@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DKE Fantasy Football</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="../images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../images/favicon-16x16.png">
+    <link rel="manifest" href="../images/manifest.json">
+    <link rel="mask-icon" href="../images/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Google Analytics -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-108694586-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-108694586-1');
+    </script>
+
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" type="text/css" href="https://bootswatch.com/flatly/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="../styles/main.css" />
+</head>
+
+<body>
+    <div class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a href="../index.html" class="navbar-brand">DKE Fantasy Football</a>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="../index.html">Home</a>
+                    </li>
+                    <li class="active">
+                        <a href="../recaps/index.html">Recaps</a>
+                    </li>
+                    <li>
+                        <a href="../previews/index.html">Previews</a>
+                    </li>
+                    <li>
+                        <a href="../stats/index.html">Stats</a>
+                    </li>
+                    <li>
+                        <a href="../rules/index.html">Rules & Keepers</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="container body-content">
+
+        <nav aria-label="breadcrumb" role="navigation">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item">
+                    <a href="../index.html">Home</a>
+                </li>
+                <li class="breadcrumb-item">
+                    <a href="./index.html">Previews</a>
+                </li>
+                <li class="breadcrumb-item active" aria-current="page">Week 8: The Week of Terrible Scores</li>
+            </ol>
+        </nav>
+
+        <h1 class="recap-title">Week 8: The Week of Terrible Scores</h1>
+
+        <div class="row">
+
+            <div class="col-xs-12">
+                <ul class="page-navigation">
+                    <li>
+                        <a href="#funfact">Fun Fact of the Week</a>
+                    </li>
+                    <li>
+                        <a href="#matchups">Match-ups</a>
+                    </li>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="col-xs-12">
+                <p>
+                    I just want to start this one off with a shout out to Sam. This week he helped me come up with some more interesting stats that I will be able to share with you more as the season goes along. But in that same process, I heard a bunch of bitching about how he is one of the unluckiest teams in our league. So Sam set up the spreadsheet to determine what each teams expected wins and losses are for each season and overall. So without further ado, Jared is the unluckiest team, getting 5.6 less wins than expected, followed up by Ean, getting 4.8 less wins than expected, and then Sam is in 3rd, getting 3.5 less wins than expected. Now those are the all time unluckiest teams all time, next here is a table of everyone this season, with the luckiest teams on top.
+                </p>
+                <table class="table table-bordered table-hover table-responsive table-striped">
+                    <thead>
+                        <th>Team</th>
+                        <th>Wins</th>
+                        <th>Expected Wins</th>
+                        <th>Excess</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Sawyer</td>
+                            <td>6</td>
+                            <td>3.45</td>
+                            <td>2.55</td>
+                        </tr>
+                        <tr>
+                            <td>Majors</td>
+                            <td>5</td>
+                            <td>4.27</td>
+                            <td>.73</td>
+                        </tr>
+                        <tr>
+                            <td>Trevor</td>
+                            <td>5</td>
+                            <td>4.45</td>
+                            <td>.55</td>
+                        </tr>
+                        <tr>
+                            <td>Hunter</td>
+                            <td>4</td>
+                            <td>3.55</td>
+                            <td>.45</td>
+                        </tr>
+                        <tr>
+                            <td>Matt</td>
+                            <td>4</td>
+                            <td>3.73</td>
+                            <td>.27</td>
+                        </tr>
+                        <tr>
+                            <td>Ross</td>
+                            <td>2</td>
+                            <td>2.09</td>
+                            <td>-.09</td>
+                        </tr>
+                        <tr>
+                            <td>Ean</td>
+                            <td>3</td>
+                            <td>3.55</td>
+                            <td>-.55</td>
+                        </tr>
+                        <tr>
+                            <td>Willis</td>
+                            <td>3</td>
+                            <td>3.64</td>
+                            <td>-.64</td>
+                        </tr>
+                        <tr>
+                            <td>Sam</td>
+                            <td>3</td>
+                            <td>3.73</td>
+                            <td>-.73</td>
+                        </tr>
+                        <tr>
+                            <td>Basil</td>
+                            <td>3</td>
+                            <td>3.82</td>
+                            <td>-.82</td>
+                        </tr>
+                        <tr>
+                            <td>Chaz</td>
+                            <td>2</td>
+                            <td>3.18</td>
+                            <td>-1.18</td>
+                        </tr>
+                        <tr>
+                            <td>Jared</td>
+                            <td>1</td>
+                            <td>2.45</td>
+                            <td>-1.45</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="col-xs-12">
+                <h2 id="funfact">Fun Fact of the Week</h2>
+                <p>
+                    So this year has just continued to be quite dreadful when it comes to scoring. So far, the average points per game is 85.11..
+                    I am just going to list every year so far...
+
+                </p>
+                <table class="table table-bordered table-hover table-responsive table-striped">
+                    <thead>
+                        <th>Season</th>
+                        <th>Average</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>2017</td>
+                            <td>85.11</td>
+                        </tr>
+                        <tr>
+                            <td>2016</td>
+                            <td>93.46</td>
+                        </tr>
+                        <tr>
+                            <td>2015</td>
+                            <td>92.9</td>
+                        </tr>
+                        <tr>
+                            <td>2014</td>
+                            <td>92.96</td>
+                        </tr>
+                        <tr>
+                            <td>2013</td>
+                            <td>90.07</td>
+                        </tr>
+                        <tr>
+                            <td>2012</td>
+                            <td>91.92</td>
+                        </tr>
+                        <tr>
+                            <td>2011</td>
+                            <td>92.76</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p>
+                    Now for even more fun, let's compare each players current average compared to their worst season, or 2nd worst season if
+                    this is your worst so far.
+                </p>
+                <table class="table table-bordered table-hover table-responsive table-striped">
+                    <thead>
+                        <th>Team</th>
+                        <th>Current Average</th>
+                        <th>Worst Average (Or 2nd worst)</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Basil</td>
+                            <td>88.3</td>
+                            <td>83.26 (2015)</td>
+                        </tr>
+                        <tr>
+                            <td>Chaz</td>
+                            <td>79.17</td>
+                            <td>82.71 (2014)</td>
+                        </tr>
+                        <tr>
+                            <td>Ean</td>
+                            <td>83.29</td>
+                            <td>72.72 (2014)</td>
+                        </tr>
+                        <tr>
+                            <td>Jared</td>
+                            <td>75.62</td>
+                            <td>67.89 (2013)</td>
+                        </tr>
+                        <tr>
+                            <td>Hunter</td>
+                            <td>85.58</td>
+                            <td>87.66 (2013)</td>
+                        </tr>
+                        <tr>
+                            <td>Majors</td>
+                            <td>95.6</td>
+                            <td>87.82 (2016)</td>
+                        </tr>
+                        <tr>
+                            <td>Matt</td>
+                            <td>85.93</td>
+                            <td>81.23 (2013)</td>
+                        </tr>
+                        <tr>
+                            <td>Ross</td>
+                            <td>74.6</td>
+                            <td>89.37 (2013)</td>
+                        </tr>
+                        <tr>
+                            <td>Sam</td>
+                            <td>89.37</td>
+                            <td>88.2 (2014)</td>
+                        </tr>
+                        <tr>
+                            <td>Sawyer</td>
+                            <td>85.23</td>
+                            <td>88.14 (2016)</td>
+                        </tr>
+                        <tr>
+                            <td>Trevor</td>
+                            <td>92.2</td>
+                            <td>77.83 (2013)</td>
+                        </tr>
+                        <tr>
+                            <td>Willis</td>
+                            <td>86.39</td>
+                            <td>87.25 (2012)</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p>
+                    So as you can see, 5 teams are still continuing to have their worst season so far and this is the only season where we have not averaged 90 points per game as a league... Hopefully the second half is much, much better.
+                </p>
+
+            </div>
+
+            <div class="col-xs-12">
+                <h2 id="matchups">Match-ups</h2>
+                <hr>
+                <div class="matchup">
+                    <h3>You Feel Lucky Punk? vs SIN-CLAIRR!!!!</h3>
+                    <p>
+                        Another hotly contested series. Out of the 11 times that the Majors and I have played, I have the slight upper hand with 5 wins. Majors will be looking to even up the series and I don't feel too confident about my chances this week due to Terrelle Pryor sucking monster dicks, the colts don't have a passing game, and AD and the Gurley man are on their bye week. But hey you never know. So far Majors has racked up 1040.88 points against me and I have piled up 1072.12, which makes sense due to the fact that the series is almost tied up. Yet the average margin of victory is 18.74 points. We will see how this one goes down but Majors has dominated me recently beating me 5 out of the last 7 times that we have played. I really don't like my chances this week, and think that Majors will get the W and even the series.
+                    </p>
+                </div>
+                <hr>
+                <div class="matchup">
+                    <h3>Turd Ferguson vs. DeMarco Polo</h3>
+                    <p>
+                        Sorry Jared but you have only beaten Willis once out of the 6 times that you have played. I wish I could tell you something like cheer up, this year is your year or at least you beat him last year but I can't. Willis has won 4 in a row. Also I have no idea who you are going to play at RB this week with DeMarco Murray on his bye week. This looks to be another bleak year for Jared. Sorry bud. Willis on the other hand is projected to get a ton of points but that has not always panned out this year, for anybody really. But historically, you average 107.96 points against Jared, your highest against anybody, so you can hope that that continues. Surpisingly, Willis does not have any major players on a bye week this week, so that should mean another win for Willis. Will he be able to catch back up to Majors? I think that he can if Majors slips up against me, I am taking Willis in this one.
+                    </p>
+                </div>
+                <hr>
+                <div class="matchup">
+                    <h3>It's Frommplicated vs Don'tMessWithTexas</h3>
+                    <p>
+                        Man, losing Aaron Rodgers does not hurt that much when you have Carson Wentz playing like a superstar playing hide and go seek with defensive linemen.
+                    </p>
+                    <iframe width="854" height="480" src="https://www.youtube.com/embed/kEswSNjoJOM" frameborder="0" gesture="media" allowfullscreen></iframe>
+                    <p>
+                        Basil's season does not look to be close to over yet, but good god he needs some runningback help. I bet you regret taking Paul Perkins in the first round now huh? Well let's get to the history between these two. Another series where Basil has the win... Basil 4, Chaz 2. Basil is on a 3 game winning streak after Chaz beat him the two time before that. I like Chaz's chances this week to end that winning streak though, LeSean McCoy is due for some more touchdowns and the Vikings need to give McKinnon more touches. Sorry Basil but I am taking Chaz in this one. 
+                    </p>
+                </div>
+                <hr>
+                <div class="matchup">
+                    <h3>Premature Punishment vs GatorFuckers</h3>
+                    <p>
+                        Hey Trevor, have you had any luck getting tickets for the Jags game vs the Chargers? Let me know. But anyways, in Deshaun Watson you trust, and you gotta go with the hot hand. Watson has looked terrific but he is playing in Seattle, so watch out. Yet if this is like most of your games against Sawyer, you'll win. Trevor 5, Sawyer 3. Trevor started off this series by beating Sawyer 3 straight times in 2011. Man that's gotta sting Sawyer worse than the ringing in your ears after an EDM festival. Since that season though, Sawyer is 3-2 against Trevor. There really isn't much else to say other than I think that Trevor gets another win this week, even with Leonard Fournette on a bye. Sorry Sawyer, but I don't see Diggs coming back and saving you this week.
+                    </p>
+                </div>
+                <hr>
+                <div class="matchup">
+                    <h3>Grab Em By The Percy vs Excel-sior</h3>
+                    <p>
+                        Hey Hunter, just a helpful hint, you should move Devante Parker into your WR slot and put Duke Johnson in before Parker takes up your flex spot. But anyways, you don't need my help against Sam, you have handled him easily all by yourself. So far, you have beaten him 5 out 6 times, and have won 5 straight games. This doesn't bode well for the team woe is me, I am so unlucky. The good news for Sam is that the Steelers are on the road, and they are a terrible road team. So sorry team Steelers but I don't think that Bell or Brown will meet their projections. Which could make for another close match-up, the average margin of victory is only 14.84 points. I guess that does give Sam a little more ammo for Mr. Unlucky, but I think Jared deserves that title more than anybody. Anyways, my prediction is that Tom Brady throws, throws, and throws some more to put the Patriots on his back yet again, and in turn put Sam's team on his back and carry him to another win. Although you might want to pick up a kicker that is not on a bye week...
+                    </p>
+                </div>
+                <hr>
+                <div class="matchup">
+                    <h3>Le'Veon A Prayer vs Hairy Palmers</h3>
+                    <p>
+                        This is a very important week in our league's history. This week in 2015, Ross put up 144 points to Ean's 37.18. Largest margin of victory that we have ever seen. I really wish I had the time to go back and dig up Majors' recap of this game because I still remember that it was one of my favorites to this day. Sorry Ean, I am really not trying to pile on here but you kinda do it to yourself, you have yet to beat Ross. Although that will have to change at some point and this year look's to be as good a time as ever. Ross is the second worst team this year, and has the least amount of expected wins, so you can hope for another poor performance from him. Yet Ross has typically blasted Ean's ass wide open. Last year he put up 181.38 points against Ean, which is the second highest score that we have seen. I think that this is the year where Ean finally does it, I think he beats Ross. I like Dalton against the Colts "defense", and it looks like the 49ers realized that Hyde is the only real offense that they have. 
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <hr />
+        <footer>
+            <p>&copy;
+                <span id="currentYear"></span> - DKE Fantasy Football</p>
+        </footer>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="../scripts/bootstrap.min.js"></script>
+    <script>
+        var now = new Date();
+        $('#currentYear').text(now.getFullYear());
+    </script>
+
+</body>
+
+</html>
