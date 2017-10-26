@@ -1,15 +1,29 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DKE Fantasy Football</title>
     <link rel="apple-touch-icon" sizes="180x180" href="./images/apple-touch-icon.png">
-	<link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="./images/favicon-16x16.png">
-	<link rel="manifest" href="./images/manifest.json">
-	<link rel="mask-icon" href="./images/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon-16x16.png">
+    <link rel="manifest" href="./images/manifest.json">
+    <link rel="mask-icon" href="./images/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="theme-color" content="#ffffff">
+
+    <!-- Google Analytics -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-108694586-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-108694586-1');
+    </script>
+
+
     <!-- Stylesheets -->
     <link rel="stylesheet" type="text/css" href="https://bootswatch.com/flatly/bootstrap.min.css" />
     <link rel="stylesheet" type="text/css" href="./styles/main.css" />
@@ -28,16 +42,26 @@
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li class="active"><a href="#">Home</a></li>
-                    <li><a href="./recaps/index.html">Recaps</a></li>
-                    <li><a href="./previews/index.html">Previews</a></li>
-                    <li><a href="./stats/index.html">Stats</a></li>
-                    <li><a href="./rules/index.html">Rules & Keepers</a></li>
+                    <li class="active">
+                        <a href="#">Home</a>
+                    </li>
+                    <li>
+                        <a href="./recaps/index.html">Recaps</a>
+                    </li>
+                    <li>
+                        <a href="./previews/index.html">Previews</a>
+                    </li>
+                    <li>
+                        <a href="./stats/index.html">Stats</a>
+                    </li>
+                    <li>
+                        <a href="./rules/index.html">Rules & Keepers</a>
+                    </li>
                 </ul>
             </div>
         </div>
     </div>
-    
+
     <div class="jumbotron">
         <div class="container">
             <h1>DKE Fantasy Football</h1>
@@ -46,39 +70,55 @@
     </div>
 
     <div class="container body-content">
-            
-            <div class="row">
-                <div class="col-md-3">
-                    <h2>Recaps</h2>
-                    <p>
-                        We got the recaps that you want. Everyone has worked very hard to give everybody a good laugh, so make sure to give them a like.</a>
-                    </p>
-                    <p><a class="btn btn-default" href="./recaps/index.html">Learn more &raquo;</a></p>
-                </div>
-                <div class="col-md-3">
-                    <h2>Previews</h2>
-                    <p>The weekly previews will be moving into this website as well. Go check out what I have to say about your upcoming week.</p>
-                    <p><a class="btn btn-default" href="./previews/index.html">Learn more &raquo;</a></p>
-                </div>
-                <div class="col-md-3">
-                    <h2>Stats & Records</h2>
-                    <p>Eventually I will be updating the Stats & League Records in here. I will let you know when I have updated the page with the stats, I will probably need some help updating them on a weekly basis until I make this page much more robust.</p>
-                    <p><a class="btn btn-default" href="./stats/index.html">Learn more &raquo;</a></p>
-                </div>
-                <div class="col-md-3">
-                    <h2>Rules & Keepers</h2>
-                    <p>Eventually I will be updating the Rules & Keepers section to include the Rules, Active trades, and the Keeper info that you will need to know going from year to year. This is mostly to help out Majors set up the draft each year, so please make sure that all the information is accurate or you might get Geno in the 4th.</p>
-                    <p><a class="btn btn-default" href="./rules/index.html">Learn more &raquo;</a></p>
-                </div>
+
+        <div class="row">
+            <div class="col-md-3">
+                <h2>Recaps</h2>
+                <p>
+                    We got the recaps that you want. Everyone has worked very hard to give everybody a good laugh, so make sure to give them
+                    a like.</a>
+                </p>
+                <p>
+                    <a class="btn btn-default" href="./recaps/index.html">Learn more &raquo;</a>
+                </p>
             </div>
+            <div class="col-md-3">
+                <h2>Previews</h2>
+                <p>The weekly previews will be moving into this website as well. Go check out what I have to say about your
+                    upcoming week.</p>
+                <p>
+                    <a class="btn btn-default" href="./previews/index.html">Learn more &raquo;</a>
+                </p>
+            </div>
+            <div class="col-md-3">
+                <h2>Stats & Records</h2>
+                <p>Eventually I will be updating the Stats & League Records in here. I will let you know when I have updated
+                    the page with the stats, I will probably need some help updating them on a weekly basis until I make
+                    this page much more robust.</p>
+                <p>
+                    <a class="btn btn-default" href="./stats/index.html">Learn more &raquo;</a>
+                </p>
+            </div>
+            <div class="col-md-3">
+                <h2>Rules & Keepers</h2>
+                <p>Eventually I will be updating the Rules & Keepers section to include the Rules, Active trades, and the Keeper
+                    info that you will need to know going from year to year. This is mostly to help out Majors set up the
+                    draft each year, so please make sure that all the information is accurate or you might get Geno in the
+                    4th.</p>
+                <p>
+                    <a class="btn btn-default" href="./rules/index.html">Learn more &raquo;</a>
+                </p>
+            </div>
+        </div>
 
         <hr />
         <footer>
-            <p>&copy; <span id="currentYear"></span> - DKE Fantasy Football</p>
+            <p>&copy;
+                <span id="currentYear"></span> - DKE Fantasy Football</p>
         </footer>
     </div>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="./scripts/bootstrap.min.js"></script>
     <script>
         var now = new Date();
@@ -86,4 +126,5 @@
     </script>
 
 </body>
+
 </html>
