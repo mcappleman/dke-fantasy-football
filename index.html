@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DKE Fantasy Football</title>
+    <link rel="stylesheet" type="text/css" href="./styles/bootstrap-paper.min.css" />
+    <link rel="stylesheet" type="text/css" href="./styles/main.css" />
+    <!-- <script src="/static/scripts/modernizr-2.6.2.js"></script> -->
+</head>
+
+<body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a href="/" class="navbar-brand">DKE Fantasy Football</a>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">Home</a></li>
+                    <li><a href="./recaps/index.html">Recaps</a></li>
+                    <li><a href="./previews/index.html">Previews</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="container body-content">
+            
+            <div class="jumbotron">
+                <h1>DKE Fantasy Football</h1>
+                <p class="lead">Welcome to the website for the greatest fantasy football league that there ever was.</p>
+            </div>
+            
+            <div class="row">
+                <div class="col-md-4">
+                    <h2>Recaps</h2>
+                    <p>
+                        Check out the recaps by <a href="./recaps/index.html">going here. I know that everyone has worked very hard to give everybody a good laugh, so make sure to give them a like.</a>
+                    </p>
+                </div>
+                <div class="col-md-4">
+                    <h2>Previews</h2>
+                    <p>The weekly previews will be moving into this website as well. You can check them out by <a href="./previews/index.html">going here</a>. Go check out what I have to say about your upcoming week.</p>
+                </div>
+                <div class="col-md-4">
+                    <h2>Stats & Records</h2>
+                    <p>Eventually I will be updating the Stats & League Records in here. I will let you know when I have updated the page with the stats, I will probably need some help updating them on a weekly basis until I make this page much more robust.</p>
+                    <p><a class="btn btn-default" href="http://azure.microsoft.com">Learn more &raquo;</a></p>
+                </div>
+            </div>
+
+        <hr />
+        <footer>
+            <p>&copy; <span id="currentYear"></span> - DKE Fantasy Football</p>
+        </footer>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>    
+    <script src="./scripts/bootstrap.min.js"></script>
+    <script>
+        var now = new Date();
+        $('#currentYear').val(now.getFullYear());
+    </script>
+
+</body>
+</html>
