@@ -12,3 +12,17 @@ body {
 .recap-title {
     margin-bottom: 20px;
 }
+
+.nfl-comparison{
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+.nfl-comparison p.description {
+    padding-top: 15px;
+}
+
+.nfl-comparison img {
+    max-width: 400px;
+    max-height: 400px;
+}
