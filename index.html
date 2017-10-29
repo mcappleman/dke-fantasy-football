@@ -4,7 +4,10 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title of the page that appears in the tab -->
     <title>DKE Fantasy Football</title>
+
+    <!-- Sewanee S that appears in the tab header -->
     <link rel="apple-touch-icon" sizes="180x180" href="./images/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon-16x16.png">
@@ -30,16 +33,20 @@
 </head>
 
 <body>
+    <!-- Navbar at the top of the page. All of this code is taken from https://getbootstrap.com/docs/3.3/components/#navbar -->
     <div class="navbar navbar-default navbar-fixed-top">
         <div class="container">
             <div class="navbar-header">
+                <!-- Menu Button that will appear in the mobile view -->
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
+                <!-- Title of the application where when clicked goes to the home page -->
                 <a href="./index.html" class="navbar-brand">DKE Fantasy Football</a>
             </div>
+            <!-- All of the navbar items go here, this is what will collapse in the mobile view and appear in the menu button -->
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
                     <li class="active">
@@ -59,9 +66,12 @@
                     </li>
                 </ul>
             </div>
+            <!-- End of the navbar items -->
         </div>
     </div>
+    <!-- End of the navbar -->
 
+    <!-- This is taken straight from https://getbootstrap.com/docs/3.3/components/#jumbotron -->
     <div class="jumbotron">
         <div class="container">
             <h1>DKE Fantasy Football</h1>
@@ -69,9 +79,13 @@
         </div>
     </div>
 
+    <!-- Body content -->
     <div class="container body-content">
 
+        <!-- This is how bootstraps grid system works. Check out this for more information, https://getbootstrap.com/docs/3.3/css/#grid -->
+        <!-- Essentially the grid system helps to lay out items on the page, and it is broken down into rows and columns, where each row is 12 columns wide. -->
         <div class="row">
+            <!-- Example of a column that is a quarter of the page for anything bigger than a tablet view. -->
             <div class="col-md-3">
                 <h2>Recaps</h2>
                 <p>
@@ -82,6 +96,7 @@
                     <a class="btn btn-default" href="./recaps/index.html">Learn more &raquo;</a>
                 </p>
             </div>
+            <!-- Same as the previous column -->
             <div class="col-md-3">
                 <h2>Previews</h2>
                 <p>The weekly previews will be moving into this website as well. Go check out what I have to say about your
@@ -112,16 +127,21 @@
         </div>
 
         <hr />
-        <footer>
-            <p>&copy;
-                <span id="currentYear"></span> - DKE Fantasy Football</p>
+        <!-- Here we have our footer, with the copyright symbol and a span item with an ID so that we can autopopulate it with the current year. -->
+         <footer>
+            <p>
+                &copy;
+                <span id="currentYear"></span> - DKE Fantasy Football
+            </p>
         </footer>
     </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="./scripts/bootstrap.min.js"></script>
     <script>
+        // Here is the code that gets the current Date
         var now = new Date();
+        // Next we get the full year value and make the html item with the ID currentYear have the text of the Current Year.
         $('#currentYear').text(now.getFullYear());
     </script>
 
