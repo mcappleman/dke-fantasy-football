@@ -39,3 +39,7 @@ body {
     padding-right: 5px;
     padding-bottom: 30px;
 }
+
+button.navbar-toggle {
+    border-radius: 0px;
+}
