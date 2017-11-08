@@ -76,30 +76,103 @@
             <div role="tabpanel" class="tab-pane" id="records">
                 <h3>Records go here</h3>
             </div>
+
             <div role="tabpanel" class="tab-pane active" id="yearall">
-                <table class="table table-striped table-bordered table-responsive" id="tableall"></table>
+                <div class="row">
+                    <div class="col-xs-12 table-container">
+                        <h3>Standings</h3>
+                        <table class="table table-striped table-bordered table-responsive" id="tableall"></table>
+                    </div>
+                </div>
             </div>
+
             <div role="tabpanel" class="tab-pane" id="year2017">
-                <table class="table table-striped table-bordered table-responsive" id="table2017"></table>
+                <div class="row">
+                    <div class="col-md-6 table-container">
+                        <h3>High Scores</h3>
+                        <table class="table stable-striped table-bordered table-responsive" id="highScores2017"></table>
+                    </div>
+                    <div class="col-md-6 table-container">
+                        <h3>Low Scores</h3>
+                        <table class="table stable-striped table-bordered table-responsive" id="lowScores2017"></table>
+                    </div>
+                    <div class="col-md-6 table-container">
+                        <h3>Biggest Blowouts</h3>
+                        <table class="table stable-striped table-bordered table-responsive" id="blowouts2017"></table>
+                    </div>
+                    <div class="col-md-6 table-container">
+                        <h3>Closest Games</h3>
+                        <table class="table stable-striped table-bordered table-responsive" id="closeGames2017"></table>
+                    </div>
+                    <div class="col-md-6 table-container">
+                        <h3>Highest Combined Scoring</h3>
+                        <table class="table stable-striped table-bordered table-responsive" id="highest2017"></table>
+                    </div>
+                    <div class="col-md-6 table-container">
+                        <h3>Dumpster Fires</h3>
+                        <table class="table stable-striped table-bordered table-responsive" id="dumpster2017"></table>
+                    </div>
+                    <div class="col-xs-12 table-container">
+                        <h3>Standings</h3>
+                        <table class="table table-striped table-bordered table-responsive" id="table2017"></table>
+                    </div>
+                </div>
             </div>
+
             <div role="tabpanel" class="tab-pane" id="year2016">
-                <table class="table table-striped table-bordered table-responsive" id="table2016"></table>
+                <div class="row">
+                    <div class="col-xs-12 table-container">
+                        <h3>Standings</h3>
+                        <table class="table table-striped table-bordered table-responsive" id="table2016"></table>
+                    </div>
+                </div>
             </div>
+
             <div role="tabpanel" class="tab-pane" id="year2015">
-                <table class="table table-striped table-bordered table-responsive" id="table2015"></table>
+                <div class="row">
+                    <div class="col-xs-12 table-container">
+                        <h3>Standings</h3>
+                        <table class="table table-striped table-bordered table-responsive" id="table2015"></table>
+                    </div>
+                </div>
             </div>
+
             <div role="tabpanel" class="tab-pane" id="year2014">
-                <table class="table table-striped table-bordered table-responsive" id="table2014"></table>
+                <div class="row">
+                    <div class="col-xs-12 table-container">
+                        <h3>Standings</h3>
+                        <table class="table table-striped table-bordered table-responsive" id="table2014"></table>
+                    </div>
+                </div>
             </div>
+
             <div role="tabpanel" class="tab-pane" id="year2013">
-                <table class="table table-striped table-bordered table-responsive" id="table2013"></table>
+                <div class="row">
+                    <div class="col-xs-12 table-container">
+                        <h3>Standings</h3>
+                        <table class="table table-striped table-bordered table-responsive" id="table2013"></table>
+                    </div>
+                </div>
             </div>
+
             <div role="tabpanel" class="tab-pane" id="year2012">
-                <table class="table table-striped table-bordered table-responsive" id="table2012"></table>
+                <div class="row">
+                    <div class="col-xs-12 table-container">
+                        <h3>Standings</h3>
+                        <table class="table table-striped table-bordered table-responsive" id="table2012"></table>
+                    </div>
+                </div>
             </div>
+
             <div role="tabpanel" class="tab-pane" id="year2011">
-                <table class="table table-striped table-bordered table-responsive" id="table2011"></table>
+                <div class="row">
+                    <div class="col-xs-12 table-container">
+                        <h3>Standings</h3>
+                        <table class="table table-striped table-bordered table-responsive" id="table2011"></table>
+                    </div>
+                </div>
             </div>
+
         </div>
 
     </div>
@@ -114,6 +187,7 @@
 <script src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
 <script src="../scripts/bootstrap.min.js"></script>
 <script src="../scripts/stats.js"></script>
+<script src="../scripts/stats2017.js"></script>
 <script>
     var now = new Date();
     $('#currentYear').text(now.getFullYear());
