@@ -9,24 +9,6 @@ $(document).ready(function () {
         columns: columnNames
     });
 
-    $('#table2016').DataTable({
-        order: [[2, "desc"]],
-        searching: false,
-        sDom: '',
-        lengthMenu: [[-1], ["All"]],
-        data: data2016,
-        columns: yearColumnNames
-    });
-
-    $('#table2015').DataTable({
-        order: [[2, "desc"]],
-        searching: false,
-        sDom: '',
-        lengthMenu: [[-1], ["All"]],
-        data: data2015,
-        columns: yearColumnNames
-    });
-
     $('#table2014').DataTable({
         order: [[2, "desc"]],
         searching: false,
@@ -65,72 +47,6 @@ $(document).ready(function () {
 
 });
 
-// Column Titles
-
-var columnNames = [
-    { title: "Name" },
-    { title: "Games" },
-    { title: "Wins" },
-    { title: "Losses" },
-    { title: "Ties" },
-    { title: "Win Percentage" },
-    { title: "Points For" },
-    { title: "Points Against" },
-    { title: "Points per Game" },
-    { title: "PA per game" },
-    { title: "Total Wins" },
-    { title: "Total Losses" },
-    { title: "Total Ties" },
-    { title: "Expected Win Percentage" },
-    { title: "Excess Win Percentage" },
-    { title: "Expected Wins" },
-    { title: "Expected Losses" },
-    { title: "Excess Wins" },
-];
-
-var yearColumnNames = [
-    { title: "Name" },
-    { title: "Games" },
-    { title: "Wins" },
-    { title: "Losses" },
-    { title: "Ties" },
-    { title: "Points For" },
-    { title: "Points Against" },
-    { title: "Points per Game" },
-    { title: "PA per game" },
-    { title: "Total Wins" },
-    { title: "Total Losses" },
-    { title: "Total Ties" },
-    { title: "Expected Wins" },
-    { title: "Expected Losses" },
-    { title: "Excess Wins" },
-];
-
-var scoreColumnNames = [
-    { title: "Name" },
-    { title: "Week" },
-    { title: "Score" },
-    { title: "Opponent" }
-];
-
-var gameColumnNames = [
-    { title: "Week" },
-    { title: "Winner" },
-    { title: "Score" },
-    { title: "Loser" },
-    { title: "Score" },
-    { title: "Difference" }
-];
-
-var gameScoringColumnNames = [
-    { title: "Week" },
-    { title: "Winner" },
-    { title: "Score" },
-    { title: "Loser" },
-    { title: "Score" },
-    { title: "Combined" }
-];
-
 var dataSet = [
     ['Willis', 102, 59, 43, 0, '57.84%', 9762.04, 9309.74, 95.71, 91.27, 618, 466, 0, '57.01%', '0.83%', 58.2, 43.8, 0.8],
     ['Majors', 101, 59, 42, 0, '58.42%', 9759.38, 9135.5, 96.63, 90.45, 599, 478, 0, '55.62%', '2.80%', 56.2, 44.8, 2.8],
@@ -144,40 +60,6 @@ var dataSet = [
     ['Ean', 100, 37, 63, 0, '37.00%', 8679.26, 9451.5, 86.79, 94.52, 448, 621, 1, '41.92%', '-4.92%', 41.9, 58.1, -4.9],
     ['Chaz', 69, 34, 35, 0, '49.28%', 6294.6, 6178.08, 91.23, 89.54, 381, 388, 0, '49.54%', '-0.27%', 34.2, 34.8, -0.2],
     ['Jared', 97, 30, 67, 0, '30.93%', 8015.84, 9357.5, 82.64, 96.47, 385, 660, 0, '36.84%', '-5.91%', 35.7, 61.3, -5.7]
-];
-
-// 2016
-
-var data2016 = [
-    ['Majors', 15, 10, 5, 0, 1317.34, 1209.34, 87.82, 80.62, 63, 98, 0, 5.73, 8.91, 4.27],
-    ['Willis', 15, 9, 6, 0, 1317.58, 1310.62, 87.84, 87.37, 74, 87, 0, 6.73, 7.91, 2.27],
-    ['Ross', 16, 10, 6, 0, 1584.58, 1483.32, 99.04, 92.71, 92, 76, 0, 8.36, 6.91, 1.64],
-    ['Matt', 15, 8, 7, 0, 1347.42, 1341.32, 89.83, 89.42, 74, 87, 0, 6.73, 7.91, 1.27],
-    ['Sam', 15, 8, 7, 0, 1415.16, 1353.58, 94.34, 90.24, 81, 80, 0, 7.36, 7.27, 0.64],
-    ['Basil', 15, 11, 4, 0, 1682.8, 1421.68, 112.19, 94.78, 122, 39, 0, 11.09, 3.55, -0.09],
-    ['Hunter', 16, 8, 8, 0, 1518.98, 1527.84, 94.94, 95.49, 89, 79, 0, 8.09, 7.18, -0.09],
-    ['Sawyer', 16, 6, 10, 0, 1410.18, 1545.6, 88.14, 96.60, 68, 100, 0, 6.18, 9.09, -0.18],
-    ['Jared', 15, 4, 11, 0, 1231.6, 1445.32, 82.11, 96.35, 56, 105, 0, 5.09, 9.55, -1.09],
-    ['Chaz', 15, 8, 7, 0, 1552.02, 1431.52, 103.47, 95.43, 102, 59, 0, 9.27, 5.36, -1.27],
-    ['Ean', 15, 5, 10, 0, 1353.44, 1495.18, 90.23, 99.68, 76, 85, 0, 6.91, 7.73, -1.91],
-    ['Trevor', 16, 5, 11, 0, 1466.1, 1631.88, 91.63, 101.99, 83, 85, 0, 7.55, 7.73, -2.55]
-];
-
-// 2015
-
-var data2015 = [
-    ['Jared', 15, 9, 6, 0, 1372.86, 1332.26, 91.52, 88.82, 82, 79, 0, 7.45, 7.18, 1.55],
-    ['Basil', 16, 6, 10, 0, 1332.12, 1505.42, 83.26, 94.09, 52, 116, 0, 4.73, 10.55, 1.27],
-    ['Willis', 16, 10, 6, 0, 1612.68, 1436.14, 100.79, 89.76, 100, 68, 0, 9.09, 6.18, 0.91],
-    ['Majors', 15, 9, 6, 0, 1485.5, 1368.36, 99.03, 91.22, 89, 72, 0, 8.09, 6.55, 0.91],
-    ['Ross', 15, 8, 7, 0, 1419.12, 1332.74, 94.61, 88.85, 82, 79, 0, 7.45, 7.18, 0.55],
-    ['Sawyer', 15, 7, 8, 0, 1359.46, 1419.6, 90.63, 94.64, 73, 88, 0, 6.64, 8.00, 0.36],
-    ['Hunter', 15, 9, 6, 0, 1485.84, 1303.64, 99.06, 86.91, 97, 64, 0, 8.82, 5.82, 0.18],
-    ['CJ', 16, 8, 8, 0, 1466.8, 1469.24, 91.68, 91.83, 86, 82, 0, 7.82, 7.45, 0.18],
-    ['Sam', 16, 8, 8, 0, 1539.62, 1439.82, 96.23, 89.99, 89, 79, 0, 8.09, 7.18, -0.09],
-    ['Trevor', 15, 7, 8, 0, 1360.08, 1481.8, 90.67, 98.79, 82, 79, 0, 7.45, 7.18, -0.45],
-    ['Matt', 15, 9, 6, 0, 1514.06, 1482.64, 100.94, 98.84, 105, 56, 0, 9.55, 5.09, -0.55],
-    ['Ean', 15, 2, 13, 0, 1146.04, 1522.52, 76.40, 101.50, 43, 118, 0, 3.91, 10.73, -1.91]
 ];
 
 // 2014
