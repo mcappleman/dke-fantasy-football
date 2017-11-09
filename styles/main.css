@@ -52,3 +52,7 @@ button.navbar-toggle {
 .table-container table.table {
     margin: 0;
 }
+
+.overflow-auto {
+    overflow: auto;
+}
