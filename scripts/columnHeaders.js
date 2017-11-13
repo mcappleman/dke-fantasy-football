@@ -64,3 +64,31 @@ var gameScoringColumnNames = [
     { title: "Score" },
     { title: "Combined" }
 ];
+
+var scoreColumnNamesAll = [
+    { title: "Year" },
+    { title: "Name" },
+    { title: "Week" },
+    { title: "Score" },
+    { title: "Opponent" }
+];
+
+var gameColumnNamesAll = [
+    { title: "Year" },
+    { title: "Week" },
+    { title: "Winner" },
+    { title: "Score" },
+    { title: "Loser" },
+    { title: "Score" },
+    { title: "Difference" }
+];
+
+var gameScoringColumnNamesAll = [
+    { title: "Year" },
+    { title: "Week" },
+    { title: "Winner" },
+    { title: "Score" },
+    { title: "Loser" },
+    { title: "Score" },
+    { title: "Combined" }
+];

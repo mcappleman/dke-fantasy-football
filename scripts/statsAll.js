@@ -9,31 +9,52 @@ $(document).ready(function () {
         columns: columnNames
     });
 
-    $('#table2013').DataTable({
-        order: [[2, "desc"]],
-        searching: false,
+    $('#highScores').DataTable({
+        order: [[3, "desc"]],
         sDom: '',
-        lengthMenu: [[-1], ["All"]],
-        data: data2013,
-        columns: yearColumnNames
+        lengthMenu: [[5], ["All"]],
+        data: highScores,
+        columns: scoreColumnNamesAll
     });
 
-    $('#table2012').DataTable({
-        order: [[2, "desc"]],
-        searching: false,
+    $('#lowScores').DataTable({
+        order: [[3, "asc"]],
         sDom: '',
-        lengthMenu: [[-1], ["All"]],
-        data: data2012,
-        columns: yearColumnNames
+        lengthMenu: [[5], ["All"]],
+        data: lowScores,
+        columns: scoreColumnNamesAll
     });
 
-    $('#table2011').DataTable({
-        order: [[2, "desc"]],
-        searching: false,
+    $('#blowouts').DataTable({
+        order: [[6, "desc"]],
         sDom: '',
-        lengthMenu: [[-1], ["All"]],
-        data: data2011,
-        columns: yearColumnNames
+        lengthMenu: [[5], ["All"]],
+        data: blowouts,
+        columns: gameColumnNamesAll
+    });
+
+    $('#closeGames').DataTable({
+        order: [[6, "asc"]],
+        sDom: '',
+        lengthMenu: [[5], ["All"]],
+        data: closeGames,
+        columns: gameColumnNamesAll
+    });
+
+    $('#highest').DataTable({
+        order: [[6, "desc"]],
+        sDom: '',
+        lengthMenu: [[5], ["All"]],
+        data: highest,
+        columns: gameScoringColumnNamesAll
+    });
+
+    $('#dumpster').DataTable({
+        order: [[6, "asc"]],
+        sDom: '',
+        lengthMenu: [[5], ["All"]],
+        data: dumpster,
+        columns: gameScoringColumnNamesAll
     });
 
 });
@@ -53,53 +74,81 @@ var dataSet = [
     ['Jared', 97, 30, 67, 0, '30.93%', 8015.84, 9357.5, 82.64, 96.47, 385, 660, 0, '36.84%', '-5.91%', 35.7, 61.3, -5.7]
 ];
 
-// 2013
-
-var data2013 = [
-    ['Chaz', 15, 9, 6, 0, 1336.36, 1344.74, 89.09, 89.65, 90, 97, 0, 6.92, 7.46, 2.08],
-    ['Ean', 15, 9, 6, 0, 1400.98, 1392.56, 93.40, 92.84, 95, 92, 0, 7.31, 7.08, 1.69],
-    ['Sawyer', 16, 10, 6, 0, 1566.02, 1413, 97.88, 88.31, 109, 85, 0, 8.38, 6.54, 1.62],
-    ['Matt', 15, 6, 9, 0, 1218.5, 1354.36, 81.23, 90.29, 66, 121, 0, 5.08, 9.31, 0.92],
-    ['Hunter', 16, 8, 8, 0, 1402.62, 1463.58, 87.66, 91.47, 94, 100, 0, 7.23, 7.69, 0.77],
-    ['Willis', 15, 11, 4, 0, 1569.36, 1252.32, 104.62, 83.49, 138, 49, 0, 10.62, 3.77, 0.38],
-    ['Basil', 15, 11, 4, 0, 1584.44, 1294.96, 105.63, 86.33, 139, 48, 0, 10.69, 3.69, 0.31],
-    ['Majors', 15, 8, 7, 0, 1407.34, 1341.64, 93.82, 89.44, 104, 83, 0, 8.00, 6.38, 0.00],
-    ['Ross', 15, 7, 8, 0, 1340.58, 1336.3, 89.37, 89.09, 91, 96, 0, 7.00, 7.38, 0.00],
-    ['Sam', 16, 7, 9, 0, 1453.02, 1354.48, 90.81, 84.66, 91, 103, 0, 7.00, 7.92, 0.00],
-    ['Drew', 16, 8, 8, 0, 1478.54, 1414.62, 92.41, 88.41, 105, 89, 0, 8.08, 6.85, -0.08],
-    ['CJ', 15, 7, 8, 0, 1339.5, 1462.46, 89.30, 97.50, 100, 87, 0, 7.69, 6.69, -0.69],
-    ['Trevor', 13, 3, 10, 0, 1011.84, 1217.3, 77.83, 93.64, 52, 117, 0, 4.00, 9.00, -1.00],
-    ['Jared', 13, 1, 12, 0, 882.58, 1349.36, 67.89, 103.80, 31, 138, 0, 2.38, 10.62, -1.38]
-];
-
-// 2012
-
-var data2012 = [
-    ['CJ', 16, 11, 5, 0, 1453.96, 1404.68, 90.87, 87.79, 80, 88, 0, 7.27, 8.00, 3.73],
-    ['Sawyer', 15, 10, 5, 0, 1409.5, 1274.06, 93.97, 84.94, 78, 83, 0, 7.09, 7.55, 2.91],
-    ['Majors', 16, 9, 7, 0, 1446.4, 1444.32, 90.40, 90.27, 84, 84, 0, 7.64, 7.64, 1.36],
-    ['Trevor', 16, 7, 9, 0, 1425.66, 1464.18, 89.10, 91.51, 71, 97, 0, 6.45, 8.82, 0.55],
-    ['Matt', 15, 9, 6, 0, 1477.74, 1381.72, 98.52, 92.11, 98, 63, 0, 8.91, 5.73, 0.09],
-    ['Hunter', 16, 8, 8, 0, 1524.42, 1564.12, 95.28, 97.76, 88, 79, 1, 8.00, 7.18, 0.00],
-    ['Sam', 15, 7, 8, 0, 1350.84, 1298.1, 90.06, 86.54, 77, 84, 0, 7.00, 7.64, 0.00],
-    ['Drew', 15, 7, 8, 0, 1380.86, 1460.66, 92.06, 97.38, 79, 82, 0, 7.18, 7.45, -0.18],
-    ['Chaz', 15, 7, 8, 0, 1407.36, 1310.46, 93.82, 87.36, 85, 76, 0, 7.73, 6.91, -0.73],
-    ['Ean', 15, 6, 9, 0, 1334.24, 1405.84, 88.95, 93.72, 76, 84, 1, 6.91, 7.64, -0.91],
-    ['Jared', 15, 6, 9, 0, 1391.54, 1427.4, 92.77, 95.16, 86, 75, 0, 7.82, 6.82, -1.82],
-    ['Willis', 15, 5, 10, 0, 1308.74, 1475.72, 87.25, 98.38, 77, 84, 0, 7.00, 7.64, -2.00]
-];
+var highScores = [];
+var lowScores = [];
+var blowouts = [];
+var closeGames = [];
+var highest = [];
+var dumpster = [];
 
 // 2011
+highScores = combineArrays(highScores, highScores2011, 2011);
+lowScores = combineArrays(lowScores, lowScores2011, 2011);
+blowouts = combineArrays(blowouts, blowouts2011, 2011);
+closeGames = combineArrays(closeGames, closeGames2011, 2011);
+highest = combineArrays(highest, highest2011, 2011);
+dumpster = combineArrays(dumpster, dumpster2011, 2011);
 
-var data2011 = [
-    ['Willis', 16, 12, 4, 0, 1623.92, 1459.7, 101.50, 91.23, 84, 56, 0, 9.33, 6.22, 2.67],
-    ['Matt', 16, 12, 4, 0, 1636.74, 1415.3, 102.30, 88.46, 90, 50, 0, 10.00, 5.56, 2.00],
-    ['Skip', 16, 8, 8, 0, 1397.92, 1393.82, 87.37, 87.11, 58, 82, 0, 6.44, 9.11, 1.56],
-    ['Trevor', 16, 10, 6, 0, 1568.64, 1461.52, 98.04, 91.35, 82, 58, 0, 9.11, 6.44, 0.89],
-    ['Connor', 14, 4, 10, 0, 987.1, 1303.86, 70.51, 93.13, 32, 94, 0, 3.56, 10.44, 0.44],
-    ['Majors', 16, 9, 7, 0, 1614.9, 1539.84, 100.93, 96.24, 84, 56, 0, 9.33, 6.22, -0.33],
-    ['Ean', 16, 8, 8, 0, 1593.48, 1477.42, 99.59, 92.34, 76, 64, 0, 8.44, 7.11, -0.44],
-    ['Sawyer', 16, 7, 9, 0, 1462.66, 1525.54, 91.42, 95.35, 67, 73, 0, 7.44, 8.11, -0.44],
-    ['Jared', 14, 3, 11, 0, 1168.66, 1454.78, 83.48, 103.91, 45, 81, 0, 5.00, 9.00, -2.00],
-    ['Sam', 16, 5, 11, 0, 1480.3, 1502.54, 92.52, 93.91, 68, 72, 0, 7.56, 8.00, -2.56]
-];
+// 2012
+highScores = combineArrays(highScores, highScores2012, 2012);
+lowScores = combineArrays(lowScores, lowScores2012, 2012);
+blowouts = combineArrays(blowouts, blowouts2012, 2012);
+closeGames = combineArrays(closeGames, closeGames2012, 2012);
+highest = combineArrays(highest, highest2012, 2012);
+dumpster = combineArrays(dumpster, dumpster2012, 2012);
+
+// 2013
+highScores = combineArrays(highScores, highScores2013, 2013);
+lowScores = combineArrays(lowScores, lowScores2013, 2013);
+blowouts = combineArrays(blowouts, blowouts2013, 2013);
+closeGames = combineArrays(closeGames, closeGames2013, 2013);
+highest = combineArrays(highest, highest2013, 2013);
+dumpster = combineArrays(dumpster, dumpster2013, 2013);
+
+// 2014
+highScores = combineArrays(highScores, highScores2014, 2014);
+lowScores = combineArrays(lowScores, lowScores2014, 2014);
+blowouts = combineArrays(blowouts, blowouts2014, 2014);
+closeGames = combineArrays(closeGames, closeGames2014, 2014);
+highest = combineArrays(highest, highest2014, 2014);
+dumpster = combineArrays(dumpster, dumpster2014, 2014);
+
+// 2015
+highScores = combineArrays(highScores, highScores2015, 2015);
+lowScores = combineArrays(lowScores, lowScores2015, 2015);
+blowouts = combineArrays(blowouts, blowouts2015, 2015);
+closeGames = combineArrays(closeGames, closeGames2015, 2015);
+highest = combineArrays(highest, highest2015, 2015);
+dumpster = combineArrays(dumpster, dumpster2015, 2015);
+
+// 2016
+highScores = combineArrays(highScores, highScores2016, 2016);
+lowScores = combineArrays(lowScores, lowScores2016, 2016);
+blowouts = combineArrays(blowouts, blowouts2016, 2016);
+closeGames = combineArrays(closeGames, closeGames2016, 2016);
+highest = combineArrays(highest, highest2016, 2016);
+dumpster = combineArrays(dumpster, dumpster2016, 2016);
+
+// 2017
+highScores = combineArrays(highScores, highScores2017, 2017);
+lowScores = combineArrays(lowScores, lowScores2017, 2017);
+blowouts = combineArrays(blowouts, blowouts2017, 2017);
+closeGames = combineArrays(closeGames, closeGames2017, 2017);
+highest = combineArrays(highest, highest2017, 2017);
+dumpster = combineArrays(dumpster, dumpster2017, 2017);
+
+// helper functions
+
+function combineArrays(allList, list, year) {
+
+    list.forEach(function (subArray) {
+
+        subArray = subArray.unshift(year);
+
+    }, this);
+
+    allList = allList.concat(list);
+
+    return allList;
+
+}
