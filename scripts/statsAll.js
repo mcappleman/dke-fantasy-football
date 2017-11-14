@@ -141,13 +141,23 @@ dumpster = combineArrays(dumpster, dumpster2017, 2017);
 
 function combineArrays(allList, list, year) {
 
-    list.forEach(function (subArray) {
+    var copy = [];
+    list.forEach((subArray, index) => {
+
+        copy[index] = []
+        subArray.forEach((item) => {
+            copy[index].push(item);
+        });
+
+    });
+
+    copy.forEach((subArray) => {
 
         subArray = subArray.unshift(year);
 
-    }, this);
+    });
 
-    allList = allList.concat(list);
+    allList = allList.concat(copy);
 
     return allList;
 
