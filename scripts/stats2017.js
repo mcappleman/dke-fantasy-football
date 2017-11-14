@@ -80,17 +80,17 @@ var highScores2017 = [
 var lowScores2017 = [
     ['Jared', 8, 41.72, 'Willis'],
     ['Sawyer', 9, 50.28, 'Basil'],
+    ['Ross', 10, 53.32, 'Sam'],
     ['Ross', 6, 53.54, 'Hunter'],
-    ['Ross', 1, 54.92, 'Majors'],
-    ['Hunter', 5, 55.18, 'Trevor']
+    ['Ross', 1, 54.92, 'Majors']
 ];
 
 var blowouts2017 = [
+    [10, 'Sam', 112.44, 'Ross', 53.32, 59.12],
     [5, 'Trevor', 112.14, 'Hunter', 55.18, 56.96],
     [9, 'Matt', 131.52, 'Hunter', 74.92, 56.6],
     [4, 'Trevor', 107.78, 'Willis', 55.22, 52.56],
-    [7, 'Basil', 106.02, 'Trevor', 56.62, 49.4],
-    [3, 'Majors', 113.1, 'Trevor', 63.96, 49.14]
+    [7, 'Basil', 106.02, 'Trevor', 56.62, 49.4]
 ];
 
 var closeGames2017 = [
