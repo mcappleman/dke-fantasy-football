@@ -49,6 +49,10 @@ button.navbar-toggle {
     margin-bottom: 20px;
 }
 
+.table-container input.column-search {
+    min-width: 100px;
+}
+
 .table-container table.table {
     margin: 0;
 }

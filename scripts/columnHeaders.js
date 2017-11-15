@@ -19,7 +19,7 @@ var columnNames = [
     { title: "Excess Win Percentage" },
     { title: "Expected Wins" },
     { title: "Expected Losses" },
-    { title: "Excess Wins" },
+    { title: "Excess Wins" }
 ];
 
 var yearColumnNames = [
@@ -37,7 +37,7 @@ var yearColumnNames = [
     { title: "Total Ties" },
     { title: "Expected Wins" },
     { title: "Expected Losses" },
-    { title: "Excess Wins" },
+    { title: "Excess Wins" }
 ];
 
 var scoreColumnNames = [
