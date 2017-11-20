@@ -35,6 +35,7 @@ var yearColumnNames = [
     { title: "Total Wins" },
     { title: "Total Losses" },
     { title: "Total Ties" },
+    { title: "Expected Win Percentage" },
     { title: "Expected Wins" },
     { title: "Expected Losses" },
     { title: "Excess Wins" }
