@@ -60,3 +60,7 @@ button.navbar-toggle {
 .overflow-auto {
     overflow: auto;
 }
+
+.comment-section { 
+    margin-top: 20px;
+}
