@@ -1,0 +1,7 @@
+=IF(Games!$C6=$A$1,Games!$A6,IF(Games!$E6=$A$1,Games!$A6,))
+=IF(Games!$C6=$A$1,Games!$B6,IF(Games!$E6=$A$1,Games!$B6,))
+=IF(Games!$C6=$A$1,Games!$E6,IF(Games!$E6=$A$1,Games!$C6,))
+=IF(Games!$C6=$A$1,Games!$D6,IF(Games!$E6=$A$1,Games!$F6,))
+=IF(Games!$C6=$A$1,Games!$F6,IF(Games!$E6=$A$1,Games!$D6,))
+=IF(Games!$G6=$A$1,Games!$I6,)
+=IF(Games!$H6=$A$1,Games!$J6,)
