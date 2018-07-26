@@ -84,7 +84,10 @@
     <div class="jumbotron">
         <div class="container">
             <h1>DKE Fantasy Football</h1>
-            <p class="lead">Welcome to the website for the greatest fantasy football league that there ever was.</p>
+            <!-- <p class="lead">Welcome to the website for the greatest fantasy football league that there ever was.</p> -->
+            <br>
+            <h2>Countdown to Live Draft on 8/18/18 @ 2 pm EST</h2>
+            <h1 id="countdown"></h1>
         </div>
     </div>
 
@@ -152,6 +155,24 @@
         var now = new Date();
         // Next we get the full year value and make the html item with the ID currentYear have the text of the Current Year.
         $('#currentYear').text(now.getFullYear());
+        var x = setInterval(function() {
+            var now = new Date();
+            $('#currentYear').text(now.getFullYear());
+            var draftTime = new Date("Sat Aug 18 2018 18:00:00 GMT-0400");
+            var distance = draftTime.getTime() - now.getTime();
+            
+            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            $('#countdown').html(days + 'd ' + hours + 'h ' + minutes + 'm ' + seconds + 's');
+
+            if (distance < 0) {
+                clearInterval(x)
+                $('#countdown').html('EXPIRED')
+            }
+        }, 1000);
     </script>
 
 </body>
