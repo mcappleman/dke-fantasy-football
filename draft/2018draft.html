@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DKE Fantasy Football</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="../images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../images/favicon-16x16.png">
+    <link rel="manifest" href="../images/manifest.json">
+    <link rel="mask-icon" href="../images/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- OG tags for sharing via social media -->
+    <meta name="twitter:card" content="summary" />
+    <meta property="og:title" content="Week 15: Something about something" />
+    <meta property="og:image" content="https://i.imgur.com/0sgPUic.jpg" />
+    <meta property="og:image:secure_url" content="https://i.imgur.com/0sgPUic.jpg"
+    />
+    <meta property="og:site_name" content="DKE Fantasy Football" />
+    <meta property="og:description" content="I want a free and open internet and I WANT IT NOW!!!"
+    />
+    <meta property="og:image:type" content="image/jpeg" />
+    <meta property="og:url" content="http://www.dkeffball.com/previews/2017week15.html" />
+    <meta property="og:type" content="article" />
+    <meta property="fb:app_id" content="1871637919516524" />
+    <!-- End of the og tags -->
+
+    <!-- Google Analytics -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-108694586-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-108694586-1');
+    </script>
+
+    <!-- AdSense -->
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({
+            google_ad_client: "ca-pub-7783180728620328",
+            enable_page_level_ads: true
+        });
+    </script>
+    <!-- End of AdSense -->
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" type="text/css" href="https://bootswatch.com/3/flatly/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.16/css/jquery.dataTables.min.css" />
+    <link rel="stylesheet" type="text/css" href="../styles/main.css" />
+</head>
+
+<body>
+    <div class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a href="../index.html" class="navbar-brand">DKE Fantasy Football</a>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="../index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="../recaps/index.html">Recaps</a>
+                    </li>
+                    <li>
+                        <a href="../previews/index.html">Previews</a>
+                    </li>
+                    <li>
+                        <a href="../stats/index.html">Stats</a>
+                    </li>
+                    <li>
+                        <a href="../rules/index.html">Rules & Keepers</a>
+                    </li>
+                    <li class="active">
+                        <a href="../draft/index.html">Draft Results</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="container body-content">
+
+        <nav aria-label="breadcrumb" role="navigation">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item">
+                    <a href="../index.html">Home</a>
+                </li>
+                <li class="breadcrumb-item">
+                    <a href="./index.html">Draft Results</a>
+                </li>
+                <li class="breadcrumb-item active" aria-current="page">2018</li>
+            </ol>
+        </nav>
+
+        <h1 class="recap-title">Draft Results 2018</h1>
+
+        <div class="row">
+
+            <div class="col-xs-12">
+                <ul class="page-navigation">
+                    <ul>
+                        <li>
+                            <a href="#BasilHead">Basil</a>
+                        </li>
+                        <li>
+                            <a href="#ChazHead">Chaz</a>
+                        </li>
+                        <li>
+                            <a href="#EanHead">Ean</a>
+                        </li>
+                        <li>
+                            <a href="#HunterHead">Hunter</a>
+                        </li>
+                        <li>
+                            <a href="#JaredHead">Jared</a>
+                        </li>
+                        <li>
+                            <a href="#MajorsHead">Majors</a>
+                        </li>
+                        <li>
+                            <a href="#MattHead">Matt</a>
+                        </li>
+                        <li>
+                            <a href="#RossHead">Ross</a>
+                        </li>
+                        <li>
+                            <a href="#SamHead">Sam</a>
+                        </li>
+                        <li>
+                            <a href="#SawyerHead">Sawyer</a>
+                        </li>
+                        <li>
+                            <a href="#TrevorHead">Trevor</a>
+                        </li>
+                        <li>
+                            <a href="#WillisHead">Willis</a>
+                        </li>
+                    </ul>
+                </ul>
+            </div>
+
+            <div class="col-xs-12 col-md-6">
+                <h2 id="BasilHead">Basil</h2>
+                <table class="table table-bordered table-striped table-responsive" id="basil"></table>
+            </div>
+
+            <div class="col-xs-12 col-md-6">
+                <h2 id="ChazHead">Chaz</h2>
+                <table class="table table-bordered table-striped table-responsive" id="chaz"></table>
+            </div>
+
+            <div class="col-xs-12 col-md-6">
+                <h2 id="EanHead">Ean</h2>
+                <table class="table table-bordered table-striped table-responsive" id="ean"></table>
+            </div>
+
+            <div class="col-xs-12 col-md-6">
+                <h2 id="HunterHead">Hunter</h2>
+                <table class="table table-bordered table-striped table-responsive" id="hunter"></table>
+            </div>
+
+            <div class="col-xs-12 col-md-6">
+                <h2 id="JaredHead">Jared</h2>
+                <table class="table table-bordered table-striped table-responsive" id="jared"></table>
+            </div>
+
+            <div class="col-xs-12 col-md-6">
+                <h2 id="MajorsHead">Majors</h2>
+                <table class="table table-bordered table-striped table-responsive" id="majors"></table>
+            </div>
+
+            <div class="col-xs-12 col-md-6">
+                <h2 id="MattHead">Matt</h2>
+                <table class="table table-bordered table-striped table-responsive" id="matt"></table>
+            </div>
+
+            <div class="col-xs-12 col-md-6">
+                <h2 id="RossHead">Ross</h2>
+                <table class="table table-bordered table-striped table-responsive" id="ross"></table>
+            </div>
+
+            <div class="col-xs-12 col-md-6">
+                <h2 id="SamHead">Sam</h2>
+                <table class="table table-bordered table-striped table-responsive" id="sam"></table>
+            </div>
+
+            <div class="col-xs-12 col-md-6">
+                <h2 id="SawyerHead">Sawyer</h2>
+                <table class="table table-bordered table-striped table-responsive" id="sawyer"></table>
+            </div>
+
+            <div class="col-xs-12 col-md-6">
+                <h2 id="TrevorHead">Trevor</h2>
+                <table class="table table-bordered table-striped table-responsive" id="trevor"></table>
+            </div>
+
+            <div class="col-xs-12 col-md-6">
+                <h2 id="WillisHead">Willis</h2>
+                <table class="table table-bordered table-striped table-responsive" id="willis"></table>
+            </div>
+
+        </div>
+
+        <div class="row">
+            <div class="col-xs-12 comment-section">
+                <div id="disqus_thread"></div>
+                <script>
+
+                    /**
+                    *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+                    *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+                    /*
+                    var disqus_config = function () {
+                    this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+                    this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+                    };
+                    */
+                    (function () { // DON'T EDIT BELOW THIS LINE
+                        var d = document, s = d.createElement('script');
+                        s.src = 'https://dkeffball.disqus.com/embed.js';
+                        s.setAttribute('data-timestamp', +new Date());
+                        (d.head || d.body).appendChild(s);
+                    })();
+                </script>
+                <noscript>Please enable JavaScript to view the
+                    <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+                </noscript>
+            </div>
+        </div>
+
+        <hr />
+        <footer>
+            <p>&copy;
+                <span id="currentYear"></span> - DKE Fantasy Football</p>
+        </footer>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
+    <script src="../scripts/bootstrap.min.js"></script>
+    <script>
+        var now = new Date();
+        $('#currentYear').text(now.getFullYear());
+
+        $(document).ready(function () {
+
+            $('#basil').DataTable({
+                order: [[0, "asc"]],
+                lengthMenu: [[-1], ["All"]],
+                sDom: '',
+                data: basilData,
+                columns: tableColumns
+            });
+
+            $('#chaz').DataTable({
+                order: [[0, "asc"]],
+                lengthMenu: [[-1], ["All"]],
+                sDom: '',
+                data: chazData,
+                columns: tableColumns
+            });
+
+            $('#ean').DataTable({
+                order: [[0, "asc"]],
+                lengthMenu: [[-1], ["All"]],
+                sDom: '',
+                data: eanData,
+                columns: tableColumns
+            });
+
+            $('#hunter').DataTable({
+                order: [[0, "asc"]],
+                lengthMenu: [[-1], ["All"]],
+                sDom: '',
+                data: hunterData,
+                columns: tableColumns
+            });
+
+            $('#jared').DataTable({
+                order: [[0, "asc"]],
+                lengthMenu: [[-1], ["All"]],
+                sDom: '',
+                data: jaredData,
+                columns: tableColumns
+            });
+
+            $('#majors').DataTable({
+                order: [[0, "asc"]],
+                lengthMenu: [[-1], ["All"]],
+                sDom: '',
+                data: majorsData,
+                columns: tableColumns
+            });
+
+            $('#matt').DataTable({
+                order: [[0, "asc"]],
+                lengthMenu: [[-1], ["All"]],
+                sDom: '',
+                data: mattData,
+                columns: tableColumns
+            });
+
+            $('#ross').DataTable({
+                order: [[0, "asc"]],
+                lengthMenu: [[-1], ["All"]],
+                sDom: '',
+                data: rossData,
+                columns: tableColumns
+            });
+
+            $('#sam').DataTable({
+                order: [[0, "asc"]],
+                lengthMenu: [[-1], ["All"]],
+                sDom: '',
+                data: samData,
+                columns: tableColumns
+            });
+
+            $('#sawyer').DataTable({
+                order: [[0, "asc"]],
+                lengthMenu: [[-1], ["All"]],
+                sDom: '',
+                data: sawyerData,
+                columns: tableColumns
+            });
+
+            $('#trevor').DataTable({
+                order: [[0, "asc"]],
+                lengthMenu: [[-1], ["All"]],
+                sDom: '',
+                data: trevorData,
+                columns: tableColumns
+            });
+
+            $('#willis').DataTable({
+                order: [[0, "asc"]],
+                lengthMenu: [[-1], ["All"]],
+                sDom: '',
+                data: willisData,
+                columns: tableColumns
+            });
+
+        });
+
+        var basilData = [
+            [1, 1, 1, 'Saquan Barkley'],
+            [2, 10, 1, 'TY Hilton'],
+            [3, 15, 2, 'Aaron Rodgers'],
+            [4, 39, 4, 'Melvin Gordon (3rd Round Keeper)'],
+            [5, 58, 5, 'Will Fuller V'],
+            [6, 63, 6, 'Jimmy Graham'],
+            [7, 82, 7, 'Tarik Cohen'],
+            [8, 87, 8, 'Adam Thielen'],
+            [9, 106, 9, 'Jamison Crowder'],
+            [10, 111, 10, 'DJ Moore'],
+            [11, 130, 11, 'Marcus Mariota'],
+            [12, 135, 12, 'Dez Bryant'],
+            [13, 154, 13, 'Pittsburgh D'],
+            [14, 169, 15, 'Dan Bailey'],
+            [15, 179, 15, 'Anthony Miller']
+        ];
+
+        var chazData = [
+            [1, 2, 1, 'Dalvin Cook'],
+            [2, 23, 2, 'Keenan Allen'],
+            [3, 26, 3, 'Kenyan Drake'],
+            [4, 47, 4, 'Marvin Jones Jr'],
+            [5, 50, 5, 'Russell Wilson'],
+            [6, 71, 6, 'CJ Anderson'],
+            [7, 74, 7, 'Kyle Rudolph'],
+            [8, 95, 8, 'Ty Montgomery'],
+            [9, 98, 9, 'Jordy Nelson'],
+            [10, 119, 10, 'Devontae Booker'],
+            [11, 122, 11, 'Vikings D'],
+            [12, 143, 12, 'Michael Thomas'],
+            [13, 146, 13, 'Wil Lutz'],
+            [14, 167, 14, 'Derek Carr'],
+            [15, 170, 15, 'Cameron Brate']
+        ];
+
+        var eanData = [
+            [1, 4, 1, 'Jerrick McKinnon'],
+            [2, 21, 2, 'Larry Fitzgerald'],
+            [3, 28, 3, 'Travis Kelce'],
+            [4, 45, 4, 'Devin Funchess'],
+            [5, 52, 5, 'Rex Burkhead'],
+            [6, 69, 6, 'Emmanuel Sanders'],
+            [7, 76, 7, 'Chris Thompson'],
+            [8, 93, 8, 'Matt Breida'],
+            [9, 100, 9, 'Allen Hurns'],
+            [10, 117, 10, 'Jimmy Garoppolo'],
+            [11, 124, 11, 'Philip Rivers'],
+            [12, 141, 12, 'Ravens D'],
+            [13, 148, 13, 'Doug Baldwin'],
+            [14, 165, 14, 'Carlos Hyde'],
+            [15, 172, 15, 'Harrison Butker']
+        ];
+
+        var hunterData = [
+            [1, 12, 1, "Joe Mixon"],
+            [2, 13, 2, "Stefon Diggs"],
+            [3, 36, 3, "Le'Veon Bell"],
+            [4, 37, 4, "Antonio Brown"],
+            [5, 60, 5, "Mark Ingram"],
+            [6, 61, 6, "Robby Anderson"],
+            [7, 84, 7, "Matt Stafford"],
+            [8, 85, 8, "Trey Burton"],
+            [9, 108, 9, "Jordan Wilkins"],
+            [10, 109, 10, "Philly D"],
+            [11, 132, 11, "Dak Prescott"],
+            [12, 133, 12, "Stephen Gostkowski"],
+            [13, 156, 13, "Charles Clay"],
+            [14, 157, 14, "Tyler Lockett"],
+            [15, 180, 15, "Jeremy Hill"]
+        ];
+
+        var jaredData = [
+            [1, 5, 1, 'Derrick Henry'],
+            [2, 6, 1, 'Lamar Miller'],
+            [3, 24, 2, 'Demaryius Thomas'],
+            [4, 40, 4, 'Golden Tate'],
+            [5, 48, 4, 'Cooper Kupp'],
+            [6, 49, 5, 'Drew Brees'],
+            [7, 57, 5, 'Duke Johnson Jr'],
+            [8, 72, 6, 'Zach Ertz'],
+            [9, 73, 7, 'Sammy Watkins'],
+            [10, 96, 8, 'Matt Ryan'],
+            [11, 97, 9, 'George Kittle'],
+            [12, 120, 10, 'Justin Tucker'],
+            [13, 121, 11, 'Rams D'],
+            [14, 144, 12, 'Chargers D'],
+            [15, 168, 14, 'Josh Gordon']
+        ];
+
+        var majorsData = [
+            [1, 11, 1, 'Ezekial Elliot'],
+            [2, 14, 2, 'AJ Green'],
+            [3, 34, 3, 'Brandin Cooks'],
+            [4, 35, 3, 'Sony Michel'],
+            [5, 38, 4, 'Kerryon Johnson'],
+            [6, 59, 5, 'Alshon Jeffery'],
+            [7, 62, 6, 'Rashaad Penny'],
+            [8, 83, 7, 'Andrew Luck'],
+            [9, 86, 8, 'David Njoku'],
+            [10, 107, 9, 'Kenny Golladay'],
+            [11, 110, 10, 'Mike Williams'],
+            [12, 131, 11, 'Ryan Tannehill'],
+            [13, 134, 12, 'Matt Bryant'],
+            [14, 155, 13, 'Dallas D'],
+            [15, 158, 14, 'Alvin Kamara']
+        ];
+
+        var mattData = [
+            [1, 19, 2, 'Todd Gurley (1st Round Keeper)'],
+            [2, 30, 3, 'Rob Gronkowski'],
+            [3, 43, 4, 'Corey Davis'],
+            [4, 67, 6, 'Marlon Mack'],
+            [5, 78, 7, 'Kelvin Benjamin'],
+            [6, 91, 8, 'Sterling Shepard'],
+            [7, 102, 9, 'Giovani Bernard'],
+            [8, 115, 10, 'Josh Doctson'],
+            [9, 126, 11, 'Alex Smith'],
+            [10, 139, 12, 'DeAndre Hopkins'],
+            [11, 150, 13, 'Michael Gallup'],
+            [12, 159, 14, 'LaGarrette Blount'],
+            [13, 163, 14, 'Mitchell Trubisky'],
+            [14, 174, 15, 'Lions D'],
+            [15, 177, 15, 'Graham Gano']
+        ];
+
+        var rossData = [
+            [1, 3, 1, 'Christian McCaffrey'],
+            [2, 22, 2, 'Alex Collins'],
+            [3, 27, 3, 'Allen Robinson'],
+            [4, 46, 4, 'Marquise Goodwin'],
+            [5, 51, 5, 'Carson Wentz'],
+            [6, 70, 6, 'Michael Crabtree'],
+            [7, 75, 7, 'Chris Hogan'],
+            [8, 94, 8, 'Jordan Reed'],
+            [9, 99, 9, 'Devontae Freeman'],
+            [10, 118, 10, 'Jack Doyle'],
+            [11, 123, 11, 'Ben Roethlisberger'],
+            [12, 142, 12, 'Peyton Barber'],
+            [13, 147, 13, 'Broncos D'],
+            [14, 166, 14, 'Robbie Gould'],
+            [15, 171, 15, 'Rishard Matthews']
+        ];
+
+        var samData = [
+            [1, 8, 1, 'LeSean McCoy'],
+            [2, 17, 2, 'Mike Evans'],
+            [3, 32, 3, 'Ronald Jones !!'],
+            [4, 41, 4, 'Marshawn Lynch'],
+            [5, 56, 5, 'Tom Brady'],
+            [6, 65, 6, 'Dion Lewis'],
+            [7, 80, 7, 'Delanie Walker'],
+            [8, 89, 8, 'Julian Edelman'],
+            [9, 104, 9, 'Pierre Garcon'],
+            [10, 113, 10, 'James White'],
+            [11, 128, 11, 'Nelson Agholor'],
+            [12, 137, 12, 'Patriots D'],
+            [13, 152, 13, 'Chris Boswell'],
+            [14, 161, 14, 'Tyreke Hill'],
+            [15, 176, 15, 'Odell Beckham Jr']
+        ];
+
+        var sawyerData = [
+            [1, 20, 2, 'JuJu Smith-Schuster'],
+            [2, 29, 3, 'Greg Olsen'],
+            [3, 44, 4, 'Randall Cobb'],
+            [4, 53, 5, 'Kirk Cousins'],
+            [5, 68, 6, 'Jamaal Williams'],
+            [6, 77, 7, 'Cam Newton'],
+            [7, 92, 8, 'Aaron Jones'],
+            [8, 101, 9, 'Jags D'],
+            [9, 116, 10, 'Dede Westbrook'],
+            [10, 125, 11, 'Christian Kirk'],
+            [11, 140, 12, 'Jordan Reed'],
+            [12, 149, 13, 'Eric Ebron'],
+            [13, 164, 14, 'Matt Prater'],
+            [14, 173, 15, 'David Johnson'],
+            [15, 178, 15, 'Samaje Perine']
+        ];
+
+        var trevorData = [
+            [1, 9, 1, 'Leonard Fournette'],
+            [2, 16, 2, 'Amari Cooper'],
+            [3, 25, 3, 'Royce Freeman'],
+            [4, 33, 3, 'Jarvis Landry'],
+            [5, 54, 5, 'Evan Engram'],
+            [6, 64, 6, 'Chris Carson'],
+            [7, 81, 7, 'Tevin Coleman'],
+            [8, 88, 8, 'Patrick Maholmes'],
+            [9, 105, 9, 'DeVante Parker'],
+            [10, 112, 10, 'John Ross'],
+            [11, 129, 11, 'Greg Zuerlein'],
+            [12, 136, 12, 'Latavius Murray'],
+            [13, 145, 13, 'Texans D'],
+            [14, 153, 13, 'Davante Adams'],
+            [15, 160, 14, 'Deshaun Watson']
+        ];
+
+        var willisData = [
+            [1, 7, 1, 'Kareem Hunt'],
+            [2, 18, 2, 'Julio Jones'],
+            [3, 31, 3, 'Jay Ajayi'],
+            [4, 42, 4, 'Robert Woods'],
+            [5, 55, 5, 'Isaiah Crowell'],
+            [6, 66, 6, 'Nick Chubb'],
+            [7, 79, 7, 'Calvin Ridley'],
+            [8, 90, 8, 'Kenny Stills'],
+            [9, 103, 9, 'Marquise Lee'],
+            [10, 114, 10, 'Chris Ivory'],
+            [11, 127, 11, 'Ben Watson'],
+            [12, 138, 12, 'Derrius Guice'],
+            [13, 151, 13, 'New Orleans D'],
+            [14, 162, 14, 'Jake Elliot'],
+            [15, 175, 15, 'Jared Goff']
+        ];
+
+        var tableColumns = [
+            { title: 'Pick', orderable: true },
+            { title: 'Overall', orderable: true, },
+            { title: 'Round', orderable: true, },
+            { title: 'Player', orderable: true, }
+        ];
+
+    </script>
+
+    <script id="dsq-count-scr" src="//dkeffball.disqus.com/count.js" async></script>
+
+</body>
+
+</html>
