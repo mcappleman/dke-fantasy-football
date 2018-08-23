@@ -68,3 +68,12 @@ button.navbar-toggle {
 .text-center {
     text-align: center;
 }
+
+ul.tab-nav {
+    list-style-type: none;
+}
+
+ul.tab-nav li {
+    float: left;
+    padding: 15px;
+}
