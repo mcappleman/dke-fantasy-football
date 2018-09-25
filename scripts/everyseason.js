@@ -2,6 +2,7 @@ $(document).ready(function () {
 
     var table = $('#everySeasonTable').DataTable({
         order: [[0, "desc"]],
+        lengthMenu: [[12, 36, -1], ['12', '36', 'All']],
         data: everySeason.seasons,
         columns: everySeason.headers
     });
