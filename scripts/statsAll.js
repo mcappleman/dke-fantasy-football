@@ -138,12 +138,12 @@ highest = combineArrays(highest, highest2017, 2017);
 dumpster = combineArrays(dumpster, dumpster2017, 2017);
 
 // 2017
-highScores = combineArrays(highScores, highScores2017, 2018);
-lowScores = combineArrays(lowScores, lowScores2017, 2018);
-blowouts = combineArrays(blowouts, blowouts2017, 2018);
-closeGames = combineArrays(closeGames, closeGames2017, 2018);
-highest = combineArrays(highest, highest2017, 2018);
-dumpster = combineArrays(dumpster, dumpster2017, 2018);
+highScores = combineArrays(highScores, highScores2018, 2018);
+lowScores = combineArrays(lowScores, lowScores2018, 2018);
+blowouts = combineArrays(blowouts, blowouts2018, 2018);
+closeGames = combineArrays(closeGames, closeGames2018, 2018);
+highest = combineArrays(highest, highest2018, 2018);
+dumpster = combineArrays(dumpster, dumpster2018, 2018);
 
 // helper functions
 
