@@ -70,27 +70,27 @@ var data2018 = [
 
 var highScores2018 = [
     ['Majors', 4, 176.56, 'Jared'],
+    ['Basil', 6, 162.9, 'Trevor'],
     ['Matt', 1, 131.7, 'Sam'],
     ['Basil', 4, 131.62, 'Sawyer'],
-    ['Willis', 4, 129.2, 'Ean'],
-    ['Basil', 5, 125.58, 'Ross']
+    ['Willis', 4, 129.2, 'Ean']
 ];
 
 
 var lowScores2018 = [
     ['Willis', 3, 59.76, 'Sawyer'],
     ['Ross', 5, 61.94, 'Basil'],
-    ['Hunter', 3, 63.38, 'Hunter'],
-    ['Majors', 5, 68.4, 'Matt'],
-    ['Sam', 2, 68.86, 'Chaz']
+    ['Willis', 6, 62.44, 'Sam'],
+    ['Jared', 6, 62.56, 'Hunter'],
+    ['Hunter', 3, 63.38, 'Hunter']
 ];
 
 var blowouts2018 = [
     [4, 'Majors', 176.56, 'Jared', 104.58, 71.98],
     [5, 'Basil', 125.58, 'Ross', 61.94, 63.64],
+    [6, 'Basil', 162.9, 'Trevor', 101.38, 61.52],
     [4, 'Basil', 131.62, 'Sawyer', 77.78, 53.84],
-    [5, 'Matt', 116.1, 'Majors', 68.4, 47.7],
-    [2, 'Matt', 106.88, 'Willis', 68.96, 37.92]
+    [6, 'Hunter', 113, 'Jared', 62.56, 50.44]
 ];
 
 var closeGames2018 = [
@@ -103,10 +103,10 @@ var closeGames2018 = [
 
 var highest2018 = [
     [4, 'Majors', 176.56, 'Jared', 104.58, 281.14],
+    [6, 'Basil', 162.9, 'Trevor', 101.38, 264.28],
     [1, 'Matt', 131.7, 'Sam', 118.48, 250.18],
     [4, 'Willis', 129.2, 'Ean', 120.2, 249.4],
-    [4, 'Trevor', 114.46, 'Matt', 111.9, 226.36],
-    [2, 'Sawyer', 120.7, 'Majors', 98.36, 219.06]
+    [6, 'Majors', 124.44, 'Ross', 102.92, 227.36]
 ];
 
 var dumpster2018 = [
