@@ -55,6 +55,7 @@ var everySeason = {
     "seasons": []
 }
 
+everySeason.seasons = combineArrays(everySeason.seasons, data2019, 2019);
 everySeason.seasons = combineArrays(everySeason.seasons, data2018, 2018);
 everySeason.seasons = combineArrays(everySeason.seasons, data2017, 2017);
 everySeason.seasons = combineArrays(everySeason.seasons, data2016, 2016);
