@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,7 +11,7 @@
     <link rel="manifest" href="../images/manifest.json">
     <link rel="mask-icon" href="../images/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="theme-color" content="#ffffff">
-    
+
     <!-- Google Analytics -->
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-108694586-1"></script>
@@ -21,8 +22,18 @@
 
         gtag('config', 'UA-108694586-1');
     </script>
-    
-    
+
+    <!-- AdSense -->
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({
+            google_ad_client: "ca-pub-7783180728620328",
+            enable_page_level_ads: true
+        });
+    </script>
+    <!-- End of AdSense -->
+
+
     <!-- Stylesheets -->
     <link rel="stylesheet" type="text/css" href="https://bootswatch.com/3/flatly/bootstrap.min.css" />
     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.16/css/jquery.dataTables.min.css" />
@@ -42,11 +53,24 @@
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li><a href="../index.html">Home</a></li>
-                    <li><a href="../recaps/index.html">Recaps</a></li>
-                    <li><a href="../previews/index.html">Previews</a></li>
-                    <li class="active"><a href="../stats/index.html">Stats</a></li>
-                    <li><a href="../rules/index.html">Rules & Keepers</a></li>
+                    <li>
+                        <a href="../index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="../recaps/index.html">Recaps</a>
+                    </li>
+                    <li>
+                        <a href="../previews/index.html">Previews</a>
+                    </li>
+                    <li class="active">
+                        <a href="../stats/index.html">Stats</a>
+                    </li>
+                    <li>
+                        <a href="../rules/index.html">Rules & Keepers</a>
+                    </li>
+                    <li>
+                        <a href="../draft/index.html">Draft Results</a>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -58,216 +82,488 @@
 
         <div>
 
-          <!-- Nav tabs -->
-          <ul class="nav nav-tabs" role="tablist">
-            <li role="presentation"><a href="#records" aria-controls="records" role="tab" data-toggle="tab">Records</a></li>
-            <li role="presentation" class="active"><a href="#yearall" aria-controls="yearall" role="tab" data-toggle="tab">All Time</a></li>
-            <li role="presentation"><a href="#year2017" aria-controls="year2017" role="tab" data-toggle="tab">2017</a></li>
-            <li role="presentation"><a href="#year2016" aria-controls="year2016" role="tab" data-toggle="tab">2016</a></li>
-            <li role="presentation"><a href="#year2015" aria-controls="year2015" role="tab" data-toggle="tab">2015</a></li>
-            <li role="presentation"><a href="#year2014" aria-controls="year2014" role="tab" data-toggle="tab">2014</a></li>
-            <li role="presentation"><a href="#year2013" aria-controls="year2013" role="tab" data-toggle="tab">2013</a></li>
-            <li role="presentation"><a href="#year2012" aria-controls="year2012" role="tab" data-toggle="tab">2012</a></li>
-            <li role="presentation"><a href="#year2011" aria-controls="year2011" role="tab" data-toggle="tab">2011</a></li>
-        </ul>
+            <!-- Nav tabs -->
+            <ul class="nav nav-tabs" role="tablist">
+                <!-- <li role="presentation">
+                    <a href="#records" aria-controls="records" role="tab" data-toggle="tab">Records</a>
+                </li> -->
+                <li role="presentation" class="active">
+                    <a href="#yearall" aria-controls="yearall" role="tab" data-toggle="tab">All Time</a>
+                </li>
+                <li role="presentation">
+                    <a href="#everyGame" aria-controls="everyGame" role="tab" data-toggle="tab">Every Game</a>
+                </li>
+                <li role="presentation">
+                    <a href="#everySeason" aria-controls="everySeason" role="tab" data-toggle="tab">Every Season</a>
+                </li>
+                <li role="presentation">
+                    <a href="#year2019" aria-controls="year2019" role="tab" data-toggle="tab">2019</a>
+                </li>
+                <li role="presentation">
+                    <a href="#year2018" aria-controls="year2018" role="tab" data-toggle="tab">2018</a>
+                </li>
+                <li role="presentation">
+                    <a href="#year2017" aria-controls="year2017" role="tab" data-toggle="tab">2017</a>
+                </li>
+                <li role="presentation">
+                    <a href="#year2016" aria-controls="year2016" role="tab" data-toggle="tab">2016</a>
+                </li>
+                <li role="presentation">
+                    <a href="#year2015" aria-controls="year2015" role="tab" data-toggle="tab">2015</a>
+                </li>
+                <li role="presentation">
+                    <a href="#year2014" aria-controls="year2014" role="tab" data-toggle="tab">2014</a>
+                </li>
+                <li role="presentation">
+                    <a href="#year2013" aria-controls="year2013" role="tab" data-toggle="tab">2013</a>
+                </li>
+                <li role="presentation">
+                    <a href="#year2012" aria-controls="year2012" role="tab" data-toggle="tab">2012</a>
+                </li>
+                <li role="presentation">
+                    <a href="#year2011" aria-controls="year2011" role="tab" data-toggle="tab">2011</a>
+                </li>
+            </ul>
 
-        <!-- Tab panes -->
-        <div class="tab-content">
-            <div role="tabpanel" class="tab-pane" id="records">
-                <h3>Records go here</h3>
-            </div>
-
-            <div role="tabpanel" class="tab-pane active" id="yearall">
-                <div class="row">
-                    <div class="col-xs-12 table-container">
-                        <h3>Standings</h3>
-                        <table class="table table-striped table-bordered table-responsive" id="tableall"></table>
-                    </div>
+            <!-- Tab panes -->
+            <div class="tab-content">
+                <div role="tabpanel" class="tab-pane" id="records">
+                    <h3>Records go here</h3>
                 </div>
-            </div>
 
-            <div role="tabpanel" class="tab-pane" id="year2017">
-                <div class="row">
-                    <div class="col-md-6 table-container">
-                        <h3>High Scores</h3>
-                        <table class="table stable-striped table-bordered table-responsive" id="highScores2017"></table>
-                    </div>
-                    <div class="col-md-6 table-container">
-                        <h3>Low Scores</h3>
-                        <table class="table stable-striped table-bordered table-responsive" id="lowScores2017"></table>
-                    </div>
-                    <div class="col-md-6 table-container">
-                        <h3>Biggest Blowouts</h3>
-                        <table class="table stable-striped table-bordered table-responsive" id="blowouts2017"></table>
-                    </div>
-                    <div class="col-md-6 table-container">
-                        <h3>Closest Games</h3>
-                        <table class="table stable-striped table-bordered table-responsive" id="closeGames2017"></table>
-                    </div>
-                    <div class="col-md-6 table-container">
-                        <h3>Highest Combined Scoring</h3>
-                        <table class="table stable-striped table-bordered table-responsive" id="highest2017"></table>
-                    </div>
-                    <div class="col-md-6 table-container">
-                        <h3>Dumpster Fires</h3>
-                        <table class="table stable-striped table-bordered table-responsive" id="dumpster2017"></table>
-                    </div>
-                    <div class="col-xs-12 table-container">
-                        <h3>Standings</h3>
-                        <table class="table table-striped table-bordered table-responsive" id="table2017"></table>
-                    </div>
-                </div>
-            </div>
-
-            <div role="tabpanel" class="tab-pane" id="year2016">
-                <div class="row">
-                    <div class="col-md-6 table-container">
-                        <h3>High Scores</h3>
-                        <table class="table stable-striped table-bordered table-responsive" id="highScores2016"></table>
-                    </div>
-                    <div class="col-md-6 table-container">
-                        <h3>Low Scores</h3>
-                        <table class="table stable-striped table-bordered table-responsive" id="lowScores2016"></table>
-                    </div>
-                    <div class="col-md-6 table-container">
-                        <h3>Biggest Blowouts</h3>
-                        <table class="table stable-striped table-bordered table-responsive" id="blowouts2016"></table>
-                    </div>
-                    <div class="col-md-6 table-container">
-                        <h3>Closest Games</h3>
-                        <table class="table stable-striped table-bordered table-responsive" id="closeGames2016"></table>
-                    </div>
-                    <div class="col-md-6 table-container">
-                        <h3>Highest Combined Scoring</h3>
-                        <table class="table stable-striped table-bordered table-responsive" id="highest2016"></table>
-                    </div>
-                    <div class="col-md-6 table-container">
-                        <h3>Dumpster Fires</h3>
-                        <table class="table stable-striped table-bordered table-responsive" id="dumpster2016"></table>
-                    </div>
-                    <div class="col-xs-12 table-container">
-                        <h3>Standings</h3>
-                        <table class="table table-striped table-bordered table-responsive" id="table2016"></table>
-                    </div>
-                </div>
-            </div>
-
-            <div role="tabpanel" class="tab-pane" id="year2015">
-                <div class="row">
-                    <div class="col-md-6 table-container">
-                        <h3>High Scores</h3>
-                        <table class="table stable-striped table-bordered table-responsive" id="highScores2015"></table>
-                    </div>
-                    <div class="col-md-6 table-container">
-                        <h3>Low Scores</h3>
-                        <table class="table stable-striped table-bordered table-responsive" id="lowScores2015"></table>
-                    </div>
-                    <div class="col-md-6 table-container">
-                        <h3>Biggest Blowouts</h3>
-                        <table class="table stable-striped table-bordered table-responsive" id="blowouts2015"></table>
-                    </div>
-                    <div class="col-md-6 table-container">
-                        <h3>Closest Games</h3>
-                        <table class="table stable-striped table-bordered table-responsive" id="closeGames2015"></table>
-                    </div>
-                    <div class="col-md-6 table-container">
-                        <h3>Highest Combined Scoring</h3>
-                        <table class="table stable-striped table-bordered table-responsive" id="highest2015"></table>
-                    </div>
-                    <div class="col-md-6 table-container">
-                        <h3>Dumpster Fires</h3>
-                        <table class="table stable-striped table-bordered table-responsive" id="dumpster2015"></table>
-                    </div>
-                    <div class="col-xs-12 table-container">
-                        <h3>Standings</h3>
-                        <table class="table table-striped table-bordered table-responsive" id="table2015"></table>
-                    </div>
-                </div>
-            </div>
-
-            <div role="tabpanel" class="tab-pane" id="year2014">
-                <div class="row">
-                    <div class="col-xs-12 table-container">
+                <div role="tabpanel" class="tab-pane active" id="yearall">
+                    <div class="row">
                         <div class="col-md-6 table-container">
                             <h3>High Scores</h3>
-                            <table class="table stable-striped table-bordered table-responsive" id="highScores2014"></table>
+                            <table class="table table-striped table-bordered table-responsive" id="highScores"></table>
                         </div>
                         <div class="col-md-6 table-container">
                             <h3>Low Scores</h3>
-                            <table class="table stable-striped table-bordered table-responsive" id="lowScores2014"></table>
+                            <table class="table table-striped table-bordered table-responsive" id="lowScores"></table>
                         </div>
                         <div class="col-md-6 table-container">
                             <h3>Biggest Blowouts</h3>
-                            <table class="table stable-striped table-bordered table-responsive" id="blowouts2014"></table>
+                            <table class="table table-striped table-bordered table-responsive" id="blowouts"></table>
                         </div>
                         <div class="col-md-6 table-container">
                             <h3>Closest Games</h3>
-                            <table class="table stable-striped table-bordered table-responsive" id="closeGames2014"></table>
+                            <table class="table table-striped table-bordered table-responsive" id="closeGames"></table>
                         </div>
                         <div class="col-md-6 table-container">
                             <h3>Highest Combined Scoring</h3>
-                            <table class="table stable-striped table-bordered table-responsive" id="highest2014"></table>
+                            <table class="table table-striped table-bordered table-responsive" id="highest"></table>
                         </div>
                         <div class="col-md-6 table-container">
                             <h3>Dumpster Fires</h3>
-                            <table class="table stable-striped table-bordered table-responsive" id="dumpster2014"></table>
+                            <table class="table table-striped table-bordered table-responsive" id="dumpster"></table>
                         </div>
-                        <h3>Standings</h3>
-                        <table class="table table-striped table-bordered table-responsive" id="table2014"></table>
+                        <div class="col-xs-12 table-container">
+                            <h3>Standings</h3>
+                            <table class="table table-striped table-bordered table-responsive" id="tableall"></table>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <div role="tabpanel" class="tab-pane" id="year2013">
-                <div class="row">
-                    <div class="col-xs-12 table-container">
-                        <h3>Standings</h3>
-                        <table class="table table-striped table-bordered table-responsive" id="table2013"></table>
+                <div role="tabpanel" class="tab-pane" id="everyGame">
+                    <div class="row">
+                        <div class="col-xs-12 table-container">
+                            <h3>Every Game</h3>
+                            <table class="table table-striped table-bordered table-responsive" id="everyGameTable">
+                                <tfoot>
+                                    <th></th>
+                                    <th></th>
+                                    <th></th>
+                                    <th></th>
+                                    <th></th>
+                                    <th></th>
+                                    <th></th>
+                                    <th></th>
+                                    <th></th>
+                                    <th></th>
+                                    <th></th>
+                                    <th></th>
+                                    <th></th>
+                                    <th></th>
+                                    <th></th>
+                                    <th></th>
+                                    <th></th>
+                                    <th></th>
+                                </tfoot>
+                            </table>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <div role="tabpanel" class="tab-pane" id="year2012">
-                <div class="row">
-                    <div class="col-xs-12 table-container">
-                        <h3>Standings</h3>
-                        <table class="table table-striped table-bordered table-responsive" id="table2012"></table>
+                <div role="tabpanel" class="tab-pane" id="everySeason">
+                    <div class="row">
+                        <div class="col-xs-12 table-container">
+                            <h3>Every Season</h3>
+                            <table class="table table-striped table-bordered table-responsive" id="everySeasonTable">
+                                <tfoot>
+                                    <th></th>
+                                    <th></th>
+                                    <th></th>
+                                    <th></th>
+                                    <th></th>
+                                    <th></th>
+                                    <th></th>
+                                    <th></th>
+                                    <th></th>
+                                    <th></th>
+                                    <th></th>
+                                    <th></th>
+                                    <th></th>
+                                    <th></th>
+                                    <th></th>
+                                    <th></th>
+                                </tfoot>
+                            </table>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <div role="tabpanel" class="tab-pane" id="year2011">
-                <div class="row">
-                    <div class="col-xs-12 table-container">
-                        <h3>Standings</h3>
-                        <table class="table table-striped table-bordered table-responsive" id="table2011"></table>
+                <div role="tabpanel" class="tab-pane" id="year2019">
+                    <div class="row">
+                        <div class="col-md-6 table-container">
+                            <h3>High Scores</h3>
+                            <table class="table table-striped table-bordered table-responsive" id="highScores2019"></table>
+                        </div>
+                        <div class="col-md-6 table-container">
+                            <h3>Low Scores</h3>
+                            <table class="table table-striped table-bordered table-responsive" id="lowScores2019"></table>
+                        </div>
+                        <div class="clearfix"></div>
+                        <div class="col-md-6 table-container">
+                            <h3>Biggest Blowouts</h3>
+                            <table class="table table-striped table-bordered table-responsive" id="blowouts2019"></table>
+                        </div>
+                        <div class="col-md-6 table-container">
+                            <h3>Closest Games</h3>
+                            <table class="table table-striped table-bordered table-responsive" id="closeGames2019"></table>
+                        </div>
+                        <div class="col-md-6 table-container">
+                            <h3>Highest Combined Scoring</h3>
+                            <table class="table table-striped table-bordered table-responsive" id="highest2019"></table>
+                        </div>
+                        <div class="col-md-6 table-container">
+                            <h3>Dumpster Fires</h3>
+                            <table class="table table-striped table-bordered table-responsive" id="dumpster2019"></table>
+                        </div>
+                        <div class="col-xs-12 table-container">
+                            <h3>Standings</h3>
+                            <table class="table table-striped table-bordered table-responsive" id="table2019"></table>
+                        </div>
                     </div>
                 </div>
+
+                <div role="tabpanel" class="tab-pane" id="year2018">
+                    <div class="row">
+                        <div class="col-md-6 table-container">
+                            <h3>High Scores</h3>
+                            <table class="table table-striped table-bordered table-responsive" id="highScores2018"></table>
+                        </div>
+                        <div class="col-md-6 table-container">
+                            <h3>Low Scores</h3>
+                            <table class="table table-striped table-bordered table-responsive" id="lowScores2018"></table>
+                        </div>
+                        <div class="clearfix"></div>
+                        <div class="col-md-6 table-container">
+                            <h3>Biggest Blowouts</h3>
+                            <table class="table table-striped table-bordered table-responsive" id="blowouts2018"></table>
+                        </div>
+                        <div class="col-md-6 table-container">
+                            <h3>Closest Games</h3>
+                            <table class="table table-striped table-bordered table-responsive" id="closeGames2018"></table>
+                        </div>
+                        <div class="col-md-6 table-container">
+                            <h3>Highest Combined Scoring</h3>
+                            <table class="table table-striped table-bordered table-responsive" id="highest2018"></table>
+                        </div>
+                        <div class="col-md-6 table-container">
+                            <h3>Dumpster Fires</h3>
+                            <table class="table table-striped table-bordered table-responsive" id="dumpster2018"></table>
+                        </div>
+                        <div class="col-xs-12 table-container">
+                            <h3>Standings</h3>
+                            <table class="table table-striped table-bordered table-responsive" id="table2018"></table>
+                        </div>
+                    </div>
+                </div>
+
+                <div role="tabpanel" class="tab-pane" id="year2017">
+                    <div class="row">
+                        <div class="col-md-6 table-container">
+                            <h3>High Scores</h3>
+                            <table class="table table-striped table-bordered table-responsive" id="highScores2017"></table>
+                        </div>
+                        <div class="col-md-6 table-container">
+                            <h3>Low Scores</h3>
+                            <table class="table table-striped table-bordered table-responsive" id="lowScores2017"></table>
+                        </div>
+                        <div class="col-md-6 table-container">
+                            <h3>Biggest Blowouts</h3>
+                            <table class="table table-striped table-bordered table-responsive" id="blowouts2017"></table>
+                        </div>
+                        <div class="col-md-6 table-container">
+                            <h3>Closest Games</h3>
+                            <table class="table table-striped table-bordered table-responsive" id="closeGames2017"></table>
+                        </div>
+                        <div class="col-md-6 table-container">
+                            <h3>Highest Combined Scoring</h3>
+                            <table class="table table-striped table-bordered table-responsive" id="highest2017"></table>
+                        </div>
+                        <div class="col-md-6 table-container">
+                            <h3>Dumpster Fires</h3>
+                            <table class="table table-striped table-bordered table-responsive" id="dumpster2017"></table>
+                        </div>
+                        <div class="col-xs-12 table-container">
+                            <h3>Standings</h3>
+                            <table class="table table-striped table-bordered table-responsive" id="table2017"></table>
+                        </div>
+                    </div>
+                </div>
+
+                <div role="tabpanel" class="tab-pane" id="year2016">
+                    <div class="row">
+                        <div class="col-md-6 table-container">
+                            <h3>High Scores</h3>
+                            <table class="table table-striped table-bordered table-responsive" id="highScores2016"></table>
+                        </div>
+                        <div class="col-md-6 table-container">
+                            <h3>Low Scores</h3>
+                            <table class="table table-striped table-bordered table-responsive" id="lowScores2016"></table>
+                        </div>
+                        <div class="col-md-6 table-container">
+                            <h3>Biggest Blowouts</h3>
+                            <table class="table table-striped table-bordered table-responsive" id="blowouts2016"></table>
+                        </div>
+                        <div class="col-md-6 table-container">
+                            <h3>Closest Games</h3>
+                            <table class="table table-striped table-bordered table-responsive" id="closeGames2016"></table>
+                        </div>
+                        <div class="col-md-6 table-container">
+                            <h3>Highest Combined Scoring</h3>
+                            <table class="table table-striped table-bordered table-responsive" id="highest2016"></table>
+                        </div>
+                        <div class="col-md-6 table-container">
+                            <h3>Dumpster Fires</h3>
+                            <table class="table table-striped table-bordered table-responsive" id="dumpster2016"></table>
+                        </div>
+                        <div class="col-xs-12 table-container">
+                            <h3>Standings</h3>
+                            <table class="table table-striped table-bordered table-responsive" id="table2016"></table>
+                        </div>
+                    </div>
+                </div>
+
+                <div role="tabpanel" class="tab-pane" id="year2015">
+                    <div class="row">
+                        <div class="col-md-6 table-container">
+                            <h3>High Scores</h3>
+                            <table class="table table-striped table-bordered table-responsive" id="highScores2015"></table>
+                        </div>
+                        <div class="col-md-6 table-container">
+                            <h3>Low Scores</h3>
+                            <table class="table table-striped table-bordered table-responsive" id="lowScores2015"></table>
+                        </div>
+                        <div class="col-md-6 table-container">
+                            <h3>Biggest Blowouts</h3>
+                            <table class="table table-striped table-bordered table-responsive" id="blowouts2015"></table>
+                        </div>
+                        <div class="col-md-6 table-container">
+                            <h3>Closest Games</h3>
+                            <table class="table table-striped table-bordered table-responsive" id="closeGames2015"></table>
+                        </div>
+                        <div class="col-md-6 table-container">
+                            <h3>Highest Combined Scoring</h3>
+                            <table class="table table-striped table-bordered table-responsive" id="highest2015"></table>
+                        </div>
+                        <div class="col-md-6 table-container">
+                            <h3>Dumpster Fires</h3>
+                            <table class="table table-striped table-bordered table-responsive" id="dumpster2015"></table>
+                        </div>
+                        <div class="col-xs-12 table-container">
+                            <h3>Standings</h3>
+                            <table class="table table-striped table-bordered table-responsive" id="table2015"></table>
+                        </div>
+                    </div>
+                </div>
+
+                <div role="tabpanel" class="tab-pane" id="year2014">
+                    <div class="row">
+                        <div class="col-md-6 table-container">
+                            <h3>High Scores</h3>
+                            <table class="table table-striped table-bordered table-responsive" id="highScores2014"></table>
+                        </div>
+                        <div class="col-md-6 table-container">
+                            <h3>Low Scores</h3>
+                            <table class="table table-striped table-bordered table-responsive" id="lowScores2014"></table>
+                        </div>
+                        <div class="col-md-6 table-container">
+                            <h3>Biggest Blowouts</h3>
+                            <table class="table table-striped table-bordered table-responsive" id="blowouts2014"></table>
+                        </div>
+                        <div class="col-md-6 table-container">
+                            <h3>Closest Games</h3>
+                            <table class="table table-striped table-bordered table-responsive" id="closeGames2014"></table>
+                        </div>
+                        <div class="col-md-6 table-container">
+                            <h3>Highest Combined Scoring</h3>
+                            <table class="table table-striped table-bordered table-responsive" id="highest2014"></table>
+                        </div>
+                        <div class="col-md-6 table-container">
+                            <h3>Dumpster Fires</h3>
+                            <table class="table table-striped table-bordered table-responsive" id="dumpster2014"></table>
+                        </div>
+                        <div class="col-xs-12 table-container">
+                            <h3>Standings</h3>
+                            <table class="table table-striped table-bordered table-responsive" id="table2014"></table>
+                        </div>
+                    </div>
+                </div>
+
+                <div role="tabpanel" class="tab-pane" id="year2013">
+                    <div class="row">
+                        <div class="col-md-6 table-container">
+                            <h3>High Scores</h3>
+                            <table class="table table-striped table-bordered table-responsive" id="highScores2013"></table>
+                        </div>
+                        <div class="col-md-6 table-container">
+                            <h3>Low Scores</h3>
+                            <table class="table table-striped table-bordered table-responsive" id="lowScores2013"></table>
+                        </div>
+                        <div class="col-md-6 table-container">
+                            <h3>Biggest Blowouts</h3>
+                            <table class="table table-striped table-bordered table-responsive" id="blowouts2013"></table>
+                        </div>
+                        <div class="col-md-6 table-container">
+                            <h3>Closest Games</h3>
+                            <table class="table table-striped table-bordered table-responsive" id="closeGames2013"></table>
+                        </div>
+                        <div class="col-md-6 table-container">
+                            <h3>Highest Combined Scoring</h3>
+                            <table class="table table-striped table-bordered table-responsive" id="highest2013"></table>
+                        </div>
+                        <div class="col-md-6 table-container">
+                            <h3>Dumpster Fires</h3>
+                            <table class="table table-striped table-bordered table-responsive" id="dumpster2013"></table>
+                        </div>
+                        <div class="col-xs-12 table-container">
+                            <h3>Standings</h3>
+                            <table class="table table-striped table-bordered table-responsive" id="table2013"></table>
+                        </div>
+                    </div>
+                </div>
+
+                <div role="tabpanel" class="tab-pane" id="year2012">
+                    <div class="row">
+                        <div class="col-md-6 table-container">
+                            <h3>High Scores</h3>
+                            <table class="table table-striped table-bordered table-responsive" id="highScores2012"></table>
+                        </div>
+                        <div class="col-md-6 table-container">
+                            <h3>Low Scores</h3>
+                            <table class="table table-striped table-bordered table-responsive" id="lowScores2012"></table>
+                        </div>
+                        <div class="col-md-6 table-container">
+                            <h3>Biggest Blowouts</h3>
+                            <table class="table table-striped table-bordered table-responsive" id="blowouts2012"></table>
+                        </div>
+                        <div class="col-md-6 table-container">
+                            <h3>Closest Games</h3>
+                            <table class="table table-striped table-bordered table-responsive" id="closeGames2012"></table>
+                        </div>
+                        <div class="col-md-6 table-container">
+                            <h3>Highest Combined Scoring</h3>
+                            <table class="table table-striped table-bordered table-responsive" id="highest2012"></table>
+                        </div>
+                        <div class="col-md-6 table-container">
+                            <h3>Dumpster Fires</h3>
+                            <table class="table table-striped table-bordered table-responsive" id="dumpster2012"></table>
+                        </div>
+                        <div class="col-xs-12 table-container">
+                            <h3>Standings</h3>
+                            <table class="table table-striped table-bordered table-responsive" id="table2012"></table>
+                        </div>
+                    </div>
+                </div>
+
+                <div role="tabpanel" class="tab-pane" id="year2011">
+                    <div class="row">
+                        <div class="col-md-6 table-container">
+                            <h3>High Scores</h3>
+                            <table class="table table-striped table-bordered table-responsive" id="highScores2011"></table>
+                        </div>
+                        <div class="col-md-6 table-container">
+                            <h3>Low Scores</h3>
+                            <table class="table table-striped table-bordered table-responsive" id="lowScores2011"></table>
+                        </div>
+                        <div class="col-md-6 table-container">
+                            <h3>Biggest Blowouts</h3>
+                            <table class="table table-striped table-bordered table-responsive" id="blowouts2011"></table>
+                        </div>
+                        <div class="col-md-6 table-container">
+                            <h3>Closest Games</h3>
+                            <table class="table table-striped table-bordered table-responsive" id="closeGames2011"></table>
+                        </div>
+                        <div class="col-md-6 table-container">
+                            <h3>Highest Combined Scoring</h3>
+                            <table class="table table-striped table-bordered table-responsive" id="highest2011"></table>
+                        </div>
+                        <div class="col-md-6 table-container">
+                            <h3>Dumpster Fires</h3>
+                            <table class="table table-striped table-bordered table-responsive" id="dumpster2011"></table>
+                        </div>
+                        <div class="col-xs-12 table-container">
+                            <h3>Standings</h3>
+                            <table class="table table-striped table-bordered table-responsive" id="table2011"></table>
+                        </div>
+                    </div>
+                </div>
+
             </div>
 
         </div>
 
+        <div class="row">
+            <div class="col-xs-12">
+                <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                <ins class="adsbygoogle" style="display:block; text-align:center;" data-ad-layout="in-article" data-ad-format="fluid" data-ad-client="ca-pub-7783180728620328"
+                    data-ad-slot="7208999358"></ins>
+                <script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
+            </div>
+        </div>
+
+        <hr />
+        <footer>
+            <p>&copy;
+                <span id="currentYear"></span> - DKE Fantasy Football</p>
+        </footer>
     </div>
 
-    <hr />
-    <footer>
-        <p>&copy; <span id="currentYear"></span> - DKE Fantasy Football</p>
-    </footer>
-</div>
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
-<script src="../scripts/bootstrap.min.js"></script>
-<script src="../scripts/columnHeaders.js"></script>
-<script src="../scripts/stats2017.js"></script>
-<script src="../scripts/stats2016.js"></script>
-<script src="../scripts/stats2015.js"></script>
-<script src="../scripts/stats2014.js"></script>
-<script src="../scripts/statsAll.js"></script>
-<script>
-    var now = new Date();
-    $('#currentYear').text(now.getFullYear());
-</script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
+    <script src="../scripts/bootstrap.min.js"></script>
+    <script src="../scripts/columnHeaders.js"></script>
+    <script src="../scripts/everygame.js"></script>
+    <script src="../scripts/stats2019.js"></script>
+    <script src="../scripts/stats2018.js"></script>
+    <script src="../scripts/stats2017.js"></script>
+    <script src="../scripts/stats2016.js"></script>
+    <script src="../scripts/stats2015.js"></script>
+    <script src="../scripts/stats2014.js"></script>
+    <script src="../scripts/stats2013.js"></script>
+    <script src="../scripts/stats2012.js"></script>
+    <script src="../scripts/stats2011.js"></script>
+    <script src="../scripts/statsAll.js"></script>
+    <script src="../scripts/everyseason.js"></script>
+    <script>
+        var now = new Date();
+        $('#currentYear').text(now.getFullYear());
+    </script>
 
 </body>
+
 </html>

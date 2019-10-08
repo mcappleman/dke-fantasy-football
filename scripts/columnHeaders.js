@@ -19,7 +19,7 @@ var columnNames = [
     { title: "Excess Win Percentage" },
     { title: "Expected Wins" },
     { title: "Expected Losses" },
-    { title: "Excess Wins" },
+    { title: "Excess Wins" }
 ];
 
 var yearColumnNames = [
@@ -35,9 +35,10 @@ var yearColumnNames = [
     { title: "Total Wins" },
     { title: "Total Losses" },
     { title: "Total Ties" },
+    { title: "Expected Win Percentage" },
     { title: "Expected Wins" },
     { title: "Expected Losses" },
-    { title: "Excess Wins" },
+    { title: "Excess Wins" }
 ];
 
 var scoreColumnNames = [
@@ -57,6 +58,34 @@ var gameColumnNames = [
 ];
 
 var gameScoringColumnNames = [
+    { title: "Week" },
+    { title: "Winner" },
+    { title: "Score" },
+    { title: "Loser" },
+    { title: "Score" },
+    { title: "Combined" }
+];
+
+var scoreColumnNamesAll = [
+    { title: "Year" },
+    { title: "Name" },
+    { title: "Week" },
+    { title: "Score" },
+    { title: "Opponent" }
+];
+
+var gameColumnNamesAll = [
+    { title: "Year" },
+    { title: "Week" },
+    { title: "Winner" },
+    { title: "Score" },
+    { title: "Loser" },
+    { title: "Score" },
+    { title: "Difference" }
+];
+
+var gameScoringColumnNamesAll = [
+    { title: "Year" },
     { title: "Week" },
     { title: "Winner" },
     { title: "Score" },

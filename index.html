@@ -26,14 +26,15 @@
         gtag('config', 'UA-108694586-1');
     </script>
 
-    <!-- Google AdSense -->
+    <!-- AdSense -->
     <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
     <script>
-      (adsbygoogle = window.adsbygoogle || []).push({
-        google_ad_client: "ca-pub-8627766001095713",
+    (adsbygoogle = window.adsbygoogle || []).push({
+        google_ad_client: "ca-pub-7783180728620328",
         enable_page_level_ads: true
-      });
+    });
     </script>
+    <!-- End of AdSense -->
 
     <!-- Stylesheets -->
     <link rel="stylesheet" type="text/css" href="https://bootswatch.com/3/flatly/bootstrap.min.css" />
@@ -72,6 +73,9 @@
                     <li>
                         <a href="./rules/index.html">Rules & Keepers</a>
                     </li>
+                    <li>
+                        <a href="./draft/index.html">Draft Results</a>
+                    </li>
                 </ul>
             </div>
             <!-- End of the navbar items -->
@@ -84,6 +88,7 @@
         <div class="container">
             <h1>DKE Fantasy Football</h1>
             <p class="lead">Welcome to the website for the greatest fantasy football league that there ever was.</p>
+            <br>
         </div>
     </div>
 
@@ -151,6 +156,24 @@
         var now = new Date();
         // Next we get the full year value and make the html item with the ID currentYear have the text of the Current Year.
         $('#currentYear').text(now.getFullYear());
+        var x = setInterval(function() {
+            var now = new Date();
+            $('#currentYear').text(now.getFullYear());
+            var draftTime = new Date("Sat Aug 18 2018 18:00:00 GMT-0400");
+            var distance = draftTime.getTime() - now.getTime();
+            
+            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            $('#countdown').html(days + 'd ' + hours + 'h ' + minutes + 'm ' + seconds + 's');
+
+            if (distance < 0) {
+                clearInterval(x)
+                $('#countdown').html('EXPIRED')
+            }
+        }, 1000);
     </script>
 
 </body>
