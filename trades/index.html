@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DKE Fantasy Football</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="../images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../images/favicon-16x16.png">
+    <link rel="manifest" href="../images/manifest.json">
+    <link rel="mask-icon" href="../images/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Google Analytics -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-108694586-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-108694586-1');
+    </script>
+
+    <!-- AdSense -->
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({
+            google_ad_client: "ca-pub-7783180728620328",
+            enable_page_level_ads: true
+        });
+    </script>
+    <!-- End of AdSense -->
+
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" type="text/css" href="https://bootswatch.com/3/flatly/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.16/css/jquery.dataTables.min.css" />
+    <link rel="stylesheet" type="text/css" href="../styles/main.css" />
+</head>
+
+<body>
+    <div class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a href="../index.html" class="navbar-brand">DKE Fantasy Football</a>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="../index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="../recaps/index.html">Recaps</a>
+                    </li>
+                    <li>
+                        <a href="../previews/index.html">Previews</a>
+                    </li>
+                    <li>
+                        <a href="../stats/index.html">Stats</a>
+                    </li>
+                    <li>
+                        <a href="../rules/index.html">Rules & Keepers</a>
+                    </li>
+                    <li>
+                        <a href="../draft/index.html">Draft Results</a>
+                    </li>
+                    <li class="active">
+                        <a href="../trades/index.html">Trades</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="container body-content">
+
+        <h1>Trades</h1>
+
+        <div>
+
+            <!-- Nav tabs -->
+            <ul class="nav nav-tabs" role="tablist">
+                <!-- <li role="presentation">
+                    <a href="#records" aria-controls="records" role="tab" data-toggle="tab">Records</a>
+                </li> -->
+                <li role="presentation" class="active">
+                    <a href="#activetrades" aria-controls="activetrades" role="tab" data-toggle="tab">Active Trades</a>
+                </li>
+            </ul>
+
+            <!-- Tab panes -->
+            <div class="tab-content">
+
+                <div role="tabpanel" class="tab-pane active" id="activetrades">
+                    <div class="row">
+                        <div class="col-xs-12 table-container">
+                            <h3>Active Trades</h3>
+                            <table class="table table-striped table-bordered table-responsive" id="activeTradeTable">
+                                <thead>
+                                    <th>Year</th>
+                                    <th>Team 1</th>
+                                    <th>Receives (1)</th>
+                                    <th>Team 2</th>
+                                    <th>Receives (2)</th>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>2019</td>
+                                        <td>Trevor</td>
+                                        <td>Saquon Barkley<br/><s>Basil's 3rd (2019)</s><br/>Basil's 3rd (2020)<br/>Basil's 3rd (2021)<br/>Basil's 3rd (2023)</td>
+                                        <td>Basil</td>
+                                        <td><s>Trevor's 1st (2019)<br/>Trevor's 2nd (2019)</s><br/>Trevor's 15th (2020)<br/>Trevor's 1st (2021)<br/>Trevor's 1st (2023)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2019</td>
+                                        <td>Jared</td>
+                                        <td>Todd Gurley<br/>Matt's 15th (2020)</td>
+                                        <td>Matt</td>
+                                        <td>Mike Evans<br/>Jared's 2nd (2020)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2019</td>
+                                        <td>Majors</td>
+                                        <td>Mike Evans<br/>Matt's 14th (2020)</td>
+                                        <td>Matt</td>
+                                        <td>Jordan Howard<br/>Majors's 4th (2020)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2019</td>
+                                        <td>Basil</td>
+                                        <td>Vance McDonald<br/>Benny Snell Jr.<br/>Sam's 1st (2020)<br/>Sam's 7th (2020)</td>
+                                        <td>Sam</td>
+                                        <td>Melvin Gordon<br/>George Kittle<br/>Basil's 5th (2020)<br/>Basil's 9th (2020)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2019</td>
+                                        <td>Chaz</td>
+                                        <td>Tevin Coleman<br/>Willis' 4th (2020)</td>
+                                        <td>Willis</td>
+                                        <td>Kenny Golladay<br/>Chaz's 12 (2020)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2019</td>
+                                        <td>Jared</td>
+                                        <td>Marvin Jones Jr.<br/>Minnesota D</td>
+                                        <td>Majors</td>
+                                        <td>Jason Witten<br/>San Francisco D</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2019</td>
+                                        <td>Sawyer</td>
+                                        <td>Major's 4th (2020)</td>
+                                        <td>Matt</td>
+                                        <td>Courtland Sutton<br/>Sawyer's 15th (2020)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2019</td>
+                                        <td>Sawyer</td>
+                                        <td>Jamison Crowder<br/>Trevor's 3rd (2020)</td>
+                                        <td>Trevor</td>
+                                        <td>Stefon Diggs<br/>Sawyer's 12th (2020)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2019</td>
+                                        <td>Trevor</td>
+                                        <td>Tom Brady<br/>Sam's 1st (2020)</td>
+                                        <td>Basil</td>
+                                        <td>Patrick Mahomes<br/>Basil's 10th (2020)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2019</td>
+                                        <td>Sam</td>
+                                        <td>Jameis Winston</td>
+                                        <td>Matt</td>
+                                        <td>Ronald Jones II</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2019</td>
+                                        <td>Trevor</td>
+                                        <td>Kareem Hunt<br/>AJ Green<br/>Sam's 3rd (2020)<br/>Sam's 5th (2020)</td>
+                                        <td>Sam</td>
+                                        <td>Davante Adams<br/>Chris Carson<br/>Philly D<br/>Trevor's 9th (2020)<br/>Trevor's 15th (2020)</td>
+                                    </tr>
+                                </tbody>
+                                <tfoot>
+                                    <th></th>
+                                    <th></th>
+                                    <th></th>
+                                    <th></th>
+                                    <th></th>
+                                </tfoot>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="row">
+            <div class="col-xs-12">
+                <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                <ins class="adsbygoogle" style="display:block; text-align:center;" data-ad-layout="in-article" data-ad-format="fluid" data-ad-client="ca-pub-7783180728620328"
+                    data-ad-slot="7208999358"></ins>
+                <script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
+            </div>
+        </div>
+
+        <hr />
+        <footer>
+            <p>&copy;
+                <span id="currentYear"></span> - DKE Fantasy Football</p>
+        </footer>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
+    <script src="../scripts/bootstrap.min.js"></script>
+    <script src="../scripts/trades.js"></script>
+    <script>
+        var now = new Date();
+        $('#currentYear').text(now.getFullYear());
+    </script>
+
+</body>
+
+</html>
