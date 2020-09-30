@@ -73,7 +73,12 @@ $(document).ready(function () {
         ['Chaz', 15, 154.98, 'Willis'],
         ['Sawyer', 9, 145.24, 'Jared'],
         ['Hunter', 4, 140.96, 'Trevor'],
-        ['CJ', 12, 130.54, 'Hunter']
+        ['CJ', 12, 130.54, 'Hunter'],
+        ['Hunter', 10, 128.84, 'Chaz'],
+        ['CJ', 14, 128.58, 'Sam'],
+        ['CJ', 16, 126.6, 'Majors'],
+        ['Jared', 3, 123.86, 'Matt'],
+        ['Sam', 6, 123.78, 'CJ']
     ];
     
     
@@ -82,7 +87,12 @@ $(document).ready(function () {
         ['Drew', 5, 40.34, 'CJ'],
         ['Majors', 8, 47.34, 'Sawyer'],
         ['Willis', 14, 47.34, 'Hunter'],
-        ['Jared', 14, 48.08, 'Majors']
+        ['Jared', 14, 48.08, 'Majors'],
+        ['Willis', 8, 48.26, 'Trevor'],
+        ['Trevor', 8, 52.74, 'Willis'],
+        ['Hunter', 11, 48.64, 'Matt'],
+        ['Sam', 3, 50.82, 'Ean'],
+        ['Chaz', 11, 54.06, 'Sawyer']
     ];
     
     var blowouts2012 = [
@@ -90,7 +100,12 @@ $(document).ready(function () {
         [8, 'Sawyer', 121.4, 'Majors', 47.34, 74.06],
         [11, 'Matt', 122.54, 'Hunter', 48.64, 73.9],
         [6, 'Sam', 123.78, 'CJ', 55.5, 68.28],
-        [5, 'CJ', 98.44, 'Drew', 40.34, 58.1]
+        [5, 'CJ', 98.44, 'Drew', 40.34, 58.1],
+        [9, 'Sawyer', 145.24, 'Jared', 88.12, 57.12],
+        [15, 'Chaz', 154.98, 'Willis', 104.18, 50.8],
+        [14, 'CJ', 128.58, 'Sam', 78.14, 50.44],
+        [4, 'Ean', 121.96, 'Drew', 72.22, 49.74],
+        [6, 'Drew', 159.48, 'Sawyer', 109.96, 49.52]
     ];
     
     var closeGames2012 = [
@@ -98,7 +113,12 @@ $(document).ready(function () {
         [5, 'Jared', 115.36, 'Trevor', 115.2, .16],
         [16, 'Sawyer', 102.56, 'Matt', 102.38, .18],
         [12, 'Sawyer', 86.5, 'Willis', 86.3, .2],
-        [11, 'Willis', 106.6, 'Drew', 106.2, .4]
+        [11, 'Willis', 106.6, 'Drew', 106.2, .4],
+        [9, 'Hunter', 100.88, 'Majors', 100.42, 0.46],
+        [10, 'Willis', 93.16, 'Matt', 92.48, 0.68],
+        [2, 'Trevor', 91.04, 'Majors', 90.24, 0.8],
+        [13, 'Majors', 65.64, 'Willis', 63.94, 1.7],
+        [7, 'Drew', 95.42, 'Majors', 93.48, 1.94]
     ];
     
     var highest2012 = [
@@ -106,7 +126,12 @@ $(document).ready(function () {
         [15, 'Chaz', 154.98, 'Willis', 104.18, 259.16],
         [4, 'Hunter', 128.84, 'Trevor', 101.48, 250.3],
         [10, 'Hunter', 118.82, 'Chaz', 112.62, 241.46],
-        [9, 'Sawyer', 145.24, 'Jared', 88.12, 233.36]
+        [9, 'Sawyer', 145.24, 'Jared', 88.12, 233.36],
+        [5, 'Jared', 115.36, 'Trevor', 115.20, 230.56],
+        [2, 'Drew', 119.24, 'Willis', 108.96, 228.20],
+        [16, 'CJ', 126.60, 'Majors', 100.28, 226.88],
+        [4, 'Jared', 121.48, 'Willis', 98.50, 219.98],
+        [5, 'Willis', 118.56, 'Ean', 100.56, 219.12]
     ];
     
     var dumpster2012 = [
@@ -114,6 +139,11 @@ $(document).ready(function () {
         [15, 'Sam', 57.24, 'Jared', 57.14, 114.38],
         [3, 'Ean', 74.32, 'Sam', 50.82, 125.14],
         [13, 'Majors', 65.64, 'Willis', 63.94, 129.58],
-        [7, 'Matt', 69.36, 'CJ', 61.22, 130.58]
+        [7, 'Matt', 69.36, 'CJ', 61.22, 130.58],
+        [14, 'Majors', 83.52, 'Jared', 48.08, 131.60],
+        [11, 'Sawyer', 79.90, 'Chaz', 54.06, 133.96],
+        [5, 'CJ', 98.44, 'Drew', 40.34, 138.78],
+        [2, 'Sawyer', 82.64, 'Chaz', 57.30, 139.94],
+        [14, 'Hunter', 94.28, 'Willis', 47.34, 141.62]
     ];
     

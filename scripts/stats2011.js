@@ -71,7 +71,12 @@ $(document).ready(function () {
         ['Majors', 14, 148.24, 'Jared'],
         ['Majors', 8, 141.1, 'Sawyer'],
         ['Willis', 1, 133.78, 'Majors'],
-        ['Ean', 12, 130.52, 'Sam']
+        ['Ean', 12, 130.52, 'Sam'],
+        ['Willis', 3, 130.28, 'Trevor'],
+        ['Matt', 11, 129.52, 'Willis'],
+        ['Trevor', 13, 128.66, 'Sam'],
+        ['Matt', 15, 128.3, 'Majors'],
+        ['Majors', 2, 125.52, 'Trevor']
     ];
     
     var lowScores2011 = [
@@ -79,7 +84,12 @@ $(document).ready(function () {
         ['Connor', 8, 32.9, 'Willis'],
         ['Connor', 14, 41.2, 'Sam'],
         ['Willis', 7, 49.64, 'Ean'],
-        ['Sam', 3, 54.64, 'Ean']
+        ['Sam', 3, 54.64, 'Ean'],
+        ['Trevor', 5, 55.9, 'Skip'],
+        ['Trevor', 7, 56.74, 'Jared'],
+        ['Skip', 15, 58.2, 'Sawyer'],
+        ['Connor', 7, 58.9, 'Majors'],
+        ['Sawyer', 10, 59.52, 'Trevor']
     ];
     
     var blowouts2011 = [
@@ -87,7 +97,12 @@ $(document).ready(function () {
         [6, 'Sawyer', 101.48, 'Connor', 20.1, 81.38],
         [14, 'Sam', 118.24, 'Connor', 41.2, 77.04],
         [7, 'Majors', 121.64, 'Connor', 58.9, 62.74],
-        [14, 'Majors', 148.24, 'Jared', 88.6, 59.64]
+        [14, 'Majors', 148.24, 'Jared', 88.6, 59.64],
+        [1, 'Willis', 133.78, 'Majors', 74.66, 59.12],
+        [15, 'Matt', 128.30, 'Majors', 71.56, 56.74],
+        [10, 'Majors', 114.18, 'Connor', 58.00, 56.18],
+        [8, 'Willis', 83.92, 'Connor', 32.90, 51.02],
+        [3, 'Matt', 117.08, 'Sawyer', 69.34, 47.74]
     ];
     
     var closeGames2011 = [
@@ -95,7 +110,12 @@ $(document).ready(function () {
         [9, 'Skip', 79.4, 'Ean', 77.52, 1.88],
         [11, 'Majors', 97.2, 'Trevor', 94.78, 2.42],
         [13, 'Willis', 102.26, 'Skip', 98.64, 3.62],
-        [7, 'Matt', 83.2, 'Skip', 78.34, 4.86]
+        [7, 'Matt', 83.2, 'Skip', 78.34, 4.86],
+        [12, 'Jared', 74.02, 'Connor', 69.10, 4.92],
+        [9, 'Matt', 114.18, 'Jared', 108.28, 5.9],
+        [10, 'Willis', 86.66, 'Skip', 80.60, 6.06],
+        [16, 'Trevor', 78.50, 'Sawyer', 72.12, 6.38],
+        [14, 'Trevor', 113.04, 'Skip', 105.80, 7.24]
     ];
     
     var highest2011 = [
@@ -103,7 +123,12 @@ $(document).ready(function () {
         [16, 'Matt', 129.52, 'Willis', 111.66, 241.18],
         [2, 'Majors', 125.52, 'Trevor', 113.5, 239.02],
         [14, 'Majors', 148.24, 'Jared', 88.6, 236.84],
-        [2, 'Ean', 163.1, 'Jared', 71.42, 234.52]
+        [2, 'Ean', 163.1, 'Jared', 71.42, 234.52],
+        [12, 'Ean', 130.52, 'Sam', 101.32, 231.84],
+        [2, 'Willis', 121.42, 'Sam', 109.72, 231.14],
+        [13, 'Matt', 121.16, 'Majors', 106.86, 228.02],
+        [15, 'Willis', 119.60, 'Ean', 106.78, 226.38],
+        [4, 'Sawyer', 124.64, 'Jared', 100.10, 224.74],
     ];
     
     var dumpster2011 = [
@@ -111,6 +136,11 @@ $(document).ready(function () {
         [6, 'Sawyer', 20.1, 'Connor', 101.48, 121.58],
         [11, 'Matt', 72.66, 'Connor', 63, 135.66],
         [3, 'Ean', 82.3, 'Sam', 54.64, 136.94],
-        [12, 'Jared', 74.02, 'Connor', 69.1, 143.12]
+        [12, 'Jared', 74.02, 'Connor', 69.1, 143.12],
+        [3, 'Skip', 83.68, 'Majors', 60.60, 144.28],
+        [7, 'Ean', 95.90, 'Willis', 49.64, 145.54],
+        [6, 'Trevor', 82.88, 'Matt', 64.14, 147.02],
+        [5, 'Skip', 92.46, 'Trevor', 55.90, 148.36],
+        [15, 'Sawyer', 91.50, 'Skip', 58.20, 149.70]
     ];
     

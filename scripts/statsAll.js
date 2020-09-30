@@ -12,7 +12,7 @@ $(document).ready(function () {
     $('#highScores').DataTable({
         order: [[3, "desc"]],
         sDom: '',
-        lengthMenu: [[5], ["All"]],
+        lengthMenu: [[10], ["All"]],
         data: highScores,
         columns: scoreColumnNamesAll
     });
@@ -20,7 +20,7 @@ $(document).ready(function () {
     $('#lowScores').DataTable({
         order: [[3, "asc"]],
         sDom: '',
-        lengthMenu: [[5], ["All"]],
+        lengthMenu: [[10], ["All"]],
         data: lowScores,
         columns: scoreColumnNamesAll
     });
@@ -28,7 +28,7 @@ $(document).ready(function () {
     $('#blowouts').DataTable({
         order: [[6, "desc"]],
         sDom: '',
-        lengthMenu: [[5], ["All"]],
+        lengthMenu: [[10], ["All"]],
         data: blowouts,
         columns: gameColumnNamesAll
     });
@@ -36,7 +36,7 @@ $(document).ready(function () {
     $('#closeGames').DataTable({
         order: [[6, "asc"]],
         sDom: '',
-        lengthMenu: [[5], ["All"]],
+        lengthMenu: [[10], ["All"]],
         data: closeGames,
         columns: gameColumnNamesAll
     });
@@ -44,7 +44,7 @@ $(document).ready(function () {
     $('#highest').DataTable({
         order: [[6, "desc"]],
         sDom: '',
-        lengthMenu: [[5], ["All"]],
+        lengthMenu: [[10], ["All"]],
         data: highest,
         columns: gameScoringColumnNamesAll
     });
@@ -52,7 +52,7 @@ $(document).ready(function () {
     $('#dumpster').DataTable({
         order: [[6, "asc"]],
         sDom: '',
-        lengthMenu: [[5], ["All"]],
+        lengthMenu: [[10], ["All"]],
         data: dumpster,
         columns: gameScoringColumnNamesAll
     });
