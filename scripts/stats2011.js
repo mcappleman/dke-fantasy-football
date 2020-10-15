@@ -51,6 +51,20 @@ $(document).ready(function () {
             columns: gameScoringColumnNames
         });
     
+        $('#fortunate2011').DataTable({
+            order: [[5, "asc"]],
+            sDom: '',
+            data: fortunate2011,
+            columns: fortunateColumnNames
+        });
+    
+        $('#unfortunate2011').DataTable({
+            order: [[5, "desc"]],
+            sDom: '',
+            data: unfortunate2011,
+            columns: fortunateColumnNames
+        });
+    
     });
     
     var data2011 = [
@@ -142,5 +156,31 @@ $(document).ready(function () {
         [6, 'Trevor', 82.88, 'Matt', 64.14, 147.02],
         [5, 'Skip', 92.46, 'Trevor', 55.90, 148.36],
         [15, 'Sawyer', 91.50, 'Skip', 58.20, 149.70]
+    ];
+    
+    var fortunate2011 = [
+        [11, 'Matt', 72.66, 'Connor', 63.00, 72.66],
+        [12, 'Jared', 74.02, 'Connor', 69.10, 74.02],
+        [16, 'Trevor', 78.50, 'Sawyer', 72.12, 78.50],
+        [9, 'Skip', 79.40, 'Ean', 77.52, 79.40],
+        [3, 'Ean', 82.30, 'Sam', 54.64, 82.30],
+        [5, 'Connor', 82.40, 'Sam', 73.30, 82.40],
+        [6, 'Trevor', 82.88, 'Matt', 64.14, 82.88],
+        [7, 'Matt', 83.20, 'Skip', 78.34, 83.20],
+        [3, 'Skip', 83.68, 'Majors', 60.60, 83.68],
+        [8, 'Willis', 83.92, 'Connor', 32.90, 83.92]
+    ];
+    
+    var unfortunate2011 = [
+        [2, 'Majors', 125.52, 'Trevor', 113.50, 113.50],
+        [16, 'Matt', 129.52, 'Willis', 111.66, 111.66],
+        [2, 'Willis', 121.42, 'Sam', 109.72, 109.72],
+        [9, 'Matt', 114.18, 'Jared', 108.28, 108.28],
+        [13, 'Matt', 121.16, 'Majors', 106.86, 106.86],
+        [15, 'Willis', 119.60, 'Ean', 106.78, 106.78],
+        [14, 'Trevor', 113.04, 'Skip', 105.80, 105.80],
+        [5, 'Willis', 104.54, 'Matt', 104.04, 104.04],
+        [8, 'Majors', 141.10, 'Sawyer', 102.46, 102.46],
+        [12, 'Ean', 130.52, 'Sam', 101.32, 101.32]
     ];
     

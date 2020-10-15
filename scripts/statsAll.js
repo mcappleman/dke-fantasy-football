@@ -57,6 +57,22 @@ $(document).ready(function () {
         columns: gameScoringColumnNamesAll
     });
 
+    $('#fortunate').DataTable({
+        order: [[6, "asc"]],
+        sDom: '',
+        lengthMenu: [[10], ["All"]],
+        data: fortunate,
+        columns: fortunateColumnNamesAll
+    });
+
+    $('#unfortunate').DataTable({
+        order: [[6, "desc"]],
+        sDom: '',
+        lengthMenu: [[10], ["All"]],
+        data: unfortunate,
+        columns: fortunateColumnNamesAll
+    });
+
 });
 
 var dataSet = [
@@ -80,6 +96,8 @@ var blowouts = [];
 var closeGames = [];
 var highest = [];
 var dumpster = [];
+var fortunate = [];
+var unfortunate = [];
 
 // 2011
 highScores = combineArrays(highScores, highScores2011, 2011);
@@ -88,6 +106,8 @@ blowouts = combineArrays(blowouts, blowouts2011, 2011);
 closeGames = combineArrays(closeGames, closeGames2011, 2011);
 highest = combineArrays(highest, highest2011, 2011);
 dumpster = combineArrays(dumpster, dumpster2011, 2011);
+fortunate = combineArrays(fortunate, fortunate2011, 2011);
+unfortunate = combineArrays(unfortunate, unfortunate2011, 2011);
 
 // 2012
 highScores = combineArrays(highScores, highScores2012, 2012);
@@ -96,6 +116,8 @@ blowouts = combineArrays(blowouts, blowouts2012, 2012);
 closeGames = combineArrays(closeGames, closeGames2012, 2012);
 highest = combineArrays(highest, highest2012, 2012);
 dumpster = combineArrays(dumpster, dumpster2012, 2012);
+fortunate = combineArrays(fortunate, fortunate2012, 2012);
+unfortunate = combineArrays(unfortunate, unfortunate2012, 2012);
 
 // 2013
 highScores = combineArrays(highScores, highScores2013, 2013);
@@ -104,6 +126,8 @@ blowouts = combineArrays(blowouts, blowouts2013, 2013);
 closeGames = combineArrays(closeGames, closeGames2013, 2013);
 highest = combineArrays(highest, highest2013, 2013);
 dumpster = combineArrays(dumpster, dumpster2013, 2013);
+fortunate = combineArrays(fortunate, fortunate2013, 2013);
+unfortunate = combineArrays(unfortunate, unfortunate2013, 2013);
 
 // 2014
 highScores = combineArrays(highScores, highScores2014, 2014);
@@ -112,6 +136,8 @@ blowouts = combineArrays(blowouts, blowouts2014, 2014);
 closeGames = combineArrays(closeGames, closeGames2014, 2014);
 highest = combineArrays(highest, highest2014, 2014);
 dumpster = combineArrays(dumpster, dumpster2014, 2014);
+fortunate = combineArrays(fortunate, fortunate2014, 2014);
+unfortunate = combineArrays(unfortunate, unfortunate2014, 2014);
 
 // 2015
 highScores = combineArrays(highScores, highScores2015, 2015);
@@ -120,6 +146,8 @@ blowouts = combineArrays(blowouts, blowouts2015, 2015);
 closeGames = combineArrays(closeGames, closeGames2015, 2015);
 highest = combineArrays(highest, highest2015, 2015);
 dumpster = combineArrays(dumpster, dumpster2015, 2015);
+fortunate = combineArrays(fortunate, fortunate2015, 2015);
+unfortunate = combineArrays(unfortunate, unfortunate2015, 2015);
 
 // 2016
 highScores = combineArrays(highScores, highScores2016, 2016);
@@ -128,6 +156,8 @@ blowouts = combineArrays(blowouts, blowouts2016, 2016);
 closeGames = combineArrays(closeGames, closeGames2016, 2016);
 highest = combineArrays(highest, highest2016, 2016);
 dumpster = combineArrays(dumpster, dumpster2016, 2016);
+fortunate = combineArrays(fortunate, fortunate2016, 2016);
+unfortunate = combineArrays(unfortunate, unfortunate2016, 2016);
 
 // 2017
 highScores = combineArrays(highScores, highScores2017, 2017);
@@ -136,6 +166,8 @@ blowouts = combineArrays(blowouts, blowouts2017, 2017);
 closeGames = combineArrays(closeGames, closeGames2017, 2017);
 highest = combineArrays(highest, highest2017, 2017);
 dumpster = combineArrays(dumpster, dumpster2017, 2017);
+fortunate = combineArrays(fortunate, fortunate2017, 2017);
+unfortunate = combineArrays(unfortunate, unfortunate2017, 2017);
 
 // 2018
 highScores = combineArrays(highScores, highScores2018, 2018);
@@ -144,6 +176,8 @@ blowouts = combineArrays(blowouts, blowouts2018, 2018);
 closeGames = combineArrays(closeGames, closeGames2018, 2018);
 highest = combineArrays(highest, highest2018, 2018);
 dumpster = combineArrays(dumpster, dumpster2018, 2018);
+fortunate = combineArrays(fortunate, fortunate2018, 2018);
+unfortunate = combineArrays(unfortunate, unfortunate2018, 2018);
 
 // 2019
 highScores = combineArrays(highScores, highScores2019, 2019);
@@ -152,6 +186,8 @@ blowouts = combineArrays(blowouts, blowouts2019, 2019);
 closeGames = combineArrays(closeGames, closeGames2019, 2019);
 highest = combineArrays(highest, highest2019, 2019);
 dumpster = combineArrays(dumpster, dumpster2019, 2019);
+fortunate = combineArrays(fortunate, fortunate2019, 2019);
+unfortunate = combineArrays(unfortunate, unfortunate2019, 2019);
 
 // 2020
 highScores = combineArrays(highScores, highScores2020, 2020);
@@ -160,6 +196,8 @@ blowouts = combineArrays(blowouts, blowouts2020, 2020);
 closeGames = combineArrays(closeGames, closeGames2020, 2020);
 highest = combineArrays(highest, highest2020, 2020);
 dumpster = combineArrays(dumpster, dumpster2020, 2020);
+fortunate = combineArrays(fortunate, fortunate2020, 2020);
+unfortunate = combineArrays(unfortunate, unfortunate2020, 2020);
 
 // helper functions
 

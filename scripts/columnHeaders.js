@@ -66,6 +66,15 @@ var gameScoringColumnNames = [
     { title: "Combined" }
 ];
 
+var fortunateColumnNames = [
+    { title: "Week" },
+    { title: "Winner" },
+    { title: "Score" },
+    { title: "Loser" },
+    { title: "Score" },
+    { title: "Result" }
+];
+
 var scoreColumnNamesAll = [
     { title: "Year" },
     { title: "Name" },
@@ -92,4 +101,14 @@ var gameScoringColumnNamesAll = [
     { title: "Loser" },
     { title: "Score" },
     { title: "Combined" }
+];
+
+var fortunateColumnNamesAll = [
+    { title: "Year" },
+    { title: "Week" },
+    { title: "Winner" },
+    { title: "Score" },
+    { title: "Loser" },
+    { title: "Score" },
+    { title: "Result" }
 ];

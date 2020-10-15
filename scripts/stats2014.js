@@ -50,6 +50,20 @@ $(document).ready(function () {
         data: dumpster2014,
         columns: gameScoringColumnNames
     });
+    
+    $('#fortunate2014').DataTable({
+        order: [[5, "asc"]],
+        sDom: '',
+        data: fortunate2014,
+        columns: fortunateColumnNames
+    });
+
+    $('#unfortunate2014').DataTable({
+        order: [[5, "desc"]],
+        sDom: '',
+        data: unfortunate2014,
+        columns: fortunateColumnNames
+    });
 
 });
 
@@ -144,4 +158,30 @@ var dumpster2014 = [
     [6, 'Willis', 96.56, 'Ean', 50.00, 146.56],
     [12, 'Matt', 90.40, 'CJ', 58.62, 149.02],
     [1, 'Sam', 89.58, 'Ross', 63.84, 153.42]
+];
+    
+var fortunate2014 = [
+    [11, 'Ross', 61.80, 'Ean', 58.62, 61.80],
+    [16, 'Matt', 67.42, 'Jared', 52.24, 67.42],
+    [5, 'Chaz', 69.64, 'Sam', 58.40, 69.64],
+    [7, 'CJ', 74.26, 'Chaz', 51.42, 74.26],
+    [15, 'Chaz', 77.20, 'Ean', 57.72, 77.20],
+    [7, 'Ean', 78.16, 'Majors', 62.80, 78.16],
+    [8, 'Sam', 80.80, 'Ross', 78.06, 80.80],
+    [1, 'Sawyer', 80.94, 'Ean', 75.48, 80.94],
+    [4, 'Ross', 81.48, 'Chaz', 73.12, 81.48],
+    [9, 'Jared', 81.56, 'Ean', 59.46, 81.56],
+];
+
+var unfortunate2014 = [
+    [8, 'Willis', 159.44, 'Majors', 143.86, 143.86],
+    [14, 'Willis', 136.08, 'Majors', 129.18, 129.18],
+    [9, 'Hunter', 121.92, 'Majors', 116.42, 116.42],
+    [6, 'Sam', 122.44, 'Sawyer', 107.12, 107.12],
+    [10, 'Hunter', 111.50, 'Sawyer', 106.70, 106.70],
+    [8, 'Sawyer', 106.66, 'Ean', 106.30, 106.30],
+    [8, 'CJ', 130.40, 'Hunter', 106.04, 106.04],
+    [12, 'Majors', 127.20, 'Sawyer', 104.98, 104.98],
+    [1, 'Hunter', 136.56, 'CJ', 102.80, 102.80],
+    [7, 'Jared', 107.42, 'Basil', 101.20, 101.20],
 ];

@@ -50,6 +50,20 @@ $(document).ready(function () {
         data: dumpster2020,
         columns: gameScoringColumnNames
     });
+    
+    $('#fortunate2020').DataTable({
+        order: [[5, "asc"]],
+        sDom: '',
+        data: fortunate2020,
+        columns: fortunateColumnNames
+    });
+
+    $('#unfortunate2020').DataTable({
+        order: [[5, "desc"]],
+        sDom: '',
+        data: unfortunate2020,
+        columns: fortunateColumnNames
+    });
 
 });
 
@@ -144,4 +158,30 @@ var dumpster2020 = [
     [4, 'Trevor', 131.32, 'Sawyer', 56.70, 188.02],
     [5, 'Majors', 100.42, 'Basil', 90.40, 190.82],
     [2, 'Jared', 108.48, 'Trevor', 83.16, 191.64]
+];
+    
+var fortunate2020 = [
+    [4, 'Willis', 81.24, 'Hunter', 71.00, 81.24],
+    [5, 'Matt', 84.54, 'Jared', 71.42, 84.54],
+    [5, 'Sam', 88.88, 'Willis', 82.44, 88.88],
+    [1, 'Matt', 92.04, 'Ross', 74.38, 92.04],
+    [2, 'Willis', 94.58, 'Sam', 86.90, 94.58],
+    [5, 'Ross', 99.26, 'Hunter', 88.58, 99.26],
+    [5, 'Majors', 100.42, 'Basil', 90.40, 100.42],
+    [1, 'Jared', 100.80, 'Chaz', 96.40, 100.80],
+    [1, 'Sawyer', 103.00, 'Majors', 94.82, 103.00],
+    [5, 'Chaz', 103.56, 'Trevor', 96.70, 103.56],
+];
+
+var unfortunate2020 = [
+    [5, 'Ean', 122.00, 'Sawyer', 117.70, 117.70],
+    [4, 'Majors', 118.56, 'Chaz', 113.52, 113.52],
+    [2, 'Ean', 127.54, 'Ross', 107.56, 107.56],
+    [2, 'Matt', 139.00, 'Hunter', 102.62, 102.62],
+    [3, 'Ean', 106.30, 'Willis', 101.00, 101.00],
+    [2, 'Chaz', 132.72, 'Sawyer', 98.76, 98.76],
+    [4, 'Sam', 131.80, 'Ross', 98.54, 98.54],
+    [5, 'Chaz', 103.56, 'Trevor', 96.70, 96.70],
+    [1, 'Jared', 100.80, 'Chaz', 96.40, 96.40],
+    [3, 'Chaz', 105.22, 'Basil', 95.90, 95.90],
 ];
