@@ -12,7 +12,7 @@ $(document).ready(function () {
 
     $('#majorsPoopTable tfoot th').each(function (i) {
         var title = $(this).text();
-        var htmlString = '<input type="text" class="form-control column-search" placeholder="' + everyGame.headers[i].title + '" />';
+        var htmlString = '<input type="text" class="form-control column-search" placeholder="' + poopSchedule.headers[i].title + '" />';
         $(this).html(htmlString);
 
     });
