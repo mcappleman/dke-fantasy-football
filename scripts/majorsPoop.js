@@ -42,6 +42,7 @@ var poopSchedule = {
         { "title": "Days Until Draft" },
     ],
     data: [
+        [1622384329, 2, "90 Days Until the Live Draft", 90],
         [1622307134, 3, "91 Days Until the Live Draft", 91],
         [1622205181, 2, "92 Days Until the Live Draft", 92],
         [1622118979, 2, "93 Days Until the Live Draft", 93],
