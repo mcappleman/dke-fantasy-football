@@ -6,27 +6,27 @@ $(document).ready(function () {
         data: everySeason.seasons,
         columns: everySeason.headers
     });
-    
-    $('#everySeasonTable tfoot th').each( function (i) {
-        
-        var title = $(this).text();
-        var htmlString = '<input type="text" class="form-control column-search" placeholder="'+everySeason.headers[i].title+'" />';
-        $(this).html( htmlString );
 
-    } );
- 
+    $('#everySeasonTable tfoot th').each(function (i) {
+
+        var title = $(this).text();
+        var htmlString = '<input type="text" class="form-control column-search" placeholder="' + everySeason.headers[i].title + '" />';
+        $(this).html(htmlString);
+
+    });
+
     // Apply the search
-    table.columns().every( function () {
+    table.columns().every(function () {
         var that = this;
- 
-        $( 'input', this.footer() ).on( 'keyup change', function () {
-            if ( that.search() !== this.value ) {
+
+        $('input', this.footer()).on('keyup change', function () {
+            if (that.search() !== this.value) {
                 that
-                    .search( this.value )
+                    .search(this.value)
                     .draw();
             }
-        } );
-    } );
+        });
+    });
 
     $('#everySeasonTable_filter').addClass('hidden');
 
@@ -55,6 +55,7 @@ var everySeason = {
     "seasons": []
 }
 
+everySeason.seasons = combineArrays(everySeason.seasons, data2021, 2021);
 everySeason.seasons = combineArrays(everySeason.seasons, data2020, 2020);
 everySeason.seasons = combineArrays(everySeason.seasons, data2019, 2019);
 everySeason.seasons = combineArrays(everySeason.seasons, data2018, 2018);

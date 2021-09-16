@@ -5,26 +5,26 @@ $(document).ready(function () {
         data: everyGame.games,
         columns: everyGame.headers
     });
-    
-    $('#everyGameTable tfoot th').each( function (i) {
-        var title = $(this).text();
-        var htmlString = '<input type="text" class="form-control column-search" placeholder="'+everyGame.headers[i].title+'" />';
-        $(this).html( htmlString );
 
-    } );
- 
+    $('#everyGameTable tfoot th').each(function (i) {
+        var title = $(this).text();
+        var htmlString = '<input type="text" class="form-control column-search" placeholder="' + everyGame.headers[i].title + '" />';
+        $(this).html(htmlString);
+
+    });
+
     // Apply the search
-    table.columns().every( function () {
+    table.columns().every(function () {
         var that = this;
- 
-        $( 'input', this.footer() ).on( 'keyup change', function () {
-            if ( that.search() !== this.value ) {
+
+        $('input', this.footer()).on('keyup change', function () {
+            if (that.search() !== this.value) {
                 that
-                    .search( this.value )
+                    .search(this.value)
                     .draw();
             }
-        } );
-    } );
+        });
+    });
 
     $('#everyGameTable_filter').addClass('hidden');
 
@@ -52,6 +52,12 @@ var everyGame = {
         { "title": "(2) Weekly Ties" }
     ],
     "games": [
+        [2021, 1, 'Ean', 130.46, 'Sam', 126.76, 'Ean', 'Sam', 2, 7, 3.7, 257.22, 11, 0, 0, 10, 1, 0],
+        [2021, 1, 'Basil', 112.88, 'Ross', 100.58, 'Basil', 'Ross', 1, 2, 12.3, 213.46, 8, 3, 0, 6, 5, 0],
+        [2021, 1, 'Hunter', 98.16, 'Majors', 87.58, 'Hunter', 'Majors', 1, 1, 10.58, 185.74, 5, 6, 0, 3, 8, 0],
+        [2021, 1, 'Matt', 113.62, 'Sawyer', 70.78, 'Matt', 'Sawyer', 1, 1, 42.84, 184.40, 9, 2, 0, 2, 9, 0],
+        [2021, 1, 'Chaz', 107.50, 'Willis', 70.56, 'Chaz', 'Willis', 2, 3, 36.94, 178.06, 7, 4, 0, 1, 10, 0],
+        [2021, 1, 'Trevor', 94.40, 'Jared', 50.92, 'Trevor', 'Jared', 2, 1, 43.48, 145.32, 4, 7, 0, 0, 11, 0],
         [2020, 16, 'Trevor', 66.72, 'Hunter', 65.00, 'Trevor', 'Hunter', 1, 3, 1.72, 131.72, 1, 6, 0, 0, 7, 0],
         [2020, 16, 'Chaz', 108.20, 'Willis', 103.86, 'Chaz', 'Willis', 1, 2, 4.34, 212.06, 5, 2, 0, 3, 4, 0],
         [2020, 16, 'Jared', 115.72, 'Ross', 107.92, 'Jared', 'Ross', 3, 1, 7.8, 223.64, 6, 1, 0, 4, 3, 0],
@@ -291,7 +297,7 @@ var everyGame = {
         [2018, 7, 'Jared', 81.66, 'Sawyer', 83.16, 'Sawyer', 'Jared', 1, 2, 1.5, 164.82, 3, 8, 0, 4, 7, 0],
         [2018, 7, 'Sam', 133.06, 'Trevor', 104.42, 'Sam', 'Trevor', 4, 3, 28.64, 237.48, 11, 0, 0, 7, 4, 0],
         [2018, 7, 'Ean', 115.76, 'Ross', 62.5, 'Ean', 'Ross', 2, 9, 53.26, 178.26, 8, 3, 0, 0, 11, 0],
-        [2018, 7, 'Basil', 119.92, 'Willis', 102.48, 'Basil', 'Willis', 8, 3, 17.44, 222.4, 9, 2, 0, 6, 5, 0], 
+        [2018, 7, 'Basil', 119.92, 'Willis', 102.48, 'Basil', 'Willis', 8, 3, 17.44, 222.4, 9, 2, 0, 6, 5, 0],
         [2018, 6, 'Matt', 125.3, 'Sawyer', 89.42, 'Matt', 'Sawyer', 2, 3, 35.88, 214.72, 10, 1, 0, 3, 8, 0],
         [2018, 6, 'Majors', 124.44, 'Ross', 102.92, 'Majors', 'Ross', 1, 8, 21.52, 227.36, 9, 2, 0, 6, 5, 0],
         [2018, 6, 'Jared', 62.56, 'Hunter', 113, 'Hunter', 'Jared', 3, 1, 50.44, 175.56, 1, 10, 0, 8, 3, 0],
