@@ -209,6 +209,16 @@ dumpster = combineArrays(dumpster, dumpster2021, 2021);
 fortunate = combineArrays(fortunate, fortunate2021, 2021);
 unfortunate = combineArrays(unfortunate, unfortunate2021, 2021);
 
+// 2022
+highScores = combineArrays(highScores, highScores2022, 2022);
+lowScores = combineArrays(lowScores, lowScores2022, 2022);
+blowouts = combineArrays(blowouts, blowouts2022, 2022);
+closeGames = combineArrays(closeGames, closeGames2022, 2022);
+highest = combineArrays(highest, highest2022, 2022);
+dumpster = combineArrays(dumpster, dumpster2022, 2022);
+fortunate = combineArrays(fortunate, fortunate2022, 2022);
+unfortunate = combineArrays(unfortunate, unfortunate2022, 2022);
+
 // helper functions
 
 function combineArrays(allList, list, year) {
