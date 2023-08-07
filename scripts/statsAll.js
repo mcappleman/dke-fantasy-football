@@ -1,93 +1,319 @@
 $(document).ready(function () {
+  $("#tableall").DataTable({
+    order: [[2, "desc"]],
+    searching: false,
+    sDom: "",
+    lengthMenu: [[-1], ["All"]],
+    data: dataSet,
+    columns: columnNames,
+  });
 
-    $('#tableall').DataTable({
-        order: [[2, "desc"]],
-        searching: false,
-        sDom: '',
-        lengthMenu: [[-1], ["All"]],
-        data: dataSet,
-        columns: columnNames
-    });
+  $("#highScores").DataTable({
+    order: [[3, "desc"]],
+    sDom: "",
+    lengthMenu: [[10], ["All"]],
+    data: highScores,
+    columns: scoreColumnNamesAll,
+  });
 
-    $('#highScores').DataTable({
-        order: [[3, "desc"]],
-        sDom: '',
-        lengthMenu: [[10], ["All"]],
-        data: highScores,
-        columns: scoreColumnNamesAll
-    });
+  $("#lowScores").DataTable({
+    order: [[3, "asc"]],
+    sDom: "",
+    lengthMenu: [[10], ["All"]],
+    data: lowScores,
+    columns: scoreColumnNamesAll,
+  });
 
-    $('#lowScores').DataTable({
-        order: [[3, "asc"]],
-        sDom: '',
-        lengthMenu: [[10], ["All"]],
-        data: lowScores,
-        columns: scoreColumnNamesAll
-    });
+  $("#blowouts").DataTable({
+    order: [[6, "desc"]],
+    sDom: "",
+    lengthMenu: [[10], ["All"]],
+    data: blowouts,
+    columns: gameColumnNamesAll,
+  });
 
-    $('#blowouts').DataTable({
-        order: [[6, "desc"]],
-        sDom: '',
-        lengthMenu: [[10], ["All"]],
-        data: blowouts,
-        columns: gameColumnNamesAll
-    });
+  $("#closeGames").DataTable({
+    order: [[6, "asc"]],
+    sDom: "",
+    lengthMenu: [[10], ["All"]],
+    data: closeGames,
+    columns: gameColumnNamesAll,
+  });
 
-    $('#closeGames').DataTable({
-        order: [[6, "asc"]],
-        sDom: '',
-        lengthMenu: [[10], ["All"]],
-        data: closeGames,
-        columns: gameColumnNamesAll
-    });
+  $("#highest").DataTable({
+    order: [[6, "desc"]],
+    sDom: "",
+    lengthMenu: [[10], ["All"]],
+    data: highest,
+    columns: gameScoringColumnNamesAll,
+  });
 
-    $('#highest').DataTable({
-        order: [[6, "desc"]],
-        sDom: '',
-        lengthMenu: [[10], ["All"]],
-        data: highest,
-        columns: gameScoringColumnNamesAll
-    });
+  $("#dumpster").DataTable({
+    order: [[6, "asc"]],
+    sDom: "",
+    lengthMenu: [[10], ["All"]],
+    data: dumpster,
+    columns: gameScoringColumnNamesAll,
+  });
 
-    $('#dumpster').DataTable({
-        order: [[6, "asc"]],
-        sDom: '',
-        lengthMenu: [[10], ["All"]],
-        data: dumpster,
-        columns: gameScoringColumnNamesAll
-    });
+  $("#fortunate").DataTable({
+    order: [[6, "asc"]],
+    sDom: "",
+    lengthMenu: [[10], ["All"]],
+    data: fortunate,
+    columns: fortunateColumnNamesAll,
+  });
 
-    $('#fortunate').DataTable({
-        order: [[6, "asc"]],
-        sDom: '',
-        lengthMenu: [[10], ["All"]],
-        data: fortunate,
-        columns: fortunateColumnNamesAll
-    });
-
-    $('#unfortunate').DataTable({
-        order: [[6, "desc"]],
-        sDom: '',
-        lengthMenu: [[10], ["All"]],
-        data: unfortunate,
-        columns: fortunateColumnNamesAll
-    });
-
+  $("#unfortunate").DataTable({
+    order: [[6, "desc"]],
+    sDom: "",
+    lengthMenu: [[10], ["All"]],
+    data: unfortunate,
+    columns: fortunateColumnNamesAll,
+  });
 });
 
 var dataSet = [
-    ['Majors', 178, 111, 67, 0, '62.36%', 17695.84, 16192.12, 99.41, 90.97, 1113, 786, 1, '58.61%', '3.75%', 104.3, 73.7, 6.7],
-    ['Basil', 150, 86, 63, 1, '57.33%', 14572.56, 13666.98, 97.15, 91.11, 898, 720, 2, '55.49%', '1.84%', 83.2, 66.8, 2.8],
-    ['Matt', 177, 103, 74, 0, '58.19%', 16956.7, 16188.54, 95.80, 91.46, 1029, 864, 0, '54.36%', '3.83%', 96.2, 80.8, 6.8],
-    ['Hunter', 164, 90, 73, 1, '54.88%', 15599.18, 15525.28, 95.12, 94.67, 968, 804, 2, '54.62%', '0.26%', 89.6, 74.4, 0.4],
-    ['Willis', 180, 98, 82, 0, '54.44%', 16873.58, 16407.28, 93.74, 91.15, 992, 921, 1, '51.85%', '2.59%', 93.3, 86.7, 4.7],
-    ['Sam', 179, 86, 93, 0, '48.04%', 16675.86, 16265.46, 93.16, 90.87, 956, 951, 0, '50.13%', '-2.09%', 89.7, 89.3, -3.7],
-    ['Ross', 149, 68, 81, 0, '45.64%', 13884.44, 14023.24, 93.18, 94.12, 798, 814, 1, '49.50%', '-3.87%', 73.8, 75.2, -5.8],
-    ['Trevor', 164, 75, 89, 0, '45.73%', 15131.1, 15614.98, 92.26, 95.21, 858, 884, 0, '49.25%', '-3.52%', 80.8, 83.2, -5.8],
-    ['Sawyer', 180, 90, 90, 0, '50.00%', 16621.76, 16581.26, 92.34, 92.12, 940, 974, 0, '49.11%', '0.89%', 88.4, 91.6, 1.6],
-    ['Chaz', 146, 72, 74, 0, '49.32%', 13455.12, 13362.2, 92.16, 91.52, 774, 818, 0, '48.62%', '0.70%', 71.0, 75.0, 1.0],
-    ['Ean', 177, 74, 103, 0, '41.81%', 15933.5, 16766.58, 90.02, 94.73, 858, 1034, 1, '45.35%', '-3.54%', 80.3, 96.7, -6.3],
-    ['Jared', 175, 54, 121, 0, '30.86%', 14447.96, 16868.24, 82.56, 96.39, 655, 1220, 0, '34.93%', '-4.08%', 61.1, 113.9, -7.1],
+  [
+    "Majors",
+    185,
+    117,
+    68,
+    0,
+    "63.24%",
+    18411.6,
+    16765.36,
+    99.52,
+    90.62,
+    1162,
+    810,
+    1,
+    "58.92%",
+    "4.32%",
+    109.0,
+    76.0,
+    8.0,
+  ], //
+  [
+    "Basil",
+    157,
+    89,
+    67,
+    1,
+    "56.69%",
+    15259.96,
+    14354.32,
+    97.2,
+    91.43,
+    939,
+    752,
+    2,
+    "55.52%",
+    "1.17%",
+    87.2,
+    69.8,
+    1.8,
+  ],
+  [
+    "Matt",
+    185,
+    107,
+    78,
+    0,
+    "57.84%",
+    17654.28,
+    16875.28,
+    95.43,
+    91.22,
+    1068,
+    905,
+    0,
+    "54.13%",
+    "3.71%",
+    100.1,
+    84.9,
+    6.9,
+  ],
+  [
+    "Hunter",
+    171,
+    93,
+    77,
+    1,
+    "54.39%",
+    16223.04,
+    16224.46,
+    94.87,
+    94.88,
+    1005,
+    840,
+    2,
+    "54.47%",
+    "-0.08%",
+    93.1,
+    77.9,
+    -0.1,
+  ],
+  [
+    "Willis",
+    187,
+    99,
+    88,
+    0,
+    "52.94%",
+    17425.84,
+    17201,
+    93.19,
+    91.98,
+    1013,
+    973,
+    1,
+    "51.01%",
+    "1.93%",
+    95.4,
+    91.6,
+    3.6,
+  ],
+  [
+    "Sam",
+    186,
+    91,
+    95,
+    0,
+    "48.92%",
+    17404.92,
+    16907.5,
+    93.57,
+    90.9,
+    1005,
+    974,
+    1,
+    "50.78%",
+    "-1.86%",
+    94.5,
+    91.5,
+    -3.5,
+  ],
+  [
+    "Ross",
+    157,
+    72,
+    85,
+    0,
+    "45.86%",
+    14604.44,
+    14677.36,
+    93.02,
+    93.49,
+    834,
+    858,
+    1,
+    "49.29%",
+    "-3.43%",
+    77.4,
+    79.6,
+    -5.4,
+  ],
+  [
+    "Trevor",
+    171,
+    80,
+    91,
+    0,
+    "46.78%",
+    15717.72,
+    16170,
+    91.92,
+    94.56,
+    885,
+    930,
+    0,
+    "48.76%",
+    "-1.98%",
+    83.4,
+    87.6,
+    -3.4,
+  ],
+  [
+    "Sawyer",
+    187,
+    91,
+    96,
+    0,
+    "48.66%",
+    17284.46,
+    17305.52,
+    92.43,
+    92.54,
+    980,
+    1007,
+    0,
+    "49.32%",
+    "-0.66%",
+    92.2,
+    94.8,
+    -1.2,
+  ],
+  [
+    "Chaz",
+    153,
+    75,
+    78,
+    0,
+    "49.02%",
+    14074.9,
+    13952.88,
+    91.99,
+    91.2,
+    810,
+    855,
+    0,
+    "48.65%",
+    "0.37%",
+    74.4,
+    78.6,
+    0.6,
+  ],
+  [
+    "Ean",
+    185,
+    78,
+    107,
+    0,
+    "42.16%",
+    16625.28,
+    17494.92,
+    89.87,
+    94.57,
+    893,
+    1078,
+    2,
+    "45.31%",
+    "-3.15%",
+    83.8,
+    101.2,
+    -5.8,
+  ],
+  [
+    "Jared",
+    183,
+    59,
+    124,
+    0,
+    "32.24%",
+    15161.88,
+    17534.28,
+    82.85,
+    95.82,
+    696,
+    1259,
+    0,
+    "35.6%",
+    "-3.36%",
+    65.1,
+    117.9,
+    -6.1,
+  ],
 ];
 
 var highScores = [];
@@ -222,25 +448,19 @@ unfortunate = combineArrays(unfortunate, unfortunate2022, 2022);
 // helper functions
 
 function combineArrays(allList, list, year) {
-
-    var copy = [];
-    list.forEach((subArray, index) => {
-
-        copy[index] = []
-        subArray.forEach((item) => {
-            copy[index].push(item);
-        });
-
+  var copy = [];
+  list.forEach((subArray, index) => {
+    copy[index] = [];
+    subArray.forEach((item) => {
+      copy[index].push(item);
     });
+  });
 
-    copy.forEach((subArray) => {
+  copy.forEach((subArray) => {
+    subArray = subArray.unshift(year);
+  });
 
-        subArray = subArray.unshift(year);
+  allList = allList.concat(copy);
 
-    });
-
-    allList = allList.concat(copy);
-
-    return allList;
-
+  return allList;
 }
