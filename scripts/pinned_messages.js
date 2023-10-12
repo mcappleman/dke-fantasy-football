@@ -22,6 +22,12 @@ function getMessageHtml(message) {
 
 var pinnedMessages = [
   {
+    url: "https://i.groupme.com/1116x852.jpeg.af22cde7c7024c46ba250c5a8c9f35eb.large",
+    local: null,
+    description: "Sawyer Super hung on the bed",
+    type: "IMAGE",
+  },
+  {
     url: "https://i.groupme.com/805x1030.jpeg.bd9d7abae24b4f27842f034deafc99ea",
     local: "/images/pinned_images/Sawyer Pole Dancing.png",
     description: "Sawyer Pole Dancing",
@@ -67,6 +73,12 @@ var pinnedMessages = [
     url: "https://i.groupme.com/1122x675.jpeg.9376d41cf6a34e3c9fdeef24de56389b",
     local: "/images/pinned_images/Jared and Willis Broke Back Mountain.png",
     description: "Jared and Willis in Broke Back Mountain",
+    type: "IMAGE",
+  },
+  {
+    url: "https://i.groupme.com/5199x2885.jpeg.f952b6164b074b54980509154bd1ae19",
+    local: null,
+    description: "Jared whisperings into Sawyer's cheeked up face",
     type: "IMAGE",
   },
   {
@@ -148,12 +160,6 @@ var pinnedMessages = [
     type: "GIF",
   },
   {
-    url: "https://i.groupme.com/5199x2885.jpeg.f952b6164b074b54980509154bd1ae19",
-    local: null,
-    description: "Jared whisperings into Sawyer's cheeked up face",
-    type: "IMAGE",
-  },
-  {
     url: "https://i.groupme.com/2362x2361.jpeg.53f9784b41a048f481c3f55b7fa53a99",
     local: null,
     description: "Sawyer mask off",
@@ -176,6 +182,24 @@ var pinnedMessages = [
     local: null,
     description: "Majors Gif Jif Brotherly Speedo Pic",
     type: "GIF",
+  },
+  {
+    url: "https://i.groupme.com/4032x3024.jpeg.57957be82f204ca2bbe65d4774a41729.large",
+    local: null,
+    description: "2023 Draft Board part 1",
+    type: "IMAGE",
+  },
+  {
+    url: "https://i.groupme.com/4032x3024.jpeg.d4137b4eb5ad47fcbb1069d14dcb707d.large",
+    local: null,
+    description: "2023 Draft Board part 2",
+    type: "IMAGE",
+  },
+  {
+    url: "https://i.groupme.com/3024x4032.jpeg.e0e883da07e24ab5a1292020b6c29be2.large",
+    local: null,
+    description: "Dead Cockroach",
+    type: "IMAGE",
   },
   {
     url: "https://i.groupme.com/1717x2289.jpeg.d342915a19594eca9e16f7b12790810f",
