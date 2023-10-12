@@ -238,6 +238,12 @@ var pinnedMessages = [
     type: "IMAGE",
   },
   {
+    url: "https://i.groupme.com/3438x3438.jpeg.8c3924c7e88343db97e5318e8584ddc2.large",
+    local: null,
+    description: "Sawyer looking left and Hunter lying down pose on top",
+    type: "IMAGE",
+  },
+  {
     url: "https://i.groupme.com/3438x3438.jpeg.ede46135b7b24f349c20e353a71d99e9",
     local: null,
     description: "Sawyer studying that thicc ass tree",
