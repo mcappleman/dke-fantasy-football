@@ -1,169 +1,220 @@
 <!DOCTYPE html>
 <html>
-
-<head>
+  <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Title of the page that appears in the tab -->
     <title>DKE Fantasy Football</title>
 
     <!-- Sewanee S that appears in the tab header -->
-    <link rel="apple-touch-icon" sizes="180x180" href="./images/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon-16x16.png">
-    <link rel="manifest" href="./images/manifest.json">
-    <link rel="mask-icon" href="./images/safari-pinned-tab.svg" color="#5bbad5">
-    <meta name="theme-color" content="#ffffff">
-    
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./images/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./images/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./images/manifest.json" />
+    <link
+      rel="mask-icon"
+      href="./images/safari-pinned-tab.svg"
+      color="#5bbad5"
+    />
+    <meta name="theme-color" content="#ffffff" />
+
     <!-- Google Analytics -->
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-108694586-1"></script>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-108694586-1"
+    ></script>
     <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-        gtag('config', 'UA-108694586-1');
+      gtag("config", "UA-108694586-1");
     </script>
 
     <!-- AdSense -->
-    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script
+      async
+      src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
+    ></script>
     <script>
-    (adsbygoogle = window.adsbygoogle || []).push({
+      (adsbygoogle = window.adsbygoogle || []).push({
         google_ad_client: "ca-pub-7783180728620328",
-        enable_page_level_ads: true
-    });
+        enable_page_level_ads: true,
+      });
     </script>
     <!-- End of AdSense -->
-    
-    
+
     <!-- Stylesheets -->
     <!-- Go get the bootstrap style shee that we want from this url -->
-    <link rel="stylesheet" type="text/css" href="https://bootswatch.com/3/flatly/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://bootswatch.com/3/flatly/bootstrap.min.css"
+    />
     <!-- Go get the css from our main.css which lives in the styles folder -->
     <link rel="stylesheet" type="text/css" href="../styles/main.css" />
-</head>
+  </head>
 
-<body>
+  <body>
     <!-- Navbar at the top of the page. All of this code is taken from https://getbootstrap.com/docs/3.3/components/#navbar -->
     <div class="navbar navbar-default navbar-fixed-top">
-        <div class="container">
-            <div class="navbar-header">
-                <!-- Menu Button that will appear in the mobile view -->
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <!-- Title of the application where when clicked goes to the home page -->
-                <a href="../index.html" class="navbar-brand">DKE Fantasy Football</a>
-            </div>
-            <!-- All of the navbar items go here, this is what will collapse in the mobile view and appear in the menu button -->
-            <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <li>
-                        <a href="../index.html">Home</a>
-                    </li>
-                    <li class="active">
-                        <a href="../recaps/index.html">Recaps</a>
-                    </li>
-                    <li>
-                        <a href="../previews/index.html">Previews</a>
-                    </li>
-                    <li>
-                        <a href="../stats/index.html">Stats</a>
-                    </li>
-                    <!-- <li>
+      <div class="container">
+        <div class="navbar-header">
+          <!-- Menu Button that will appear in the mobile view -->
+          <button
+            type="button"
+            class="navbar-toggle"
+            data-toggle="collapse"
+            data-target=".navbar-collapse"
+          >
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <!-- Title of the application where when clicked goes to the home page -->
+          <a href="../index.html" class="navbar-brand">DKE Fantasy Football</a>
+        </div>
+        <!-- All of the navbar items go here, this is what will collapse in the mobile view and appear in the menu button -->
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li>
+              <a href="../index.html">Home</a>
+            </li>
+            <li class="active">
+              <a href="../recaps/index.html">Recaps</a>
+            </li>
+            <li>
+              <a href="../previews/index.html">Previews</a>
+            </li>
+            <li>
+              <a href="../stats/index.html">Stats</a>
+            </li>
+            <!-- <li>
                         <a href="../rules/index.html">Rules & Keepers</a>
                     </li> -->
-                    <li>
-                        <a href="../draft/index.html">Draft Results</a>
-                    </li>
-                    <li>
-                        <a href="../trades/index.html">Trades</a>
-                    </li>
-                </ul>
-            </div>
-            <!-- End of the navbar items -->
+            <li>
+              <a href="../draft/index.html">Draft Results</a>
+            </li>
+            <li>
+              <a href="../trades/index.html">Trades</a>
+            </li>
+            <li>
+              <a href="../messages/index.html">Messages</a>
+            </li>
+          </ul>
         </div>
+        <!-- End of the navbar items -->
+      </div>
     </div>
     <!-- End of the navbar -->
 
     <div class="container body-content">
-        <!-- Breadcrumbs to show where we are on the page and for some quick links to the previous pages. -->
-        <!-- Check out this for more information https://getbootstrap.com/docs/3.3/components/#breadcrumbs -->
-        <nav aria-label="breadcrumb" role="navigation">
-            <ol class="breadcrumb">
-                <li class="breadcrumb-item">
-                    <a href="../index.html">Home</a>
-                </li>
-                <li class="breadcrumb-item active" aria-current="page">Recaps</li>
-            </ol>
-        </nav>
-        <!-- End of Breadcrumbs -->
+      <!-- Breadcrumbs to show where we are on the page and for some quick links to the previous pages. -->
+      <!-- Check out this for more information https://getbootstrap.com/docs/3.3/components/#breadcrumbs -->
+      <nav aria-label="breadcrumb" role="navigation">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item">
+            <a href="../index.html">Home</a>
+          </li>
+          <li class="breadcrumb-item active" aria-current="page">Recaps</li>
+        </ol>
+      </nav>
+      <!-- End of Breadcrumbs -->
 
-        <h1>Recaps</h1>
+      <h1>Recaps</h1>
 
-        <div class="row">
-            <!-- Again we have Bootstraps grid system, so any mobile and tablet will take up the full width of the page, laptop and desktops will only take up 3/4 of the page -->
-            <!-- Check out the grid system here https://getbootstrap.com/docs/3.3/css/#grid -->
-            <div class="col-lg-8">
-
-                <!-- This is a panel group, it allows for the user to collapse a panel for easier navigation -->
-                <!-- https://getbootstrap.com/docs/3.3/javascript/#collapse -->
-                <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-                    <div class="panel panel-default">
-
-                        <!-- The title of the panel that will collapse -->
-                        <div class="panel-heading" role="tab" id="headingOne">
-                            <h4 class="panel-title">
-                                <!-- data-toggle tells it what to tdo, data-parent points to the id of the panel group, and href tells it what section to collapse. -->
-                                <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                    2017
-                                </a>
-                            </h4>
-                        </div>
-                        <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
-                            <ul class="list-group">
-                                <!-- For Each week copy these lines, also try to name the html files so that they have the year and the week number -->
-                                <li class="list-group-item">
-                                    <a href="./2017week12.html">Week 12: It’s Getting Hot and Heavy</a>
-                                </li>
-                                <li class="list-group-item">
-                                    <a href="./2017week8.html">Week 8: Back To Our Old League</a>
-                                </li>
-                                <li class="list-group-item">
-                                    <a href="./2017week7.html">Week 7: DKE Fantasy Lore</a>
-                                </li>
-                                <!-- End of lines to copy -->
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
+      <div class="row">
+        <!-- Again we have Bootstraps grid system, so any mobile and tablet will take up the full width of the page, laptop and desktops will only take up 3/4 of the page -->
+        <!-- Check out the grid system here https://getbootstrap.com/docs/3.3/css/#grid -->
+        <div class="col-lg-8">
+          <!-- This is a panel group, it allows for the user to collapse a panel for easier navigation -->
+          <!-- https://getbootstrap.com/docs/3.3/javascript/#collapse -->
+          <div
+            class="panel-group"
+            id="accordion"
+            role="tablist"
+            aria-multiselectable="true"
+          >
+            <div class="panel panel-default">
+              <!-- The title of the panel that will collapse -->
+              <div class="panel-heading" role="tab" id="headingOne">
+                <h4 class="panel-title">
+                  <!-- data-toggle tells it what to tdo, data-parent points to the id of the panel group, and href tells it what section to collapse. -->
+                  <a
+                    role="button"
+                    data-toggle="collapse"
+                    data-parent="#accordion"
+                    href="#collapseOne"
+                    aria-expanded="true"
+                    aria-controls="collapseOne"
+                  >
+                    2017
+                  </a>
+                </h4>
+              </div>
+              <div
+                id="collapseOne"
+                class="panel-collapse collapse in"
+                role="tabpanel"
+                aria-labelledby="headingOne"
+              >
+                <ul class="list-group">
+                  <!-- For Each week copy these lines, also try to name the html files so that they have the year and the week number -->
+                  <li class="list-group-item">
+                    <a href="./2017week12.html"
+                      >Week 12: It’s Getting Hot and Heavy</a
+                    >
+                  </li>
+                  <li class="list-group-item">
+                    <a href="./2017week8.html"
+                      >Week 8: Back To Our Old League</a
+                    >
+                  </li>
+                  <li class="list-group-item">
+                    <a href="./2017week7.html">Week 7: DKE Fantasy Lore</a>
+                  </li>
+                  <!-- End of lines to copy -->
+                </ul>
+              </div>
             </div>
-
+          </div>
         </div>
+      </div>
 
-        <hr />
-        <!-- Here we have our footer, with the copyright symbol and a span item with an ID so that we can autopopulate it with the current year. -->
-         <footer>
-            <p>
-                &copy;
-                <span id="currentYear"></span> - DKE Fantasy Football
-            </p>
-        </footer>
+      <hr />
+      <!-- Here we have our footer, with the copyright symbol and a span item with an ID so that we can autopopulate it with the current year. -->
+      <footer>
+        <p>
+          &copy;
+          <span id="currentYear"></span> - DKE Fantasy Football
+        </p>
+      </footer>
     </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="../scripts/bootstrap.min.js"></script>
     <script>
-        // Here is the code that gets the current Date
-        var now = new Date();
-        // Next we get the full year value and make the html item with the ID currentYear have the text of the Current Year.
-        $('#currentYear').text(now.getFullYear());
+      // Here is the code that gets the current Date
+      var now = new Date();
+      // Next we get the full year value and make the html item with the ID currentYear have the text of the Current Year.
+      $("#currentYear").text(now.getFullYear());
     </script>
-
-</body>
-
+  </body>
 </html>

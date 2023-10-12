@@ -1,307 +1,413 @@
 <!DOCTYPE html>
 <html>
-
-<head>
+  <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>DKE Fantasy Football</title>
-    <link rel="apple-touch-icon" sizes="180x180" href="../images/apple-touch-icon.png">
-	<link rel="icon" type="image/png" sizes="32x32" href="../images/favicon-32x32.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="../images/favicon-16x16.png">
-	<link rel="manifest" href="../images/manifest.json">
-	<link rel="mask-icon" href="../images/safari-pinned-tab.svg" color="#5bbad5">
-    <meta name="theme-color" content="#ffffff">
-    
-        <!-- Google Analytics -->
-        <!-- Global site tag (gtag.js) - Google Analytics -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-108694586-1"></script>
-        <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag() { dataLayer.push(arguments); }
-            gtag('js', new Date());
-    
-            gtag('config', 'UA-108694586-1');
-        </script>
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="../images/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../images/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="../images/favicon-16x16.png"
+    />
+    <link rel="manifest" href="../images/manifest.json" />
+    <link
+      rel="mask-icon"
+      href="../images/safari-pinned-tab.svg"
+      color="#5bbad5"
+    />
+    <meta name="theme-color" content="#ffffff" />
+
+    <!-- Google Analytics -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-108694586-1"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "UA-108694586-1");
+    </script>
 
     <!-- AdSense -->
-    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script
+      async
+      src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
+    ></script>
     <script>
-    (adsbygoogle = window.adsbygoogle || []).push({
+      (adsbygoogle = window.adsbygoogle || []).push({
         google_ad_client: "ca-pub-7783180728620328",
-        enable_page_level_ads: true
-    });
+        enable_page_level_ads: true,
+      });
     </script>
     <!-- End of AdSense -->
-    
-    
-    <!-- Stylesheets -->
-    <link rel="stylesheet" type="text/css" href="https://bootswatch.com/3/flatly/bootstrap.min.css" />
-    <link rel="stylesheet" type="text/css" href="../styles/main.css" />
-</head>
 
-<body>
+    <!-- Stylesheets -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://bootswatch.com/3/flatly/bootstrap.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="../styles/main.css" />
+  </head>
+
+  <body>
     <!-- Navbar at the top of the page. All of this code is taken from https://getbootstrap.com/docs/3.3/components/#navbar -->
     <div class="navbar navbar-default navbar-fixed-top">
-        <div class="container">
-            <div class="navbar-header">
-                <!-- Menu Button that will appear in the mobile view -->
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <!-- Title of the application where when clicked goes to the home page -->
-                <a href="../index.html" class="navbar-brand">DKE Fantasy Football</a>
-            </div>
-            <!-- All of the navbar items go here, this is what will collapse in the mobile view and appear in the menu button -->
-            <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <li>
-                        <a href="../index.html">Home</a>
-                    </li>
-                    <!-- Class active shows in the navbar which section you are currently under -->
-                    <li class="active">
-                        <a href="../recaps/index.html">Recaps</a>
-                    </li>
-                    <li>
-                        <a href="../previews/index.html">Previews</a>
-                    </li>
-                    <li>
-                        <a href="../stats/index.html">Stats</a>
-                    </li>
-                    <!-- <li>
+      <div class="container">
+        <div class="navbar-header">
+          <!-- Menu Button that will appear in the mobile view -->
+          <button
+            type="button"
+            class="navbar-toggle"
+            data-toggle="collapse"
+            data-target=".navbar-collapse"
+          >
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <!-- Title of the application where when clicked goes to the home page -->
+          <a href="../index.html" class="navbar-brand">DKE Fantasy Football</a>
+        </div>
+        <!-- All of the navbar items go here, this is what will collapse in the mobile view and appear in the menu button -->
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li>
+              <a href="../index.html">Home</a>
+            </li>
+            <!-- Class active shows in the navbar which section you are currently under -->
+            <li class="active">
+              <a href="../recaps/index.html">Recaps</a>
+            </li>
+            <li>
+              <a href="../previews/index.html">Previews</a>
+            </li>
+            <li>
+              <a href="../stats/index.html">Stats</a>
+            </li>
+            <!-- <li>
                         <a href="../rules/index.html">Rules & Keepers</a>
                     </li> -->
-                    <li>
-                        <a href="../draft/index.html">Draft Results</a>
-                    </li>
-                    <li>
-                        <a href="../trades/index.html">Trades</a>
-                    </li>
-                </ul>
-            </div>
-            <!-- End of the navbar items -->
+            <li>
+              <a href="../draft/index.html">Draft Results</a>
+            </li>
+            <li>
+              <a href="../trades/index.html">Trades</a>
+            </li>
+            <li>
+              <a href="../messages/index.html">Messages</a>
+            </li>
+          </ul>
         </div>
+        <!-- End of the navbar items -->
+      </div>
     </div>
     <!-- End of the navbar -->
 
     <div class="container body-content">
+      <!-- Breadcrumbs to show where we are on the page and for some quick links to the previous pages. -->
+      <!-- Check out this for more information https://getbootstrap.com/docs/3.3/components/#breadcrumbs -->
+      <nav aria-label="breadcrumb" role="navigation">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item">
+            <a href="../index.html">Home</a>
+          </li>
+          <li class="breadcrumb-item">
+            <a href="./index.html">Recaps</a>
+          </li>
+          <li class="breadcrumb-item active" aria-current="page">
+            Title of the recap goes here...
+          </li>
+        </ol>
+      </nav>
+      <!-- End of Breadcrumbs -->
 
-        <!-- Breadcrumbs to show where we are on the page and for some quick links to the previous pages. -->
-        <!-- Check out this for more information https://getbootstrap.com/docs/3.3/components/#breadcrumbs -->
-        <nav aria-label="breadcrumb" role="navigation">
-            <ol class="breadcrumb">
-                <li class="breadcrumb-item">
-                    <a href="../index.html">Home</a>
-                </li>
-                <li class="breadcrumb-item">
-                    <a href="./index.html">Recaps</a>
-                </li>
-                <li class="breadcrumb-item active" aria-current="page">Title of the recap goes here...</li> 
-            </ol>
-        </nav>
-        <!-- End of Breadcrumbs -->
+      <h1 class="recap-title">Title of the Recap goes here...</h1>
 
-        <h1 class="recap-title">Title of the Recap goes here...</h1>
-
-        <div class="row">
-            <!-- Again we have Bootstraps grid system, so any size of the page that is loaded, it will take the full width of the page. -->
-            <!-- Check out the grid system here https://getbootstrap.com/docs/3.3/css/#grid -->
-            <div class="col-xs-12">
-                <!-- basic navigation of the page -->
-                <ul class="page-navigation">
-                    <li>
-                        <a href="#introduction">Introduction</a>
-                    </li>
-                    <li>
-                        <a href="#recaps">Recaps</a>
-                    </li>
-                    <li>
-                        <a href="#rankings">Rankings</a>
-                    </li>
-                    <li>
-                        <a href="#questions">Questions</a>
-                    </li>
-                    <li>
-                        <a href="#finalthoughts">Final Thoughts</a>
-                    </li>
-                </ul>
-            </div>
-            <!-- Again the grid system, the current div underneath will take the full width of the page. Just to make sure that everything lines up nicely. -->
-            <div class="col-xs-12">
-                <h2 id="introduction">Introduction</h2>
-                <!-- Use p tags for each individual paragraph -->
-                <p>
-                    I was daydreaming the other day about where we were going to do our live draft (still pushing for Vegas) and at one point,
-                    it made me laugh when I thought about us all talking shit to each other 30 years from now. Yes, the game
-                    will be drastically different, maybe even non-existent, but to potentially hear someone say "I've been
-                    beating your ass for 30 years now" is incredibly amusing. In a lot of ways, yall are the people I keep
-                    up with the most, albeit indirectly most of the time. I don't do any of this with my Dallas or Georgia
-                    friends, and when I catch up with them, I'm trying to figure out what they have done for the last couple
-                    of years since I have seen them. Not so with yall. It feels like we are all talking (except Chaz) every
-                    week, jawing at each other or making jokes at the expense of teams, but its one way of keeping up with
-                    each other and I love it. I'm terrible at picking up the phone and calling people to check in, so this
-                    gives me a much better way of knowing whats going on.
-                </p>
-                <p>
-                    As I continued to daydream, the thought of "fantasy lore" kept coming back into my head. Someday down the road Matt or Sam
-                    is going to say some absurd stat that we all just go crazy over, like Jared has beaten Sawyer the last
-                    9 times with an average win of 1.2 points, and it will be glorious. The trophies will get bigger as we
-                    all get more money to play with, the drafts will be a blast if we can organize them correctly, and all
-                    of us will be invested because it's something that we look forward to each week. I'm ready to make a
-                    DKE history room in my house with busts of the highest scoring players/teams ever, the best managers,
-                    and the most epic games.
-                </p>
-            </div>
-
-            <div class="col-xs-12">
-            <!-- Again the grid system, the current div underneath will take the full width of the page. Just to make sure that everything lines up nicely. -->
-                <h2 id="recaps">Recaps</h2>
-
-                <!-- I just used a div here to make every individual section be collapsible in my editor and if we wanted to add any stylings between each section, like a horizontal line, it would be easy to add a class to this div and add some styles. -->
-                <div>
-                    <h3>SIN-CLAIRR!!!! vs. Turd Ferguson</h3>
-                    <p>
-                        Willis and I have a long history. It goes past the last couple of seasons, one of which he beat me on Monday night with Julio
-                        putting up 30 points (he needed 25 or so) in the semifinals of the playoffs. Some of the most epic
-                        games in league history have been played between us. It more than Georgia/Florida, or Georgia/Georgia
-                        Tech. I'd equate it to Georgia/Auburn, with deep roots, but less hatred and more respect. This game
-                        didn't disappoint as Willis put up a whopping 112.70 points, his second-most of the season. The problem
-                        was that I had my best game of the season, putting up 127.52 points, mostly behind the 2nd highest
-                        single fantasy point-total by a player this season (the only one who did better was on Willis' roster).
-                        Please don't leave me Zeke, those 39.90 glorious points made me forget you went to Ohio State and
-                        still wear a crop top. I knew that the two players that led the league in fantasy points last week
-                        (Melvin and Kirk) shouldn't get close to replicating their outputs, but Kirk still had a great game,
-                        putting up 24.92 points in a gun-slinging loss to the Eagles. Maybe the best part about my team is
-                        that AJ and Melvin had the two lowest point totals on my team and I still put up the most points
-                        by anyone in the league to date. Elsewhere on my roster, both Agholor and Engram (who is Eli's only
-                        target) got TDs, and I'm excited that my bench can still put up points too. Lord knows I'm going
-                        to need it when Zeke finally sits. Willis had an extremely impressive week and had one of the coolest-looking,
-                        most consistent point spreads from his players (Matt could tell you what the stdev was). Only two
-                        players got under 11 points, and even they had relatively good days. His receivers both got plenty
-                        of yards and a TD, hopefully showing that Julio can go back to his old ways despite a horrible game
-                        from the Falcons, Graham is getting all of the redzone targets in Seattle, and his LA players (D,
-                        Cupp and Goff) looked fantastic against a stingy Cardinals team. Excluding Derek Carr and the best
-                        kicker in the league, his bench doesn't look great. We know Martavis is unhappy, and Willis would
-                        benefit from a change in scenery. We know Derrick Henry should be the starter, but he got out-touched
-                        by a dude nursing an injury. I'm worried that Willis is going to have a hard time replicating this
-                        week, but lets hope for the best. I mean, it's always hard to get the second-most points in the league
-                        and the lose to the one guy who was better. I won't kick you while you are down.
-                    </p>
-
-                    <!-- Just a quick class I made, you can go checkout main.css under the styles folder to see what is applied. This way every comparison section looks the same. -->
-                    <div class="nfl-comparison">
-                        <h4>Majors' NFL comparison: Andy Reid</h4>
-                        <br>
-                        <img src="https://uproxx.files.wordpress.com/2013/01/chiefsreid.jpg?quality=100&w=650" width="400" height="240">
-                        <br>
-                        <p class="description">
-                            Consistently good, and almost always has a great season, but can't win the big one. Also is 400 pounds.
-                        </p>
-                    </div>
-
-                    <div class="nfl-comparison">
-                        <h4>Willis' NFL comparison: Rob Gronkowski</h4>
-                        <br>
-                        <img src="http://i.dailymail.co.uk/i/pix/2015/07/10/18/2A6A20BB00000578-3156327-Rob_Gronkowski_26_wore_a_mustache_and_a_belly_shirt_while_issuin-m-15_1436547829459.jpg"
-                            width="250" height="345">
-                        <br>
-                        <p class="description">
-                            Flashy, good in the playoffs and a monster when unleashed, but sometimes gets injured and suffers from it. Also does an impressive
-                            party-boy and still drinks Keystone.
-                        </p>
-                    </div>
-                </div>
-
-            </div>
-
-            <div class="col-xs-12">
-            <!-- Again the grid system, the current div underneath will take the full width of the page. Just to make sure that everything lines up nicely. -->
-                <h3 id="rankings">Rankings</h3>
-
-                <ol>
-                    <li>Premature Punishment (barely)</li>
-                    <li>SIN-CLAIRR!!!!</li>
-                    <li>Grab Em By The Percy</li>
-                    <li>Gator Fuckers</li>
-                    <li>Excel-sior</li>
-                    <li>Don'tMessWithTexas</li>
-                    <li>You Feel Lucky Punk?</li>
-                    <li>Hairy Palmers</li>
-                    <li>Turd Ferguson</li>
-                    <li>Le'Veon a Prayer</li>
-                    <li>It's Frommplicated</li>
-                    <li>DeMarco Polo</li>
-                </ol>
-
-            </div>
-
-            <div class="col-xs-12">
-            <!-- Again the grid system, the current div underneath will take the full width of the page. Just to make sure that everything lines up nicely. -->
-                <h3 id="questions">Questions</h3>
-
-                <h4>Questions from Week 5</h4>
-                <ol>
-                    <li>Vegasssss</li>
-                    <li>Only if we debate on fantasy reform first</li>
-                    <li>Yes, Trevor. Just because you suck at one position doesn't mean we should get rid of it</li>
-                    <li>Ummm I think 6 wins in a row is pretty damn sufficient</li>
-                    <li>Flying somewhere in his apache, just jamming out and shooting commie bastards</li>
-                    <li>Never, unless he gets an insane package.</li>
-                </ol>
-                <h4>One or More Questions for Each Team this Week (answer in the Facebook comments):</h4>
-                <ol>
-                    <li>Sawyer: On a scale of 1-10, how much is Cam pissing you off and will you ever NOT keep him because of
-                        the Auburn connection?</li>
-                    <li>Me: Is my team going to fold once Zeke gets suspended? Spoiler alert: yes it is.</li>
-                    <li>Hunter: Is it annoying to rely on one team week in and week out? How do you feel when Pittsburg plays
-                        the best team and have you considered not keeping Brown or Bell?</li>
-                    <li>Trevor: Why would you want to give up Fournette for Hunt? It seems like Willis has the upperhand and
-                        you would have to give more for practically the same RB.</li>
-                    <li>Sam: If we raised the auto-loss of a draft pick when keeping a player that you got after the 6th round
-                        to the loss of a 6th round pick, how pissed would you be regarding OBJ?</li>
-                    <li>Basil: How often are you going to start Jordy now?</li>
-                    <li>Matt: How much less confident are you now after losing to Ean? Will you sing "Glory Glory to Old Georgia"?</li>
-                    <li>Ean: On a scale of 1-10, how much confidence do you have after being close to .500? </li>
-                    <li>Willis: Would you say you believe more in your WRs or RBs to put up the most points each week?</li>
-                    <li>Ross: What in the world changed from last year to this year?</li>
-                    <li>Chaz: Why would I bother to write a question? You won't respond anyway. Fine, what's your favorite color?</li>
-                    <li>Jared: What do you have to say regarding the supposed "fantasy curse" on your team? Is it real?</li>
-                </ol>
-            </div>
-
-            <div class="col-xs-12">
-            <!-- Again the grid system, the current div underneath will take the full width of the page. Just to make sure that everything lines up nicely. -->
-                <h3 id="finalthoughts">Final Thoughts</h3>
-                <p>
-                    Well that's it for this week. Let me know if you like this website or if you would rather me post to Facebook like I usually
-                    do. This was great practice for me to build it, but it probably took twice as long, so I'm not going
-                    to commit to doing this every week.
-                </p>
-            </div>
-
+      <div class="row">
+        <!-- Again we have Bootstraps grid system, so any size of the page that is loaded, it will take the full width of the page. -->
+        <!-- Check out the grid system here https://getbootstrap.com/docs/3.3/css/#grid -->
+        <div class="col-xs-12">
+          <!-- basic navigation of the page -->
+          <ul class="page-navigation">
+            <li>
+              <a href="#introduction">Introduction</a>
+            </li>
+            <li>
+              <a href="#recaps">Recaps</a>
+            </li>
+            <li>
+              <a href="#rankings">Rankings</a>
+            </li>
+            <li>
+              <a href="#questions">Questions</a>
+            </li>
+            <li>
+              <a href="#finalthoughts">Final Thoughts</a>
+            </li>
+          </ul>
+        </div>
+        <!-- Again the grid system, the current div underneath will take the full width of the page. Just to make sure that everything lines up nicely. -->
+        <div class="col-xs-12">
+          <h2 id="introduction">Introduction</h2>
+          <!-- Use p tags for each individual paragraph -->
+          <p>
+            I was daydreaming the other day about where we were going to do our
+            live draft (still pushing for Vegas) and at one point, it made me
+            laugh when I thought about us all talking shit to each other 30
+            years from now. Yes, the game will be drastically different, maybe
+            even non-existent, but to potentially hear someone say "I've been
+            beating your ass for 30 years now" is incredibly amusing. In a lot
+            of ways, yall are the people I keep up with the most, albeit
+            indirectly most of the time. I don't do any of this with my Dallas
+            or Georgia friends, and when I catch up with them, I'm trying to
+            figure out what they have done for the last couple of years since I
+            have seen them. Not so with yall. It feels like we are all talking
+            (except Chaz) every week, jawing at each other or making jokes at
+            the expense of teams, but its one way of keeping up with each other
+            and I love it. I'm terrible at picking up the phone and calling
+            people to check in, so this gives me a much better way of knowing
+            whats going on.
+          </p>
+          <p>
+            As I continued to daydream, the thought of "fantasy lore" kept
+            coming back into my head. Someday down the road Matt or Sam is going
+            to say some absurd stat that we all just go crazy over, like Jared
+            has beaten Sawyer the last 9 times with an average win of 1.2
+            points, and it will be glorious. The trophies will get bigger as we
+            all get more money to play with, the drafts will be a blast if we
+            can organize them correctly, and all of us will be invested because
+            it's something that we look forward to each week. I'm ready to make
+            a DKE history room in my house with busts of the highest scoring
+            players/teams ever, the best managers, and the most epic games.
+          </p>
         </div>
 
-        <hr />
-        <!-- Here we have our footer, with the copyright symbol and a span item with an ID so that we can autopopulate it with the current year. -->
-        <footer>
+        <div class="col-xs-12">
+          <!-- Again the grid system, the current div underneath will take the full width of the page. Just to make sure that everything lines up nicely. -->
+          <h2 id="recaps">Recaps</h2>
+
+          <!-- I just used a div here to make every individual section be collapsible in my editor and if we wanted to add any stylings between each section, like a horizontal line, it would be easy to add a class to this div and add some styles. -->
+          <div>
+            <h3>SIN-CLAIRR!!!! vs. Turd Ferguson</h3>
             <p>
-                &copy;
-                <span id="currentYear"></span> - DKE Fantasy Football
+              Willis and I have a long history. It goes past the last couple of
+              seasons, one of which he beat me on Monday night with Julio
+              putting up 30 points (he needed 25 or so) in the semifinals of the
+              playoffs. Some of the most epic games in league history have been
+              played between us. It more than Georgia/Florida, or
+              Georgia/Georgia Tech. I'd equate it to Georgia/Auburn, with deep
+              roots, but less hatred and more respect. This game didn't
+              disappoint as Willis put up a whopping 112.70 points, his
+              second-most of the season. The problem was that I had my best game
+              of the season, putting up 127.52 points, mostly behind the 2nd
+              highest single fantasy point-total by a player this season (the
+              only one who did better was on Willis' roster). Please don't leave
+              me Zeke, those 39.90 glorious points made me forget you went to
+              Ohio State and still wear a crop top. I knew that the two players
+              that led the league in fantasy points last week (Melvin and Kirk)
+              shouldn't get close to replicating their outputs, but Kirk still
+              had a great game, putting up 24.92 points in a gun-slinging loss
+              to the Eagles. Maybe the best part about my team is that AJ and
+              Melvin had the two lowest point totals on my team and I still put
+              up the most points by anyone in the league to date. Elsewhere on
+              my roster, both Agholor and Engram (who is Eli's only target) got
+              TDs, and I'm excited that my bench can still put up points too.
+              Lord knows I'm going to need it when Zeke finally sits. Willis had
+              an extremely impressive week and had one of the coolest-looking,
+              most consistent point spreads from his players (Matt could tell
+              you what the stdev was). Only two players got under 11 points, and
+              even they had relatively good days. His receivers both got plenty
+              of yards and a TD, hopefully showing that Julio can go back to his
+              old ways despite a horrible game from the Falcons, Graham is
+              getting all of the redzone targets in Seattle, and his LA players
+              (D, Cupp and Goff) looked fantastic against a stingy Cardinals
+              team. Excluding Derek Carr and the best kicker in the league, his
+              bench doesn't look great. We know Martavis is unhappy, and Willis
+              would benefit from a change in scenery. We know Derrick Henry
+              should be the starter, but he got out-touched by a dude nursing an
+              injury. I'm worried that Willis is going to have a hard time
+              replicating this week, but lets hope for the best. I mean, it's
+              always hard to get the second-most points in the league and the
+              lose to the one guy who was better. I won't kick you while you are
+              down.
             </p>
-        </footer>
+
+            <!-- Just a quick class I made, you can go checkout main.css under the styles folder to see what is applied. This way every comparison section looks the same. -->
+            <div class="nfl-comparison">
+              <h4>Majors' NFL comparison: Andy Reid</h4>
+              <br />
+              <img
+                src="https://uproxx.files.wordpress.com/2013/01/chiefsreid.jpg?quality=100&w=650"
+                width="400"
+                height="240"
+              />
+              <br />
+              <p class="description">
+                Consistently good, and almost always has a great season, but
+                can't win the big one. Also is 400 pounds.
+              </p>
+            </div>
+
+            <div class="nfl-comparison">
+              <h4>Willis' NFL comparison: Rob Gronkowski</h4>
+              <br />
+              <img
+                src="http://i.dailymail.co.uk/i/pix/2015/07/10/18/2A6A20BB00000578-3156327-Rob_Gronkowski_26_wore_a_mustache_and_a_belly_shirt_while_issuin-m-15_1436547829459.jpg"
+                width="250"
+                height="345"
+              />
+              <br />
+              <p class="description">
+                Flashy, good in the playoffs and a monster when unleashed, but
+                sometimes gets injured and suffers from it. Also does an
+                impressive party-boy and still drinks Keystone.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-xs-12">
+          <!-- Again the grid system, the current div underneath will take the full width of the page. Just to make sure that everything lines up nicely. -->
+          <h3 id="rankings">Rankings</h3>
+
+          <ol>
+            <li>Premature Punishment (barely)</li>
+            <li>SIN-CLAIRR!!!!</li>
+            <li>Grab Em By The Percy</li>
+            <li>Gator Fuckers</li>
+            <li>Excel-sior</li>
+            <li>Don'tMessWithTexas</li>
+            <li>You Feel Lucky Punk?</li>
+            <li>Hairy Palmers</li>
+            <li>Turd Ferguson</li>
+            <li>Le'Veon a Prayer</li>
+            <li>It's Frommplicated</li>
+            <li>DeMarco Polo</li>
+          </ol>
+        </div>
+
+        <div class="col-xs-12">
+          <!-- Again the grid system, the current div underneath will take the full width of the page. Just to make sure that everything lines up nicely. -->
+          <h3 id="questions">Questions</h3>
+
+          <h4>Questions from Week 5</h4>
+          <ol>
+            <li>Vegasssss</li>
+            <li>Only if we debate on fantasy reform first</li>
+            <li>
+              Yes, Trevor. Just because you suck at one position doesn't mean we
+              should get rid of it
+            </li>
+            <li>Ummm I think 6 wins in a row is pretty damn sufficient</li>
+            <li>
+              Flying somewhere in his apache, just jamming out and shooting
+              commie bastards
+            </li>
+            <li>Never, unless he gets an insane package.</li>
+          </ol>
+          <h4>
+            One or More Questions for Each Team this Week (answer in the
+            Facebook comments):
+          </h4>
+          <ol>
+            <li>
+              Sawyer: On a scale of 1-10, how much is Cam pissing you off and
+              will you ever NOT keep him because of the Auburn connection?
+            </li>
+            <li>
+              Me: Is my team going to fold once Zeke gets suspended? Spoiler
+              alert: yes it is.
+            </li>
+            <li>
+              Hunter: Is it annoying to rely on one team week in and week out?
+              How do you feel when Pittsburg plays the best team and have you
+              considered not keeping Brown or Bell?
+            </li>
+            <li>
+              Trevor: Why would you want to give up Fournette for Hunt? It seems
+              like Willis has the upperhand and you would have to give more for
+              practically the same RB.
+            </li>
+            <li>
+              Sam: If we raised the auto-loss of a draft pick when keeping a
+              player that you got after the 6th round to the loss of a 6th round
+              pick, how pissed would you be regarding OBJ?
+            </li>
+            <li>Basil: How often are you going to start Jordy now?</li>
+            <li>
+              Matt: How much less confident are you now after losing to Ean?
+              Will you sing "Glory Glory to Old Georgia"?
+            </li>
+            <li>
+              Ean: On a scale of 1-10, how much confidence do you have after
+              being close to .500?
+            </li>
+            <li>
+              Willis: Would you say you believe more in your WRs or RBs to put
+              up the most points each week?
+            </li>
+            <li>
+              Ross: What in the world changed from last year to this year?
+            </li>
+            <li>
+              Chaz: Why would I bother to write a question? You won't respond
+              anyway. Fine, what's your favorite color?
+            </li>
+            <li>
+              Jared: What do you have to say regarding the supposed "fantasy
+              curse" on your team? Is it real?
+            </li>
+          </ol>
+        </div>
+
+        <div class="col-xs-12">
+          <!-- Again the grid system, the current div underneath will take the full width of the page. Just to make sure that everything lines up nicely. -->
+          <h3 id="finalthoughts">Final Thoughts</h3>
+          <p>
+            Well that's it for this week. Let me know if you like this website
+            or if you would rather me post to Facebook like I usually do. This
+            was great practice for me to build it, but it probably took twice as
+            long, so I'm not going to commit to doing this every week.
+          </p>
+        </div>
+      </div>
+
+      <hr />
+      <!-- Here we have our footer, with the copyright symbol and a span item with an ID so that we can autopopulate it with the current year. -->
+      <footer>
+        <p>
+          &copy;
+          <span id="currentYear"></span> - DKE Fantasy Football
+        </p>
+      </footer>
     </div>
 
     <!-- ALWAYS LOAD YOUR JS FILES AT THE END OF THE PAGE UNLESS OTHERWISE SPECIFIED -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="../scripts/bootstrap.min.js"></script>
     <script>
-        // Here is the code that gets the current Date
-        var now = new Date();
-        // Next we get the full year value and make the html item with the ID currentYear have the text of the Current Year.
-        $('#currentYear').text(now.getFullYear());
+      // Here is the code that gets the current Date
+      var now = new Date();
+      // Next we get the full year value and make the html item with the ID currentYear have the text of the Current Year.
+      $("#currentYear").text(now.getFullYear());
     </script>
-
-</body>
-
+  </body>
 </html>
