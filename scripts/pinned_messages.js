@@ -22,6 +22,12 @@ function getMessageHtml(message) {
 
 var pinnedMessages = [
   {
+    url: "https://i.groupme.com/1057x705.jpeg.4580f85caf66460fb443a344852caa16.large",
+    local: null,
+    description: "Sawyer the witch",
+    type: "IMAGE",
+  },
+  {
     url: "https://i.groupme.com/400x221.gif.8418def5aac148aa831bce6dcc2bf7ed.large",
     local: null,
     description: "Majors & Sawyer chugging piss",
