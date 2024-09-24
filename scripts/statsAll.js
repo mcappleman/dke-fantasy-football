@@ -217,6 +217,26 @@ dumpster = combineArrays(dumpster, dumpster2022, 2022);
 fortunate = combineArrays(fortunate, fortunate2022, 2022);
 unfortunate = combineArrays(unfortunate, unfortunate2022, 2022);
 
+// 2023
+highScores = combineArrays(highScores, highScores2023, 2023);
+lowScores = combineArrays(lowScores, lowScores2023, 2023);
+blowouts = combineArrays(blowouts, blowouts2023, 2023);
+closeGames = combineArrays(closeGames, closeGames2023, 2023);
+highest = combineArrays(highest, highest2023, 2023);
+dumpster = combineArrays(dumpster, dumpster2023, 2023);
+fortunate = combineArrays(fortunate, fortunate2023, 2023);
+unfortunate = combineArrays(unfortunate, unfortunate2023, 2023);
+
+// 2024
+highScores = combineArrays(highScores, highScores2024, 2024);
+lowScores = combineArrays(lowScores, lowScores2024, 2024);
+blowouts = combineArrays(blowouts, blowouts2024, 2024);
+closeGames = combineArrays(closeGames, closeGames2024, 2024);
+highest = combineArrays(highest, highest2024, 2024);
+dumpster = combineArrays(dumpster, dumpster2024, 2024);
+fortunate = combineArrays(fortunate, fortunate2024, 2024);
+unfortunate = combineArrays(unfortunate, unfortunate2024, 2024);
+
 // helper functions
 
 function combineArrays(allList, list, year) {
